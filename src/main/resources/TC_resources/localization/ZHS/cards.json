@@ -1,0 +1,75 @@
+{
+    "Strike_TC": {
+      "NAME": "打击",
+     "DESCRIPTION": "造成 !D! 点伤害。",
+     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
+    },
+    "Defend_TC": {
+      "NAME": "防御",
+      "DESCRIPTION": "获得 !B! 点 格挡 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
+    },
+    "SandstoneBarrier_TC": {
+      "NAME": "砂岩屏障",
+      "DESCRIPTION": "获得 !B! 格挡 ，可选择一张手牌丢弃。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，可选择一张手牌丢弃。NL 消耗 。"
+    },
+    "Quicksand_TC": {
+      "NAME": "流沙陷阱",
+      "DESCRIPTION": "造成 !D! 伤害，抽一张牌。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，抽一张牌。 NL 消耗 。"
+    },
+    "DustFog_TC": {
+      "NAME": "尘幕",
+      "DESCRIPTION": "将一张 *流沙陷阱 和 *砂岩屏障 加入手牌， thecolorful:调色 为 [#ffff00]黄[] 。 ",
+      "UPGRADE_DESCRIPTION": "将一张 *流沙陷阱+ 和 *砂岩屏障+ 加入手牌， thecolorful:调色 为 [#ffff00]黄[] 。",
+      "EXTENDED_DESCRIPTION": [
+        "主色调",
+        "主色调自身没有作用，但会影响 #y活墨 和部分卡牌的效果。 NL 战斗中只能同时存在一种主色调，绝大多数情况下，调色会 #y覆盖 原有的色调。"
+      ]
+    },
+    "Swamp_TC": {
+      "NAME": "化生泥沼",
+      "DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "EXTENDED_DESCRIPTION": [
+        "主色调",
+        "主色调自身没有作用，但会影响 #y活墨 和部分卡牌的效果。 NL 战斗中只能同时存在一种主色调，绝大多数情况下，调色会 #y覆盖 原有的色调。"
+      ]
+    },
+    "Drought_TC": {
+      "NAME": "干旱",
+      "DESCRIPTION": "造成 !D! 伤害，将一张 *流沙陷阱 加入手牌。下回合开始时失去 [E] ， thecolorful:主色调 为 [#ffff00]黄[] 时则不会失去",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，将一张 *流沙陷阱+ 加入手牌。下回合开始时失去 [E] ， thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时则不会失去"
+    },
+    "Cirrus_TC": {
+      "NAME": "卷云",
+      "DESCRIPTION": "抽 !M! 张牌，调色为 [#cc33ff]紫[] 。",
+      "UPGRADE_DESCRIPTION": "抽 !M! 张牌，调色为 [#cc33ff]紫[] 。"
+    },
+    "Oasis_TC": {
+      "NAME": "绿洲",
+      "DESCRIPTION": " 虚无 。获得3层 再生 。 消耗 。",
+      "UPGRADE_DESCRIPTION": " 虚无 。获得3层 再生 。 消耗 。"
+    },
+    "Dune_TC": {
+      "NAME": "塑造沙丘",
+      "DESCRIPTION": "将 2 张 *砂岩屏障 添加到手牌。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时再添加一张 *绿洲 ，否则 thecolorful:调色 为 [#ffff00]黄[] 。",
+      "UPGRADE_DESCRIPTION": "将 2 张 *砂岩屏障+ 添加到手牌。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时再添加一张 *绿洲+ ，否则 thecolorful:调色 为 [#ffff00]黄[] 。"
+    },
+    "MudstoneGolem_TC": {
+      "NAME": "泥岩魔偶",
+      "DESCRIPTION": "获得 !B! 格挡 。 消耗 。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时将 !M! 张 *流沙陷阱 加入手牌，否则抽 !M! 张牌并 thecolorful:调色 为 [#ffff00]黄[] 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 消耗 。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时将 !M! 张 *流沙陷阱+ 加入手牌，否则抽 !M! 张牌并 thecolorful:调色 为 [#ffff00]黄[]  。"
+    },
+    "FirstQuarter_TC": {
+      "NAME": "上弦月",
+      "DESCRIPTION": "对所有敌人施加1层 虚弱 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *下弦月 ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身",
+      "UPGRADE_DESCRIPTION": "对所有敌人施加1层 虚弱 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *下弦月+ ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身"
+    },
+    "LastQuarter_TC": {
+      "NAME": "下弦月",
+      "DESCRIPTION": "对所有敌人施加1层 易伤 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *上弦月 ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身",
+      "UPGRADE_DESCRIPTION": "对所有敌人施加1层 易伤 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *上弦月+ ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身"
+    }
+}
