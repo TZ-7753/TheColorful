@@ -71,5 +71,15 @@
       "NAME": "下弦月",
       "DESCRIPTION": "对所有敌人施加1层 易伤 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *上弦月 ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身",
       "UPGRADE_DESCRIPTION": "对所有敌人施加1层 易伤 !M! 次。 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将一张“ *上弦月+ ”洗入弃牌堆，否则 thecolorful:调色 为 [#cc33ff]紫[] 并洗入自身"
+    },
+    "DarknessPaeon_TC": {
+      "NAME": "深暗赞歌",
+      "DESCRIPTION": " 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时向所有敌人施加3层 虚弱 和 易伤 ，否则向所有敌人施加1层 *缓慢 。",
+      "UPGRADE_DESCRIPTION": " 保留 ， 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时向所有敌人施加3层 虚弱 和 易伤 ，否则向所有敌人施加1层 *缓慢 。"
+    },
+    "OpusMagnum_TC": {
+      "NAME": "尽归巨作",
+      "DESCRIPTION": " thecolorful:入画 将使敌人受到的伤害增加 *一倍 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:入画 将使敌人受到的伤害增加 *一倍 ！"
     }
 }

@@ -13,6 +13,7 @@ theColorful\Cards\Defend_TC.class
 theColorful\Cards\LastQuarter_D.class
 theColorful\Powers\Painted.class
 theColorful\Cards\Dune.class
+theColorful\Cards\OpusMagnum.class
 theColorful\characters\TC_character$Enums.class
 theColorful\Cards\Oasis.class
 theColorful\Cards\Cirrus.class
@@ -25,7 +26,9 @@ theColorful\Actions\ToningAction.class
 theColorful\Cards\Swamp_TC.class
 theColorful\Cards\SandstoneBarrier_TC.class
 theColorful\Cards\DustFog_TC.class
+theColorful\Powers\OpusMagnum_pow.class
 theColorful\Cards\Drought.class
 theColorful\characters\TC_character.class
+theColorful\Cards\DarknessPaeon.class
 theColorful\Core\TheColorful.class
 theColorful\Powers\ToneRed.class

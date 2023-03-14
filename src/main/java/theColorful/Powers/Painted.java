@@ -47,7 +47,11 @@ public class Painted extends AbstractPower {
 
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {
         if (type == DamageType.NORMAL) {
-            return damage * 1.5F;
+            if(AbstractDungeon.player.hasPower(NameAssist.MakePath("OpusMagnum_pow"))){
+                return damage * 2.00000000F;
+            }else {
+                return damage * 1.5F;
+            }
         } else {
             return damage;
         }
@@ -56,5 +60,8 @@ public class Painted extends AbstractPower {
     // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
+        if(AbstractDungeon.player.hasPower(NameAssist.MakePath("OpusMagnum_pow"))){
+            this.description = DESCRIPTIONS[1];
+        }
     }
 }

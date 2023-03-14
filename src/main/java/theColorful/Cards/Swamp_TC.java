@@ -1,23 +1,19 @@
 package theColorful.Cards;
 
 import basemod.helpers.TooltipInfo;
-import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.Painted;
-import theColorful.Powers.TonePurple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +56,7 @@ public class Swamp_TC extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m,p, new Painted(m)));
+        this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if(p.hasPower(NameAssist.MakePath("TonePurple"))){
             this.cost = 0;

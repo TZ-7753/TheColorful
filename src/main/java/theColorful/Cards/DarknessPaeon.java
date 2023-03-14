@@ -1,49 +1,44 @@
 package theColorful.Cards;
 
-import basemod.helpers.TooltipInfo;
-import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
+import basemod.abstracts.CustomCard;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theColorful.Actions.ToningAction;
+import com.megacrit.cardcrawl.powers.SlowPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
-import theColorful.Powers.Painted;
-import theColorful.Powers.TonePurple;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Iterator;
 
 import static theColorful.characters.TC_character.Enums.TC_CARD;
-public class DarknessPaeon extends AbstractCard{
-    public static final String ID = NameAssist.MakePath("Swamp");
+public class DarknessPaeon extends CustomCard {
+    public static final String ID = NameAssist.MakePath("DarknessPaeon");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "TC_resources/img/cards/Swamp_TC.png";
-    private static final int COST = 1;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
+    private static final String IMG_PATH = "TC_resources/img/cards/DarknessPaeon.png";
+    private static final int COST = 2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    private static final ToningCards.MainTone TONE = ToningCards.MainTone.PURPLE;
 
 
     public DarknessPaeon() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
-
+        this.magicNumber = this.baseMagicNumber = 3;
+        this.exhaust = true;
     }
 
 
@@ -51,29 +46,30 @@ public class DarknessPaeon extends AbstractCard{
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(4);
+            this.retain = true;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m,p, new Painted(m)));
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if(p.hasPower(NameAssist.MakePath("TonePurple"))){
-            this.cost = 0;
+        if(p.hasPower(NameAssist.MakePath("ToneBlue")) || p.hasPower(NameAssist.MakePath("TonePurple")) || p.hasPower(NameAssist.MakePath("ToneRed"))){
+            Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+            AbstractMonster mo;
+            while(var3.hasNext()) {
+                mo = var3.next();
+                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo,3,false), 3, true, AbstractGameAction.AttackEffect.NONE));
+                this.addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo,3,false), 3, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }else{
-            this.addToBot(new ToningAction(p,TONE));
+            Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+            AbstractMonster mo;
+            while(var3.hasNext()) {
+                mo = var3.next();
+                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo,1,false), 1, false, AbstractGameAction.AttackEffect.NONE));}
         }
-
     }
 
-    public List<TooltipInfo> getCustomTooltips() {
-        List<TooltipInfo> tips = new ArrayList();
-        tips.add(new TooltipInfo(cardStrings.EXTENDED_DESCRIPTION[0], cardStrings.EXTENDED_DESCRIPTION[1]));
-        return tips;
-    }
 
     public AbstractCard makeCopy(){
         return new DarknessPaeon();

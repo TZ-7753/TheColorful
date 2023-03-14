@@ -16,6 +16,7 @@ public abstract class ToningCards extends CustomCard {
         YELLOW,
         GREEN,
         PURPLE,
+        BLUE,
         BLACK,
         WHITE,
         GRAY,
