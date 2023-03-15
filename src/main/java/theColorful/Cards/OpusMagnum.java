@@ -30,7 +30,6 @@ public class OpusMagnum extends CustomCard  {
     public OpusMagnum() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = 3;
-        this.exhaust = true;
     }
 
 

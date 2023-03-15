@@ -52,5 +52,11 @@
     "DESCRIPTIONS": [
       "所有 #y入画 将使敌人受到的伤害增加 #b100% 。"
     ]
+  },
+  "ElDorado_pow_TC": {
+    "NAME": "黄金国度",
+    "DESCRIPTIONS": [
+      "所有 #y流沙陷阱 将对敌人施加 #y入画 。"
+    ]
   }
 }

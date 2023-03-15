@@ -48,6 +48,7 @@ public class DarknessPaeon extends CustomCard {
             upgradeName();
             this.retain = true;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

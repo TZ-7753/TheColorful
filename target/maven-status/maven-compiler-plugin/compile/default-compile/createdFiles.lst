@@ -16,6 +16,7 @@ theColorful\Cards\Dune.class
 theColorful\Cards\OpusMagnum.class
 theColorful\characters\TC_character$Enums.class
 theColorful\Cards\Oasis.class
+theColorful\Powers\ElDorado_pow.class
 theColorful\Cards\Cirrus.class
 theColorful\Cards\Abstract\ToningCards$MainTone.class
 theColorful\Powers\LoseNRGNextTurn.class
@@ -25,6 +26,7 @@ theColorful\Powers\ToneBlue.class
 theColorful\Actions\ToningAction.class
 theColorful\Cards\Swamp_TC.class
 theColorful\Cards\SandstoneBarrier_TC.class
+theColorful\Cards\ElDorado.class
 theColorful\Cards\DustFog_TC.class
 theColorful\Powers\OpusMagnum_pow.class
 theColorful\Cards\Drought.class

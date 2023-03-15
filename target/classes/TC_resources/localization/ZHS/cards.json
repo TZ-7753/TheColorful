@@ -80,6 +80,11 @@
     "OpusMagnum_TC": {
       "NAME": "尽归巨作",
       "DESCRIPTION": " thecolorful:入画 将使敌人受到的伤害增加 *一倍 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:入画 将使敌人受到的伤害增加 *一倍 ！"
+      "UPGRADE_DESCRIPTION": " thecolorful:入画 将使敌人受到的伤害增加 *一倍 。"
+    },
+    "ElDorado_TC": {
+      "NAME": "黄金国度",
+      "DESCRIPTION": "所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。",
+      "UPGRADE_DESCRIPTION": " 固有 。 所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。"
     }
 }

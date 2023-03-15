@@ -2,6 +2,7 @@ package theColorful.Cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,7 +12,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import theColorful.Helpers.NameAssist;
+import theColorful.Powers.ElDorado_pow;
+import theColorful.Powers.Painted;
 
 import static theColorful.characters.TC_character.Enums.TC_CARD;
 
@@ -50,6 +54,9 @@ public class Quicksand_TC extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
         this.addToBot(new DrawCardAction(p,this.magicNumber));
+        if(p.hasPower(NameAssist.MakePath("ElDorado_pow"))){
+            this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
+        }
     }
 
     public AbstractCard makeCopy(){

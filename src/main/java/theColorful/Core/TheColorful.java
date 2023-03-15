@@ -79,6 +79,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
+        BaseMod.addCard(new ElDorado());        //黄金国度
     }
 
     @Override
