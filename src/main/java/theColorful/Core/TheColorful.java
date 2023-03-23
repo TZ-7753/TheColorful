@@ -72,6 +72,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Cirrus());      //卷云
         BaseMod.addCard(new Oasis());       //绿洲
         BaseMod.addCard(new Dune());        //塑造沙丘
+        BaseMod.addCard(new GlimpseofDark());   //一瞬黑暗
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月

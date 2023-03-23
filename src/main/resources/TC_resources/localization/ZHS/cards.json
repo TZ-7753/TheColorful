@@ -86,5 +86,10 @@
       "NAME": "黄金国度",
       "DESCRIPTION": "所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。",
       "UPGRADE_DESCRIPTION": " 固有 。 所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。"
+    },
+    "GlimpseofDark_TC": {
+      "NAME": "一瞬黑暗",
+      "DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。",
+      "UPGRADE_DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。"
     }
 }

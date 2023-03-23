@@ -67,7 +67,7 @@ public class DarknessPaeon extends CustomCard {
             AbstractMonster mo;
             while(var3.hasNext()) {
                 mo = var3.next();
-                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo,1,false), 1, false, AbstractGameAction.AttackEffect.NONE));}
+                this.addToBot(new ApplyPowerAction(mo, p, new SlowPower(mo,1), 1, false, AbstractGameAction.AttackEffect.NONE));}
         }
     }
 

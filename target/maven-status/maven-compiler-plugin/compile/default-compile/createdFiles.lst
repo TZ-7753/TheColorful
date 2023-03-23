@@ -22,6 +22,7 @@ theColorful\Cards\Abstract\ToningCards$MainTone.class
 theColorful\Powers\LoseNRGNextTurn.class
 theColorful\Powers\ToneYellow.class
 theColorful\Relics\Pallite.class
+theColorful\Cards\GlimpseofDark.class
 theColorful\Powers\ToneBlue.class
 theColorful\Actions\ToningAction.class
 theColorful\Cards\Swamp_TC.class
