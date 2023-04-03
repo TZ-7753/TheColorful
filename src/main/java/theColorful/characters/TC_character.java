@@ -23,6 +23,7 @@ import theColorful.Cards.Defend_TC;
 import theColorful.Cards.DustFog_TC;
 import theColorful.Cards.Swamp_TC;
 import theColorful.Core.TheColorful;
+import theColorful.Relics.Pallite;
 
 import java.util.ArrayList;
 
@@ -106,7 +107,7 @@ public class TC_character extends CustomPlayer {
     // 初始遗物的ID，可以先写个原版遗物凑数
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Vajra.ID);
+        retVal.add(Pallite.ID);
         return retVal;
     }
 

@@ -30,8 +30,8 @@
     },
     "Swamp_TC": {
       "NAME": "化生泥沼",
-      "DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
       "EXTENDED_DESCRIPTION": [
         "主色调",
         "主色调自身没有作用，但会影响 #y活墨 和部分卡牌的效果。 NL 战斗中只能同时存在一种主色调，绝大多数情况下，调色会 #y覆盖 原有的色调。"
@@ -60,7 +60,7 @@
     "MudstoneGolem_TC": {
       "NAME": "泥岩魔偶",
       "DESCRIPTION": "获得 !B! 格挡 。 消耗 。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时将 !M! 张 *流沙陷阱 加入手牌，否则抽 !M! 张牌并 thecolorful:调色 为 [#ffff00]黄[] 。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 消耗 。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时将 !M! 张 *流沙陷阱+ 加入手牌，否则抽 !M! 张牌并 thecolorful:调色 为 [#ffff00]黄[]  。"
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 消耗 。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时将 !M! 张 *流沙陷阱+ 加入手牌，否则抽 !M! 张牌并 thecolorful:调色 为 [#ffff00]黄[] 。"
     },
     "FirstQuarter_TC": {
       "NAME": "上弦月",
@@ -74,8 +74,8 @@
     },
     "DarknessPaeon_TC": {
       "NAME": "深暗赞歌",
-      "DESCRIPTION": " 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时向所有敌人施加3层 虚弱 和 易伤 ，否则向所有敌人施加1层 *缓慢 。",
-      "UPGRADE_DESCRIPTION": " 保留 ， 消耗 。 thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时向所有敌人施加3层 虚弱 和 易伤 ，否则向所有敌人施加1层 *缓慢 。"
+      "DESCRIPTION": "移除自身的所有正面状态，使自身不能再被附加任何状态或能力。向所有敌人施加 #b1 层 缓慢 ",
+      "UPGRADE_DESCRIPTION": "移除自身的所有正面与负面状态，使自身不能再被附加任何状态或能力。向所有敌人施加 #b1 层 缓慢 "
     },
     "OpusMagnum_TC": {
       "NAME": "尽归巨作",
@@ -91,5 +91,69 @@
       "NAME": "一瞬黑暗",
       "DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。",
       "UPGRADE_DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。"
+    },
+    "Minerals_TC": {
+      "NAME": "化生矿床",
+      "DESCRIPTION": " 不能被打出 。 抽到时获得 !B! 格挡，被手动丢弃时获得 [E] ，被消耗时获得 !M! 金属化 。",
+      "UPGRADE_DESCRIPTION": " 保留 ， 不能被打出 。 抽到时获得 !B! 格挡，被手动丢弃时获得 [E] ，被消耗时获得 !M! 金属化 。"
+    },
+    "AshesPaeon_TC": {
+      "NAME": "灰烬赞歌",
+      "DESCRIPTION": " 虚无 ， 消耗 。 NL *选择 ：获得与已消耗的卡牌数量相等的 格挡 ，或使随机敌人失去等量生命",
+      "UPGRADE_DESCRIPTION": " 消耗 。 NL *选择 ：获得与已消耗的卡牌数量相等的 格挡 ，或使所有敌人失去等量生命"
+    },
+    "AshesShelter_TC": {
+      "NAME": "灰烬守护",
+      "DESCRIPTION": "获得与已消耗的牌数相等的 格挡 ",
+      "UPGRADE_DESCRIPTION": "获得与已消耗的牌数相等的 格挡 "
+    },
+    "AshesStorm_TC": {
+      "NAME": "灰烬风暴",
+      "DESCRIPTION": "使一个随机敌人失去与已消耗的牌数相等的生命",
+      "UPGRADE_DESCRIPTION": "使所有敌人失去与已消耗的牌数相等的生命"
+    },
+    "SunlightSpear_TC": {
+      "NAME": "阳光枪",
+      "DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[]，[#ff9900]橙[]，[#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并调色为 [#ff9900]橙[]。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[]，[#ff9900]橙[]，[#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并调色为 [#ff9900]橙[]。"
+    },
+    "BloodPaeon_TC": {
+      "NAME": "鲜血赞歌",
+      "DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[]时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! ",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[]时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! "
+    },
+    "UnusedColor_TC": {
+      "NAME": "弃用杂色",
+      "DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并洗入一张此卡的复制品。 NL 虚无",
+      "UPGRADE_DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并洗入一张此卡的复制品。 NL 虚无"
+    },
+    "ToneRed_TC": {
+      "NAME": "红",
+      "DESCRIPTION": "thecolorful:调色 为 [#ff0000]红[]"
+    },
+    "ToneOrange_TC": {
+      "NAME": "橙",
+      "DESCRIPTION": "thecolorful:调色 为 [#ff9900]橙[]"
+    },
+    "ToneYellow_TC": {
+      "NAME": "黄",
+      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[]"
+    },
+    "ToneGreen_TC": {
+      "NAME": "绿",
+      "DESCRIPTION": "thecolorful:调色 为 [#33ee33]绿[]"
+    },
+    "ToneBlue_TC": {
+      "NAME": "蓝",
+      "DESCRIPTION": "thecolorful:调色 为 [#0099ff]蓝[]"
+    },
+    "TonePurple_TC": {
+      "NAME": "紫",
+      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[]"
+    },
+      "ReTone_TC": {
+      "NAME": "重新调色",
+      "DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色。 NL 消耗 。",
+        "UPGRADE_DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色并抽一张牌。 NL 消耗 。"
     }
 }

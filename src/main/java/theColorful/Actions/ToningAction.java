@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.AbstractRelic.LandingSound;
 import com.megacrit.cardcrawl.relics.AbstractRelic.RelicTier;
@@ -34,7 +35,7 @@ public class ToningAction extends AbstractGameAction {
         }else if(this.owner.hasPower(NameAssist.MakePath("ToneGreen")) && this.tone != ToningCards.MainTone.GREEN){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("ToneGreen")));
         }else if(this.owner.hasPower(NameAssist.MakePath("ToneBlue")) && this.tone != ToningCards.MainTone.BLUE) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("ToneGreen")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("ToneBlue")));
         }
         //是否在此写添加主色调...待定
         switch (tone){
@@ -58,6 +59,9 @@ public class ToningAction extends AbstractGameAction {
                 break;
         }
 
+//        if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("Pallite"))){
+//
+//        }
         this.isDone = true;
     }
 

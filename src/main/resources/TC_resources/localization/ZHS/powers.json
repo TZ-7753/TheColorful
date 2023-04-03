@@ -58,5 +58,42 @@
     "DESCRIPTIONS": [
       "所有 #y流沙陷阱 将对敌人施加 #y入画 。"
     ]
+  },
+  "InkRed_TC": {
+    "NAME": "活墨 - 红",
+    "DESCRIPTIONS": [
+      "[#ff0000]红[] 色活墨。获得2 #y力量 "
+    ]
+  },
+  "InkOrange_TC": {
+    "NAME": "活墨 - 橙",
+    "DESCRIPTIONS": [
+      "[#ff9900]橙[] 色活墨。获得1 #y能量 "
+    ]
+  },
+  "InkYellow_TC": {
+    "NAME": "活墨 - 黄",
+    "DESCRIPTIONS": [
+      "[#ffff00]黄[] 色活墨。本回合将受到的所有伤害减少 #b30% "
+    ]
+  },
+  "InkGreen_TC": {
+    "NAME": "活墨 - 绿",
+    "DESCRIPTIONS": [
+      "[#33ee33]绿[] 色活墨。获得2 #y敏捷 "
+    ]
+  },
+  "InkBlue_TC": {
+    "NAME": "活墨 - 蓝",
+    "DESCRIPTIONS": [
+      "[#0099ff]蓝[] 色活墨。你的回合结束时，最多保留 #b2 张手牌。"
+    ]
+  },
+  "InkPurple_TC": {
+      "NAME": "活墨 - 紫",
+      "DESCRIPTIONS": [
+        "[#cc33ff]紫[] 色活墨。自身所有负面状态的层数已被减少 #b1 "
+    ]
   }
+
 }

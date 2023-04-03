@@ -1,12 +1,10 @@
 package theColorful.Core;
 
-import basemod.interfaces.EditCharactersSubscriber;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.helpers.RelicType;
+import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
-import basemod.interfaces.EditCardsSubscriber;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.red.SearingBlow;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -19,12 +17,13 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 import static theColorful.characters.TC_character.Enums.TC_CHARACTER;
 
 import theColorful.Cards.*;
+import theColorful.Relics.Pallite;
 import theColorful.characters.TC_character;
 
 import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditKeywordsSubscriber {
+public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber, EditKeywordsSubscriber, EditRelicsSubscriber {
     private static final String TC_CHARACTER_BUTTON = "TC_resources/img/char/Character_Button.png";
     // 人物选择界面的立绘
     private static final String TC_CHARACTER_PORTRAIT = "TC_resources/img/char/Character_Portrait.png";
@@ -65,22 +64,29 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Defend_TC());   //防御
         BaseMod.addCard(new Quicksand_TC());    //流沙陷阱
         BaseMod.addCard(new SandstoneBarrier_TC()); //砂岩屏障
-        BaseMod.addCard(new DustFog_TC());  //尘雾
-        BaseMod.addCard(new Swamp_TC());    //化生泥沼，降能耗效果未实装
+        BaseMod.addCard(new DustFog_TC());  //尘幕
+        BaseMod.addCard(new Swamp_TC());    //化生泥沼
+
 
         BaseMod.addCard(new Drought());     //干旱
         BaseMod.addCard(new Cirrus());      //卷云
         BaseMod.addCard(new Oasis());       //绿洲
         BaseMod.addCard(new Dune());        //塑造沙丘
         BaseMod.addCard(new GlimpseofDark());   //一瞬黑暗
+        BaseMod.addCard(new Minerals());    //化生矿床
+        BaseMod.addCard(new UnusedColor()); //弃用杂色
+        BaseMod.addCard(new ReTone());      //重新调色
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
         BaseMod.addCard(new LastQuarter());     //下弦月
+        BaseMod.addCard(new SunlightSpear());   //阳光枪
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
         BaseMod.addCard(new ElDorado());        //黄金国度
+        BaseMod.addCard(new AshesPaeon());      //灰烬赞歌
+        BaseMod.addCard(new BloodPaeon());      //鲜血赞歌
     }
 
     @Override
@@ -99,7 +105,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         // 如果是中文，加载的就是"ExampleResources/localization/ZHS/cards.json"
         BaseMod.loadCustomStringsFile(CharacterStrings.class, "TC_resources/localization/" + lang + "/characters.json"); // 加载属于角色的本地化内容。
         BaseMod.loadCustomStringsFile(PowerStrings.class, "TC_resources/localization/" + lang + "/powers.json");
-        //BaseMod.loadCustomStringsFile(RelicStrings.class, "ExampleResources/localization/" + lang + "/relics.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "TC_resources/localization/" + lang + "/relics.json");
     }
 
     @Override
@@ -122,5 +128,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
 
 
     }
-
+    @Override
+    public void receiveEditRelics() {
+        BaseMod.addRelic(new Pallite(), RelicType.SHARED); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
+    }
 }

@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -28,17 +29,15 @@ public class DarknessPaeon extends CustomCard {
     private static final String IMG_PATH = "TC_resources/img/cards/DarknessPaeon.png";
     private static final int COST = 2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = TC_CARD;
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
 
     public DarknessPaeon() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 3;
-        this.exhaust = true;
     }
 
 
@@ -46,7 +45,6 @@ public class DarknessPaeon extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.retain = true;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -54,21 +52,23 @@ public class DarknessPaeon extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(p.hasPower(NameAssist.MakePath("ToneBlue")) || p.hasPower(NameAssist.MakePath("TonePurple")) || p.hasPower(NameAssist.MakePath("ToneRed"))){
-            Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-            AbstractMonster mo;
-            while(var3.hasNext()) {
-                mo = var3.next();
-                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo,3,false), 3, true, AbstractGameAction.AttackEffect.NONE));
-                this.addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo,3,false), 3, true, AbstractGameAction.AttackEffect.NONE));
+        Iterator<AbstractPower> var5 = p.powers.iterator();
+        while(var5.hasNext()){
+            AbstractPower pow = var5.next();
+            if(pow.type == AbstractPower.PowerType.BUFF){
+                this.addToBot(new RemoveSpecificPowerAction(p, p, pow.ID));
+            }else if(pow.type == AbstractPower.PowerType.DEBUFF && this.upgraded){
+                this.addToBot(new RemoveSpecificPowerAction(p, p, pow.ID));
             }
-        }else{
-            Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-            AbstractMonster mo;
-            while(var3.hasNext()) {
-                mo = var3.next();
-                this.addToBot(new ApplyPowerAction(mo, p, new SlowPower(mo,1), 1, false, AbstractGameAction.AttackEffect.NONE));}
         }
+        //人工制品的码好像抄不了 - 阻止上Buff
+        Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+        AbstractMonster mo;
+        while(var3.hasNext()) {
+            mo = var3.next();
+            this.addToBot(new ApplyPowerAction(mo, p, new SlowPower(mo,1), 1, false, AbstractGameAction.AttackEffect.NONE));
+        }
+
     }
 
 

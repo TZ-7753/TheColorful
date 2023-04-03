@@ -64,4 +64,6 @@ public class Painted extends AbstractPower {
             this.description = DESCRIPTIONS[1];
         }
     }
+
+
 }

@@ -25,7 +25,7 @@ public class DustFog_TC extends ToningCards {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "TC_resources/img/cards/Defend_TC.png";
+    private static final String IMG_PATH = "TC_resources/img/cards/DustFog.png";
     private static final int COST = 1;
     //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
