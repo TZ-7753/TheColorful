@@ -30,8 +30,8 @@
     },
     "Swamp_TC": {
       "NAME": "化生泥沼",
-      "DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] ，则在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，施加 thecolorful:入画 。打出时若主色调为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] ，则在余下的战斗中这张牌的耗能变为0，否则 thecolorful:调色 为 [#cc33ff]紫[] 。 ",
       "EXTENDED_DESCRIPTION": [
         "主色调",
         "主色调自身没有作用，但会影响 #y活墨 和部分卡牌的效果。 NL 战斗中只能同时存在一种主色调，绝大多数情况下，调色会 #y覆盖 原有的色调。"
@@ -95,7 +95,7 @@
     "Minerals_TC": {
       "NAME": "化生矿床",
       "DESCRIPTION": " 不能被打出 。 抽到时获得 !B! 格挡，被手动丢弃时获得 [E] ，被消耗时获得 !M! 金属化 。",
-      "UPGRADE_DESCRIPTION": " 保留 ， 不能被打出 。 抽到时获得 !B! 格挡，被手动丢弃时获得 [E] ，被消耗时获得 !M! 金属化 。"
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 抽到时获得 !B! 格挡，被手动丢弃时获得 [E] ，被消耗时获得 !M! 金属化 。"
     },
     "AshesPaeon_TC": {
       "NAME": "灰烬赞歌",
@@ -114,13 +114,13 @@
     },
     "SunlightSpear_TC": {
       "NAME": "阳光枪",
-      "DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[]，[#ff9900]橙[]，[#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并调色为 [#ff9900]橙[]。",
-      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[]，[#ff9900]橙[]，[#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并调色为 [#ff9900]橙[]。"
+      "DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并 thecolorful:调色 为 [#ff9900]橙[] 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时造成 !D! 伤害，否则移除目标的所有 格挡 ，造成与其相等的伤害并 thecolorful:调色 为 [#ff9900]橙[] 。"
     },
     "BloodPaeon_TC": {
       "NAME": "鲜血赞歌",
-      "DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[]时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! ",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[]时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! "
+      "DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[] 时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! ",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害， 消耗 。 thecolorful:主色调 为 [#ff0000]红[] 时回复与未被 格挡 的伤害量相等的生命并使这张牌在整局游戏中造成的伤害+ !M! "
     },
     "UnusedColor_TC": {
       "NAME": "弃用杂色",
@@ -155,5 +155,20 @@
       "NAME": "重新调色",
       "DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色。 NL 消耗 。",
         "UPGRADE_DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色并抽一张牌。 NL 消耗 。"
+    },
+    "LiveVolcano_TC": {
+      "NAME": "活火山",
+      "DESCRIPTION": " thecolorful:场地 。 NL 你的回合结束时若 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 则对所有敌人造成 !M! 伤害，否则 thecolorful:调色 为 [#ff0000]红[] 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:场地 。 NL 你的回合结束时若 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 则对所有敌人造成 !M! 伤害，否则 thecolorful:调色 为 [#ff0000]红[] 。"
+    },
+    "Desert_TC": {
+      "NAME": "大沙漠",
+      "DESCRIPTION": " thecolorful:场地 。 NL 你的回合开始时若 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 则将一张 *流沙陷阱 加入手牌。否则将一张 *砂岩屏障 加入手牌并 thecolorful:调色 为 [#ffff00]黄[] 。",
+      "UPGRADE_DESCRIPTION": " 固有 ， thecolorful:场地 。 NL 你的回合开始时若 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 则将一张 *流沙陷阱 加入手牌。否则将一张 *砂岩屏障 加入手牌并 thecolorful:调色 为 [#ffff00]黄[] 。"
+    },
+    "HueCalibrator_TC": {
+      "NAME": "色相校准装置",
+      "DESCRIPTION": " thecolorful:场地 。 NL 如果你在一回合内没有进行任何有效的 thecolorful:调色 ，则在下一回合开始时获得 !M! 层 人工制品 与 !M! 张 *重新调色 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:场地 。 NL 如果你在一回合内没有进行任何有效的 thecolorful:调色 ，则在下一回合开始时获得 !M! 层 人工制品 与 !M! 张 *重新调色 。"
     }
 }

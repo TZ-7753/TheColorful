@@ -24,6 +24,7 @@ public class ToningAction extends AbstractGameAction {
     public void update() {
 
         //若无阻止调色的pow或其他特殊主色调，则正常清理
+        this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Calibrating")));
         if(this.owner.hasPower(NameAssist.MakePath("TonePurple")) && this.tone != ToningCards.MainTone.PURPLE){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("TonePurple")));
         }else if(this.owner.hasPower(NameAssist.MakePath("ToneRed")) && this.tone != ToningCards.MainTone.RED){

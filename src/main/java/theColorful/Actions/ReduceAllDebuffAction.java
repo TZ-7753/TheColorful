@@ -18,7 +18,7 @@ public class ReduceAllDebuffAction extends AbstractGameAction {
         Iterator<AbstractPower> var5 = this.owner.powers.iterator();
         while(var5.hasNext()){
             AbstractPower p = var5.next();
-            if(p.type == AbstractPower.PowerType.DEBUFF){
+            if(p.type == AbstractPower.PowerType.DEBUFF && p.amount != -1){
                 if(p.amount>1){
                     p.amount-=1;
                 }else if(p.amount == 1){

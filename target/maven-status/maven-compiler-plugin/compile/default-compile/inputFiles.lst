@@ -2,6 +2,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\LoseNRGNextTurn.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Painted.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Oasis.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Core\TheColorful.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Calibrating.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Defend_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Minerals.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkGreen.java
@@ -14,6 +15,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneOrange.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Dune.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\MudstoneGolem.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\DarknessPaeon.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\HueCalibrator.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\AshesShelter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Quicksand_TC.java
@@ -22,9 +24,11 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\TonePurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneRed.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\FirstQuarter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SunlightSpear.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\Desert_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\DustFog_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LastQuarter_D.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\AshesStorm.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Desert.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ReduceAllDebuffAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\GlimpseofDark.java
@@ -39,10 +43,12 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ToningAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BloodPaeon.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\characters\TC_character.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\HueCalibrator_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Drought.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LastQuarter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Swamp_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ElDorado_pow.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\LiveVolcano_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Abstract\ToningCards.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ReTone.java
@@ -51,6 +57,8 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\OpusMagnum.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Strike_TC.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ApplyFieldAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\UnusedColor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Pallite.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LiveVolcano.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SandstoneBarrier_TC.java
