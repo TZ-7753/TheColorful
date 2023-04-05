@@ -33,7 +33,7 @@ public class UnusedColor extends CustomCard {
 
     public UnusedColor() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
+        this.damage = this.baseDamage = 7;
         this.isEthereal = true;
     }
 
@@ -42,7 +42,7 @@ public class UnusedColor extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(3);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

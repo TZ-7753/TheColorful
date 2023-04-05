@@ -9,6 +9,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkPurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Cirrus.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\PaintRandomEnemyAction.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrimaryArmaRed.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkOrange.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneOrange.java
@@ -22,6 +23,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Quicksand_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneRed.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\TonePurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneRed.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ClearPalliteAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\FirstQuarter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SunlightSpear.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\Desert_pow.java
@@ -40,6 +42,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneOrange.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkRed.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ToningAction.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Red\CrimsonMeteor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BloodPaeon.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\characters\TC_character.java
@@ -62,3 +65,5 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\UnusedColor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Pallite.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LiveVolcano.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SandstoneBarrier_TC.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ClearPallite.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Red\InfernoHull.java

@@ -28,7 +28,7 @@ public class AshesPaeon extends CustomCard {
     //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/AshesPaeon.png";
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;

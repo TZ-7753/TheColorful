@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -22,7 +21,6 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class LastQuarter extends ToningCards {
     public static final String ID = NameAssist.MakePath("LastQuarter");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/LastQuarter.png";
     private static final int COST = 1;
@@ -76,7 +74,7 @@ public class LastQuarter extends ToningCards {
             this.addToBot(new MakeTempCardInDiscardAction(c1,1));
         }else{
             this.addToBot(new MakeTempCardInDiscardAction(c2,1));
-            this.addToBot(new ToningAction(p,MainTone.PURPLE));
+            this.addToBot(new ToningAction(p,TONE));
         }
 
     }

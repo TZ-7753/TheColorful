@@ -17,6 +17,8 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 import static theColorful.characters.TC_character.Enums.TC_CHARACTER;
 
 import theColorful.Cards.*;
+import theColorful.Cards.Arma.Red.CrimsonMeteor;
+import theColorful.Cards.Arma.Red.InfernoHull;
 import theColorful.Relics.Pallite;
 import theColorful.characters.TC_character;
 
@@ -84,12 +86,17 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new LiveVolcano());     //活火山
         BaseMod.addCard(new Desert());          //大沙漠
         BaseMod.addCard(new HueCalibrator());   //色相校准装置
+        BaseMod.addCard(new ClearPallite());    //清空绘盘
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
         BaseMod.addCard(new ElDorado());        //黄金国度
         BaseMod.addCard(new AshesPaeon());      //灰烬赞歌
         BaseMod.addCard(new BloodPaeon());      //鲜血赞歌
+
+        BaseMod.addCard(new CrimsonMeteor());   //赤色流星
+        BaseMod.addCard(new InfernoHull());     //灼燃机壳
+        BaseMod.addCard(new PrimaryArmaRed());  //原色武装-红
     }
 
     @Override

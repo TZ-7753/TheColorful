@@ -22,11 +22,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class BloodPaeon extends CustomCard {
     public static final String ID = NameAssist.MakePath("BloodPaeon");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/BloodPaeon.png";
     private static final int COST = 1;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = TC_CARD;
@@ -61,10 +59,11 @@ public class BloodPaeon extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        DamageInfo info = new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.NORMAL);
-        this.addToBot(new VampireDamageAction(m,info,AbstractGameAction.AttackEffect.LIGHTNING));
         if(p.hasPower(NameAssist.MakePath("ToneRed"))){
+            this.addToBot(new VampireDamageAction(m,new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),AbstractGameAction.AttackEffect.LIGHTNING));
             this.addToBot(new IncreaseMiscAction(this.uuid, this.misc, this.magicNumber));
+        }else{
+            this.addToBot(new DamageAction(m,new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),AbstractGameAction.AttackEffect.LIGHTNING));
         }
     }
 

@@ -9,6 +9,7 @@ theColorful\Cards\Quicksand_TC.class
 theColorful\Powers\TonePurple.class
 theColorful\Powers\Painted.class
 theColorful\Cards\Dune.class
+theColorful\Cards\Arma\Red\InfernoHull.class
 theColorful\Powers\Ink\InkOrange.class
 theColorful\characters\TC_character$Enums.class
 theColorful\Cards\UnusedColor.class
@@ -37,6 +38,7 @@ theColorful\Powers\Field\HueCalibrator_pow.class
 theColorful\Powers\Ink\InkBlue.class
 theColorful\Cards\Choices\AshesStorm.class
 theColorful\Cards\Choices\ToneYellow.class
+theColorful\Cards\Arma\Red\CrimsonMeteor.class
 theColorful\Powers\ToneRed.class
 theColorful\Powers\Ink\InkRed.class
 theColorful\Cards\Strike_TC.class
@@ -47,6 +49,7 @@ theColorful\Cards\LastQuarter_D.class
 theColorful\Cards\Choices\AshesShelter.class
 theColorful\Cards\OpusMagnum.class
 theColorful\Cards\Oasis.class
+theColorful\Cards\ClearPallite.class
 theColorful\Cards\LiveVolcano.class
 theColorful\Powers\ElDorado_pow.class
 theColorful\Cards\Cirrus.class
@@ -61,7 +64,9 @@ theColorful\Cards\Swamp_TC.class
 theColorful\Cards\ElDorado.class
 theColorful\Cards\Drought.class
 theColorful\Cards\Choices\TonePurple.class
+theColorful\Actions\ClearPalliteAction.class
 theColorful\Cards\DarknessPaeon.class
 theColorful\Cards\Minerals.class
+theColorful\Cards\PrimaryArmaRed.class
 theColorful\Core\TheColorful.class
 theColorful\Cards\Choices\ToneOrange.class

@@ -58,7 +58,7 @@ public class Swamp_TC extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        if(p.hasPower(NameAssist.MakePath("TonePurple"))){
+        if(p.hasPower(NameAssist.MakePath("TonePurple"))||p.hasPower(NameAssist.MakePath("ToneBlue"))||p.hasPower(NameAssist.MakePath("ToneRed"))){
             this.updateCost(-1);
         }else{
             this.addToBot(new ToningAction(p,TONE));

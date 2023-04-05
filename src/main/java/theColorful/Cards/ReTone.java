@@ -32,7 +32,7 @@ public class ReTone extends CustomCard {
 
     public ReTone() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.retain = true;
+        this.selfRetain = true;
         this.exhaust = true;
     }
 

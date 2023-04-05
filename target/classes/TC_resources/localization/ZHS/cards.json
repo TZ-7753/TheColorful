@@ -170,5 +170,29 @@
       "NAME": "色相校准装置",
       "DESCRIPTION": " thecolorful:场地 。 NL 如果你在一回合内没有进行任何有效的 thecolorful:调色 ，则在下一回合开始时获得 !M! 层 人工制品 与 !M! 张 *重新调色 。",
       "UPGRADE_DESCRIPTION": " thecolorful:场地 。 NL 如果你在一回合内没有进行任何有效的 thecolorful:调色 ，则在下一回合开始时获得 !M! 层 人工制品 与 !M! 张 *重新调色 。"
+    },
+    "CrimsonMeteor_TC": {
+      "NAME": "赤色流星",
+      "DESCRIPTION": "造成 !D! 伤害2次，力量发挥两倍效果。 NL 保留 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害2次，力量发挥三倍效果。 NL 保留 。"
+    },
+    "InfernoHull_TC": {
+      "NAME": "灼燃机壳",
+      "DESCRIPTION": "获得 !D! 格挡 2次， 力量 取代 敏捷 影响获得的数量。",
+      "UPGRADE_DESCRIPTION": "获得 !D! 格挡 3次， 力量 取代 敏捷 影响获得的数量。"
+    },
+    "PrimaryArmaRed_TC": {
+      "NAME": " [#ff0000]原色武装 - 红[] ",
+      "DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将共5张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将共5张特殊的已升级卡牌洗入抽牌堆。",
+      "EXTENDED_DESCRIPTION": [
+        "原色武装",
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 *原色武装 ，则将它们全部 消耗 。"
+      ]
+    },
+    "ClearPallite_TC": {
+      "NAME": "清空绘盘",
+      "DESCRIPTION": " 消耗 手牌中所有的无色牌。每 消耗 一张就抽一张牌。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 消耗 手牌中所有的无色牌。每 消耗 一张就抽一张牌。"
     }
 }
