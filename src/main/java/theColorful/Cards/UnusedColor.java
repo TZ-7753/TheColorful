@@ -52,10 +52,14 @@ public class UnusedColor extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         DamageInfo info = new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.NORMAL);
         this.addToBot(new DamageRandomEnemyAction(info, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        p.drawPile.moveToExhaustPile(p.drawPile.getRandomCard(AbstractDungeon.cardRandomRng));
-        p.discardPile.moveToExhaustPile(p.discardPile.getRandomCard(AbstractDungeon.cardRandomRng));
-        this.addToBot(new MakeTempCardInDiscardAction(this,1));
-        this.addToBot(new MakeTempCardInDrawPileAction(this,1,true,true,false));
+        if(p.drawPile.size()>0){
+            p.drawPile.moveToExhaustPile(p.drawPile.getRandomCard(AbstractDungeon.cardRandomRng));
+            this.addToBot(new MakeTempCardInDrawPileAction(this,1,true,true,false));
+        }
+        if(p.discardPile.size()>0) {
+            p.discardPile.moveToExhaustPile(p.discardPile.getRandomCard(AbstractDungeon.cardRandomRng));
+            this.addToBot(new MakeTempCardInDiscardAction(this,1));
+        }
     }
 
     public AbstractCard makeCopy(){

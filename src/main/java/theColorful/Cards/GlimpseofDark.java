@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
+import theColorful.Powers.Painted;
 
 import java.util.Iterator;
 
@@ -44,7 +45,7 @@ public class GlimpseofDark extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.updateCost(0);
+            this.upgradeBaseCost(0);
         }
     }
 
@@ -54,7 +55,7 @@ public class GlimpseofDark extends ToningCards {
         AbstractMonster mo;
         while(var3.hasNext()) {
             mo = var3.next();
-            this.addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo,1,false), 1, true, AbstractGameAction.AttackEffect.NONE));
+            this.addToBot(new ApplyPowerAction(mo, p, new Painted(mo)));
         }
         this.addToBot(new ToningAction(p,TONE));
     }

@@ -52,12 +52,11 @@ public class DustFog_TC extends ToningCards {
             upgradeName();
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
+            MultiCardPreview.clear(this);
             AbstractCard c1 = new Quicksand_TC();
             AbstractCard c2 = new SandstoneBarrier_TC();
             c1.upgrade();
             c2.upgrade();
-            MultiCardPreview.remove(this, new Quicksand_TC());
-            MultiCardPreview.remove(this, new SandstoneBarrier_TC());
             MultiCardPreview.add(this, c1, c2);
         }
     }

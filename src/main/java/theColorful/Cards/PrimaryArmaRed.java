@@ -9,10 +9,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theColorful.Actions.PrimaryArmaInitAction;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Cards.Arma.Red.CrimsonMeteor;
 import theColorful.Cards.Arma.Red.InfernoHull;
+import theColorful.Cards.Arma.Red.ReIgnition;
 import theColorful.Helpers.NameAssist;
 
 import java.util.ArrayList;
@@ -34,9 +36,9 @@ public class PrimaryArmaRed extends ToningCards {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final MainTone TONE = MainTone.RED;
 
-
     public PrimaryArmaRed() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.isArma = true;
     }
 
 
@@ -51,14 +53,18 @@ public class PrimaryArmaRed extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToTop(new PrimaryArmaInitAction(ID));
         AbstractCard card1 = new CrimsonMeteor();
         AbstractCard card2 = new InfernoHull();
+        AbstractCard card3 = new ReIgnition();
         if(this.upgraded){
             card1.upgrade();
             card2.upgrade();
+            card3.upgrade();
         }
         this.addToBot(new MakeTempCardInDrawPileAction(card1,2,true,true,false));
         this.addToBot(new MakeTempCardInDrawPileAction(card2,2,true,true,false));
+        this.addToBot(new MakeTempCardInDrawPileAction(card3,1,true,true,false));
         this.addToBot(new ToningAction(p,TONE));
 
     }

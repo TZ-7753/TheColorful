@@ -35,6 +35,7 @@ public class Drought extends CustomCard {
     public Drought() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 6;
+        this.cardsToPreview = new Quicksand_TC();
     }
 
 
@@ -45,6 +46,9 @@ public class Drought extends CustomCard {
             upgradeDamage(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
+            AbstractCard c = new Quicksand_TC();
+            c.upgrade();
+            this.cardsToPreview = c;
         }
     }
 

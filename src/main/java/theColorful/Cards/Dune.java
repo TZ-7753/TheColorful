@@ -55,8 +55,7 @@ public class Dune extends ToningCards {
             this.initializeDescription();
             AbstractCard c1 = new SandstoneBarrier_TC();
             AbstractCard c2 = new Oasis();
-            MultiCardPreview.remove(this, c1);
-            MultiCardPreview.remove(this, c2);
+            MultiCardPreview.clear(this);
             c1.upgrade();
             c2.upgrade();
             MultiCardPreview.add(this, c1, c2);
@@ -69,6 +68,7 @@ public class Dune extends ToningCards {
         AbstractCard c2 = new Oasis();
         if(this.upgraded){
             c1.upgrade();
+            c2.upgrade();
         }
         this.addToBot(new MakeTempCardInHandAction(c1,2));
         if(p.hasPower(NameAssist.MakePath("ToneYellow"))){

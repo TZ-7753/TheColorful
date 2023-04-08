@@ -31,7 +31,7 @@ public class AshesStorm extends CustomCard {
 
     public AshesStorm() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = AbstractDungeon.player.exhaustPile.size();
+        this.damage = this.baseDamage = 2*(AbstractDungeon.player.exhaustPile.size());
     }
 
 
@@ -52,7 +52,7 @@ public class AshesStorm extends CustomCard {
     public void onChoseThisOption() {
         DamageInfo info = new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.HP_LOSS);
         if(this.upgraded){
-            this.addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, this.baseDamage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.LIGHTNING));
+            this.addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, this.damage, DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.LIGHTNING));
         }else{
             this.addToBot(new DamageRandomEnemyAction(info, AbstractGameAction.AttackEffect.LIGHTNING));
         }

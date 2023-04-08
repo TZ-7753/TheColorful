@@ -3,6 +3,7 @@ package theColorful.Cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -47,6 +48,14 @@ public class SandstoneBarrier_TC extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
         this.addToBot(new DiscardAction(p,p,this.magicNumber,false,false));
+    }
+
+    public void onChoseThisOption() {
+        AbstractCard c = new SandstoneBarrier_TC();
+        if(this.upgraded){
+            c.upgrade();
+        }
+        this.addToBot(new MakeTempCardInHandAction(c,3));
     }
 
     public AbstractCard makeCopy(){

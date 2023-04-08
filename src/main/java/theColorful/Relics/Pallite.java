@@ -51,7 +51,9 @@ public class Pallite extends CustomRelic implements ClickableRelic {
     public void onRightClick() {
         //点击时根据当前色调降低计数产生活墨pow
         if(AbstractDungeon.getCurrRoom() != null && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+
             if (this.counter >= 1 && !this.used) {
+                this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneRed"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new InkRed(AbstractDungeon.player)));
@@ -76,11 +78,12 @@ public class Pallite extends CustomRelic implements ClickableRelic {
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new InkPurple(AbstractDungeon.player)));
                     this.addToBot(new ReduceAllDebuffAction(AbstractDungeon.player));
                 }
-
                 this.used = true;
                 this.flash();
                 this.counter--;
             }
+
+
         }
     }
 

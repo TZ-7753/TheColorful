@@ -28,7 +28,7 @@ public class AshesShelter extends CustomCard {
 
     public AshesShelter() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = AbstractDungeon.player.exhaustPile.size();
+        this.block = this.baseBlock = 2*(AbstractDungeon.player.exhaustPile.size());
     }
 
 

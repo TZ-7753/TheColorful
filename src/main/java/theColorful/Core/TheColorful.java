@@ -6,7 +6,6 @@ import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.cards.red.SearingBlow;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
@@ -19,7 +18,12 @@ import static theColorful.characters.TC_character.Enums.TC_CHARACTER;
 import theColorful.Cards.*;
 import theColorful.Cards.Arma.Red.CrimsonMeteor;
 import theColorful.Cards.Arma.Red.InfernoHull;
+import theColorful.Cards.Arma.Red.ReIgnition;
+import theColorful.Cards.Arma.Yellow.GoldenSpear;
+import theColorful.Cards.Arma.Yellow.MirageCity;
+import theColorful.Cards.Arma.Yellow.MirageDoppel;
 import theColorful.Relics.Pallite;
+import theColorful.StonePile;
 import theColorful.characters.TC_character;
 
 import java.nio.charset.StandardCharsets;
@@ -64,20 +68,18 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
     public void receiveEditCards(){
         BaseMod.addCard(new Strike_TC());   //打击
         BaseMod.addCard(new Defend_TC());   //防御
-        BaseMod.addCard(new Quicksand_TC());    //流沙陷阱
-        BaseMod.addCard(new SandstoneBarrier_TC()); //砂岩屏障
         BaseMod.addCard(new DustFog_TC());  //尘幕
         BaseMod.addCard(new Swamp_TC());    //化生泥沼
 
-
         BaseMod.addCard(new Drought());     //干旱
         BaseMod.addCard(new Cirrus());      //卷云
-        BaseMod.addCard(new Oasis());       //绿洲
         BaseMod.addCard(new Dune());        //塑造沙丘
         BaseMod.addCard(new GlimpseofDark());   //一瞬黑暗
-        BaseMod.addCard(new Minerals());    //化生矿床
-        BaseMod.addCard(new UnusedColor()); //弃用杂色
-        BaseMod.addCard(new ReTone());      //重新调色
+        BaseMod.addCard(new Dawn());        //画中朝阳
+        BaseMod.addCard(new Desertify());   //沙漠化
+        BaseMod.addCard(new RockBreaker()); //碎岩击
+        BaseMod.addCard(new LavaFlow());    //熔岩流
+        BaseMod.addCard(new StonePile());   //石堆
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -87,6 +89,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Desert());          //大沙漠
         BaseMod.addCard(new HueCalibrator());   //色相校准装置
         BaseMod.addCard(new ClearPallite());    //清空绘盘
+        BaseMod.addCard(new RiftValley());      //裂谷
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
@@ -96,7 +99,20 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
         BaseMod.addCard(new InfernoHull());     //灼燃机壳
+        BaseMod.addCard(new ReIgnition());      //复燃
         BaseMod.addCard(new PrimaryArmaRed());  //原色武装-红
+        BaseMod.addCard(new MirageCity());      //蜃楼之城
+        BaseMod.addCard(new MirageDoppel());    //幻象双身
+        BaseMod.addCard(new GoldenSpear());     //黄金长枪
+        BaseMod.addCard(new PrimaryArmaYellow());//原色武装-黄
+
+        BaseMod.addCard(new Minerals());    //化生矿床
+        BaseMod.addCard(new UnusedColor()); //弃用杂色
+        BaseMod.addCard(new ReTone());      //重新调色
+        BaseMod.addCard(new PauseTone());   //暂停调色
+        BaseMod.addCard(new Quicksand_TC());    //流沙陷阱
+        BaseMod.addCard(new SandstoneBarrier_TC()); //砂岩屏障
+        BaseMod.addCard(new Oasis());       //绿洲
     }
 
     @Override

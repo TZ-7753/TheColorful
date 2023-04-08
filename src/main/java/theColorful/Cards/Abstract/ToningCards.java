@@ -26,6 +26,8 @@ public abstract class ToningCards extends CustomCard {
 
         }
     }
+
+    public boolean isArma;
     public ToningCards(String id, String name, String img, int cost, String rawDescription, AbstractCard.CardType type, AbstractCard.CardColor color, AbstractCard.CardRarity rarity, AbstractCard.CardTarget target) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
     }

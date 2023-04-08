@@ -2,9 +2,7 @@ package theColorful.Cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -57,6 +55,14 @@ public class Quicksand_TC extends CustomCard {
         if(p.hasPower(NameAssist.MakePath("ElDorado_pow"))){
             this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
         }
+    }
+
+    public void onChoseThisOption() {
+        AbstractCard c = new Quicksand_TC();
+        if(this.upgraded){
+            c.upgrade();
+        }
+        this.addToBot(new MakeTempCardInHandAction(c,3));
     }
 
     public AbstractCard makeCopy(){

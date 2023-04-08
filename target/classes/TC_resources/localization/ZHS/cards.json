@@ -11,8 +11,8 @@
     },
     "SandstoneBarrier_TC": {
       "NAME": "砂岩屏障",
-      "DESCRIPTION": "获得 !B! 格挡 ，可选择一张手牌丢弃。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，可选择一张手牌丢弃。NL 消耗 。"
+      "DESCRIPTION": "获得 !B! 格挡 ，选择一张手牌丢弃。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，选择一张手牌丢弃。NL 消耗 。"
     },
     "Quicksand_TC": {
       "NAME": "流沙陷阱",
@@ -89,8 +89,8 @@
     },
     "GlimpseofDark_TC": {
       "NAME": "一瞬黑暗",
-      "DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。",
-      "UPGRADE_DESCRIPTION": "对所有敌人施加1层 易伤 ，调色为 [#cc33ff]紫[] 。"
+      "DESCRIPTION": "对所有敌人施加 thecolorful:入画 ， thecolorful:调色 为 [#cc33ff]紫[] 。",
+      "UPGRADE_DESCRIPTION": "对所有敌人施加 thecolorful:入画 ， thecolorful:调色 为 [#cc33ff]紫[] 。"
     },
     "Minerals_TC": {
       "NAME": "化生矿床",
@@ -99,18 +99,18 @@
     },
     "AshesPaeon_TC": {
       "NAME": "灰烬赞歌",
-      "DESCRIPTION": " 虚无 ， 消耗 。 NL *选择 ：获得与已消耗的卡牌数量相等的 格挡 ，或使随机敌人失去等量生命",
-      "UPGRADE_DESCRIPTION": " 消耗 。 NL *选择 ：获得与已消耗的卡牌数量相等的 格挡 ，或使所有敌人失去等量生命"
+      "DESCRIPTION": " 虚无 。 消耗 。 NL *选择 ： NL 获得两倍于已消耗的卡牌数量的 格挡 ， NL 或使随机敌人失去等量生命",
+      "UPGRADE_DESCRIPTION": " 消耗 。 NL *选择 ： NL 获得两倍于已消耗的卡牌数量的 格挡 ， NL 或使所有敌人失去等量生命"
     },
     "AshesShelter_TC": {
       "NAME": "灰烬守护",
-      "DESCRIPTION": "获得与已消耗的牌数相等的 格挡 ",
-      "UPGRADE_DESCRIPTION": "获得与已消耗的牌数相等的 格挡 "
+      "DESCRIPTION": "获得两倍于已消耗的牌数的 格挡 ",
+      "UPGRADE_DESCRIPTION": "获得两倍于已消耗的牌数的 格挡 "
     },
     "AshesStorm_TC": {
       "NAME": "灰烬风暴",
-      "DESCRIPTION": "使一个随机敌人失去与已消耗的牌数相等的生命",
-      "UPGRADE_DESCRIPTION": "使所有敌人失去与已消耗的牌数相等的生命"
+      "DESCRIPTION": "使一个随机敌人失去两倍于已消耗的牌数的生命",
+      "UPGRADE_DESCRIPTION": "使所有敌人失去两倍于已消耗的牌数的生命"
     },
     "SunlightSpear_TC": {
       "NAME": "阳光枪",
@@ -124,8 +124,8 @@
     },
     "UnusedColor_TC": {
       "NAME": "弃用杂色",
-      "DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并洗入一张此卡的复制品。 NL 虚无",
-      "UPGRADE_DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并洗入一张此卡的复制品。 NL 虚无"
+      "DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并替换为此卡的复制品。 NL 虚无。",
+      "UPGRADE_DESCRIPTION": "对随机敌人造成 !D! 伤害，在抽牌堆与弃牌堆中各随机 消耗 一张牌并替换为此卡的复制品。 NL 虚无。"
     },
     "ToneRed_TC": {
       "NAME": "红",
@@ -156,6 +156,11 @@
       "DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色。 NL 消耗 。",
         "UPGRADE_DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色并抽一张牌。 NL 消耗 。"
     },
+    "PauseTone_TC": {
+      "NAME": "暂停调色",
+      "DESCRIPTION": " 保留 。 NL 阻止本回合内的下一次 thecolorful:调色 产生效果。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 阻止本回合内的下一次 thecolorful:调色 产生效果并抽一张牌。 NL 消耗 。"
+    },
     "LiveVolcano_TC": {
       "NAME": "活火山",
       "DESCRIPTION": " thecolorful:场地 。 NL 你的回合结束时若 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 则对所有敌人造成 !M! 伤害，否则 thecolorful:调色 为 [#ff0000]红[] 。",
@@ -181,18 +186,77 @@
       "DESCRIPTION": "获得 !D! 格挡 2次， 力量 取代 敏捷 影响获得的数量。",
       "UPGRADE_DESCRIPTION": "获得 !D! 格挡 3次， 力量 取代 敏捷 影响获得的数量。"
     },
+    "ReIgnition_TC": {
+      "NAME": "复燃",
+      "DESCRIPTION": "失去 !M! 生命， NL 获得 [E] [E] ， NL 抽2张牌， NL thecolorful:调色 为 [#ff0000]红[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "失去 !M! 生命， NL 获得 [E] [E] ， NL 抽2张牌， NL thecolorful:调色 为 [#ff0000]红[] 。"
+    },
     "PrimaryArmaRed_TC": {
-      "NAME": " [#ff0000]原色武装 - 红[] ",
-      "DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将共5张特殊的卡牌洗入抽牌堆。",
-      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将共5张特殊的已升级卡牌洗入抽牌堆。",
+      "NAME": "原色武装 - 红",
+      "DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将5张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将5张特殊的已升级卡牌洗入抽牌堆。",
       "EXTENDED_DESCRIPTION": [
         "原色武装",
-        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 *原色武装 ，则将它们全部 消耗 。"
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
       ]
     },
     "ClearPallite_TC": {
       "NAME": "清空绘盘",
       "DESCRIPTION": " 消耗 手牌中所有的无色牌。每 消耗 一张就抽一张牌。 NL 消耗 。",
       "UPGRADE_DESCRIPTION": " 消耗 手牌中所有的无色牌。每 消耗 一张就抽一张牌。"
+    },
+    "Dawn_TC": {
+      "NAME": "画中朝阳",
+      "DESCRIPTION": "获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 并将一张 *暂停调色 加入手牌。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 并将一张 *暂停调色+ 加入手牌。 NL 消耗 。"
+    },
+    "Desertify_TC": {
+      "NAME": "沙漠化",
+      "DESCRIPTION": "抽1张牌，将 !M! 张 *流沙陷阱 洗入抽牌堆。 NL thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时额外在手牌中加入 *绿洲 ，否则 thecolorful:调色 为 [#ffff00]黄[] 。",
+      "UPGRADE_DESCRIPTION": "抽1张牌，将 !M! 张 *流沙陷阱+ 洗入抽牌堆。 NL thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时额外在手牌中加入 *绿洲+ ，否则 thecolorful:调色 为 [#ffff00]黄[] 。"
+    },
+    "RiftValley_TC": {
+      "NAME": "裂谷",
+      "DESCRIPTION": "造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色 加入手牌",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色+ 加入手牌"
+    },
+    "PrimaryArmaYellow_TC": {
+      "NAME": "原色武装 - 黄",
+      "DESCRIPTION": " thecolorful:调色 为 [#ffff00]黄[] 。将4张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ffff00]黄[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
+      "EXTENDED_DESCRIPTION": [
+        "原色武装",
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+      ]
+    },
+    "MirageDoppel_TC": {
+      "NAME": "幻象双身",
+      "DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则将2张 *绿洲 洗入抽牌堆",
+      "UPGRADE_DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则将2张 *绿洲+ 洗入抽牌堆"
+    },
+    "MirageCity_TC": {
+      "NAME": "蜃楼之城",
+      "DESCRIPTION": "被手动丢弃时获得 !M! *金币 。 NL *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。",
+      "UPGRADE_DESCRIPTION": "被手动丢弃时获得 !M! *金币 。 NL *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。"
+    },
+    "GoldenSpear_TC": {
+      "NAME": "黄金长枪",
+      "DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过格挡",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过格挡"
+    },
+    "RockBreaker_TC": {
+      "NAME": "碎岩击",
+      "DESCRIPTION": "造成 !D! 伤害。 NL 施加 !M! 虚弱 。 NL thecolorful:调色 为 [#ff0000]红[] 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 NL 施加 !M! 虚弱 。 NL thecolorful:调色 为 [#ff0000]红[] 。"
+    },
+    "LavaFlow_TC": {
+      "NAME": "熔岩流",
+      "DESCRIPTION": "造成 !D! 伤害2次， thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成2次，否则 thecolorful:调色 为 [#ff0000]红[] 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害2次， thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成2次，否则 thecolorful:调色 为 [#ff0000]红[] 。"
+    },
+    "StonePile_TC": {
+      "NAME": "石堆",
+      "DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡。"
     }
 }
