@@ -1,10 +1,8 @@
 package theColorful.Cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -59,7 +57,7 @@ public class Peak extends CustomCard {
         if(this.upgraded){
             c.upgrade();
         }
-        if(!p.hasPower(NameAssist.MakePath("TonePurple")) && !p.hasPower(NameAssist.MakePath("ToneRed")) && !p.hasPower(NameAssist.MakePath("ToneOrange"))){
+        if(p.hasPower(NameAssist.MakePath("TonePurple")) || p.hasPower(NameAssist.MakePath("ToneRed")) || p.hasPower(NameAssist.MakePath("ToneOrange"))){
             this.addToBot(new GainBlockAction(p,this.block));
         }else{
             this.addToBot(new MakeTempCardInHandAction(c,1));

@@ -24,6 +24,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\AshesShelter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Quicksand_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneRed.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\MilkyWay_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\TonePurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneRed.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ClearPalliteAction.java
@@ -36,6 +37,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LastQuarter_D.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\AshesStorm.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Desert.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneYellow.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Tar.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ReduceAllDebuffAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\GlimpseofDark.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Red\ReIgnition.java
@@ -74,12 +76,14 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Abstract\ToningCards.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ReTone.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Helpers\NameAssist.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BirdsWatchout.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\StonePile.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneGreen.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\MilkyWay.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\OpusMagnum.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Strike_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ApplyFieldAction.java
-D:\Mymod\TheColorful\src\main\java\theColorful\StonePile.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\StarLight.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Peak.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\UnusedColor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Pallite.java

@@ -19,7 +19,9 @@ theColorful\Powers\Ink\InkGreen.class
 theColorful\Powers\Ink\InkPurple.class
 theColorful\Powers\Calibrating.class
 theColorful\Cards\Choices\ToneBlue.class
+theColorful\Cards\Tar.class
 theColorful\Cards\SunlightSpear.class
+theColorful\Cards\MilkyWay.class
 theColorful\Cards\Arma\Red\ReIgnition.class
 theColorful\Cards\BirdsWatchout.class
 theColorful\Actions\PaintRandomEnemyAction.class
@@ -31,8 +33,9 @@ theColorful\Actions\ApplyFieldAction.class
 theColorful\Powers\Field\LiveVolcano_pow.class
 theColorful\Cards\BloodPaeon.class
 theColorful\Actions\ToningAction.class
-theColorful\StonePile.class
+theColorful\Cards\Arma\Purple\NightSkyBarrier.class
 theColorful\Powers\Field\Desert_pow.class
+theColorful\Powers\Field\MilkyWay_pow.class
 theColorful\Cards\SandstoneBarrier_TC.class
 theColorful\Cards\Desert.class
 theColorful\Cards\DustFog_TC.class
@@ -40,6 +43,7 @@ theColorful\Powers\OpusMagnum_pow.class
 theColorful\Cards\Choices\ToneRed.class
 theColorful\Cards\GrassShield.class
 theColorful\Actions\ReduceAllDebuffAction.class
+theColorful\Cards\Arma\Purple\BlackHole.class
 theColorful\characters\TC_character.class
 theColorful\Powers\Field\HueCalibrator_pow.class
 theColorful\Cards\RiftValley.class
@@ -48,6 +52,7 @@ theColorful\Cards\Choices\AshesStorm.class
 theColorful\Cards\Choices\ToneYellow.class
 theColorful\Cards\Arma\Red\CrimsonMeteor.class
 theColorful\Powers\ToneRed.class
+theColorful\Cards\StarLight.class
 theColorful\Powers\Ink\InkRed.class
 theColorful\Cards\Strike_TC.class
 theColorful\Cards\Abstract\ToningCards.class
@@ -59,10 +64,12 @@ theColorful\Cards\LastQuarter_D.class
 theColorful\Cards\Choices\AshesShelter.class
 theColorful\Cards\OpusMagnum.class
 theColorful\Cards\Arma\Yellow\MirageDoppel.class
+theColorful\Powers\Aurora_pow.class
 theColorful\Cards\Oasis.class
 theColorful\Cards\ClearPallite.class
 theColorful\Cards\Warmth.class
 theColorful\Cards\LiveVolcano.class
+theColorful\Powers\NightSkyBarrier_pow.class
 theColorful\Powers\ElDorado_pow.class
 theColorful\Cards\Cirrus.class
 theColorful\Cards\Choices\ToneGreen.class
@@ -82,6 +89,7 @@ theColorful\Cards\ElDorado.class
 theColorful\Actions\PrimaryArmaInitAction.class
 theColorful\Cards\Drought.class
 theColorful\Cards\Choices\TonePurple.class
+theColorful\Cards\Arma\Purple\Aurora.class
 theColorful\Actions\ClearPalliteAction.class
 theColorful\Cards\DarknessPaeon.class
 theColorful\Cards\Minerals.class
@@ -89,4 +97,6 @@ theColorful\Cards\Arma\Yellow\MirageCity.class
 theColorful\Cards\PrimaryArmaRed.class
 theColorful\Core\TheColorful.class
 theColorful\Actions\InkAction.class
+theColorful\Cards\PrimaryArmaPurple.class
+theColorful\Cards\StonePile.class
 theColorful\Cards\Choices\ToneOrange.class

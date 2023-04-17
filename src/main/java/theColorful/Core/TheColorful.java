@@ -16,6 +16,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 import static theColorful.characters.TC_character.Enums.TC_CHARACTER;
 
 import theColorful.Cards.*;
+import theColorful.Cards.Arma.Purple.Aurora;
+import theColorful.Cards.Arma.Purple.BlackHole;
+import theColorful.Cards.Arma.Purple.NightSkyBarrier;
 import theColorful.Cards.Arma.Red.CrimsonMeteor;
 import theColorful.Cards.Arma.Red.InfernoHull;
 import theColorful.Cards.Arma.Red.ReIgnition;
@@ -23,7 +26,7 @@ import theColorful.Cards.Arma.Yellow.GoldenSpear;
 import theColorful.Cards.Arma.Yellow.MirageCity;
 import theColorful.Cards.Arma.Yellow.MirageDoppel;
 import theColorful.Relics.Pallite;
-import theColorful.StonePile;
+import theColorful.Cards.StonePile;
 import theColorful.characters.TC_character;
 
 import java.nio.charset.StandardCharsets;
@@ -83,6 +86,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Peak());        //孤峰
         BaseMod.addCard(new Warmth());      //温暖的火
         BaseMod.addCard(new GrassShield()); //丛生蔓叶
+        BaseMod.addCard(new Tar());         //污泥
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -95,6 +99,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new RiftValley());      //裂谷
         BaseMod.addCard(new BirdsWatchout());   //鸟群警戒
         BaseMod.addCard(new WindBreak());       //防风林
+        BaseMod.addCard(new StarLight());       //星辉
+        BaseMod.addCard(new MilkyWay());        //银河
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
@@ -110,6 +116,10 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new MirageDoppel());    //幻象双身
         BaseMod.addCard(new GoldenSpear());     //黄金长枪
         BaseMod.addCard(new PrimaryArmaYellow());//原色武装-黄
+        BaseMod.addCard(new BlackHole());       //黑洞
+        BaseMod.addCard(new NightSkyBarrier()); //夜色帷幕
+        BaseMod.addCard(new Aurora());          //极光
+        BaseMod.addCard(new PrimaryArmaPurple());//原色武装-紫
 
         BaseMod.addCard(new Minerals());    //化生矿床
         BaseMod.addCard(new UnusedColor()); //弃用杂色
