@@ -21,7 +21,7 @@ public class LavaFlow extends ToningCards {
     public static final String ID = NameAssist.MakePath("LavaFlow");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "TC_resources/img/cards/RockBreaker.png";
+    private static final String IMG_PATH = "TC_resources/img/cards/LavaFlow.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;

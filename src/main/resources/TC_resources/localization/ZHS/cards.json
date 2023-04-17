@@ -241,8 +241,8 @@
     },
     "GoldenSpear_TC": {
       "NAME": "黄金长枪",
-      "DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过格挡",
-      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过格挡"
+      "DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过 格挡 ",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过 格挡 "
     },
     "RockBreaker_TC": {
       "NAME": "碎岩击",
@@ -256,7 +256,32 @@
     },
     "StonePile_TC": {
       "NAME": "石堆",
-      "DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡。"
+      "DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡 。"
+    },
+    "Peak_TC": {
+      "NAME": "孤峰",
+      "DESCRIPTION": " 不能被打出 。 NL 回合结束时若 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 则获得 !B! 格挡 ，否则将一张 *重新调色 加入手牌。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 回合结束时若 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 则获得 !B! 格挡 ，否则将一张 *重新调色+ 加入手牌。"
+    },
+    "BirdsWatchout_TC": {
+      "NAME": "鸟群警戒",
+      "DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时阻止下一次 thecolorful:调色 生效，否则场上每有一名敌人就获得 !B! 格挡 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时阻止下一次 thecolorful:调色 生效，否则场上每有一名敌人就获得 !B! 格挡 。"
+    },
+    "Warmth_TC": {
+      "NAME": "温暖的火",
+      "DESCRIPTION": " 不能被打出 。 虚无 。 NL 被抽到时获得 [E] 与1层 脆弱 。 thecolorful:主色调 为 [#ff9900]橙[] 时则不会获得 脆弱 。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 虚无 。 NL 被抽到时获得 [E] 与1层 脆弱 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时则不会获得 脆弱 。"
+    },
+    "GrassShield_TC": {
+      "NAME": "丛生蔓叶",
+      "DESCRIPTION": "获得 !B! 格挡 ， thecolorful:主色调 为 [#33ee33]绿[] 时再获得一次。 NL 每当你成功进行 thecolorful:调色 ，将这张牌从弃牌堆放回抽牌堆中并洗牌。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ， thecolorful:主色调 为 [#33ee33]绿[] 时再获得一次。 NL 每当你成功进行 thecolorful:调色 ，将这张牌从弃牌堆放回抽牌堆中并洗牌。"
+    },
+    "WindBreak_TC": {
+      "NAME": "防风林",
+      "DESCRIPTION": " 不能被打出 ， 虚无 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得5 多层护甲 ，否则获得2 力量 。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得5 多层护甲 ，否则获得2 力量 。"
     }
 }

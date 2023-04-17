@@ -46,8 +46,8 @@ public class Cirrus extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DrawCardAction(p,this.magicNumber));
         this.addToBot(new ToningAction(p,TONE));
+        this.addToBot(new DrawCardAction(p,this.magicNumber));
     }
 
     public AbstractCard makeCopy(){

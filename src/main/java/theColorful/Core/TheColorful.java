@@ -80,6 +80,9 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new RockBreaker()); //碎岩击
         BaseMod.addCard(new LavaFlow());    //熔岩流
         BaseMod.addCard(new StonePile());   //石堆
+        BaseMod.addCard(new Peak());        //孤峰
+        BaseMod.addCard(new Warmth());      //温暖的火
+        BaseMod.addCard(new GrassShield()); //丛生蔓叶
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -90,6 +93,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new HueCalibrator());   //色相校准装置
         BaseMod.addCard(new ClearPallite());    //清空绘盘
         BaseMod.addCard(new RiftValley());      //裂谷
+        BaseMod.addCard(new BirdsWatchout());   //鸟群警戒
+        BaseMod.addCard(new WindBreak());       //防风林
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作

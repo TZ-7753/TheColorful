@@ -21,6 +21,7 @@ theColorful\Powers\Calibrating.class
 theColorful\Cards\Choices\ToneBlue.class
 theColorful\Cards\SunlightSpear.class
 theColorful\Cards\Arma\Red\ReIgnition.class
+theColorful\Cards\BirdsWatchout.class
 theColorful\Actions\PaintRandomEnemyAction.class
 theColorful\Cards\Abstract\ToningCards$MainTone.class
 theColorful\Powers\LoseNRGNextTurn.class
@@ -37,6 +38,7 @@ theColorful\Cards\Desert.class
 theColorful\Cards\DustFog_TC.class
 theColorful\Powers\OpusMagnum_pow.class
 theColorful\Cards\Choices\ToneRed.class
+theColorful\Cards\GrassShield.class
 theColorful\Actions\ReduceAllDebuffAction.class
 theColorful\characters\TC_character.class
 theColorful\Powers\Field\HueCalibrator_pow.class
@@ -49,6 +51,7 @@ theColorful\Powers\ToneRed.class
 theColorful\Powers\Ink\InkRed.class
 theColorful\Cards\Strike_TC.class
 theColorful\Cards\Abstract\ToningCards.class
+theColorful\Cards\WindBreak.class
 theColorful\Powers\ToneGreen.class
 theColorful\Cards\LavaFlow.class
 theColorful\Cards\Defend_TC.class
@@ -58,12 +61,14 @@ theColorful\Cards\OpusMagnum.class
 theColorful\Cards\Arma\Yellow\MirageDoppel.class
 theColorful\Cards\Oasis.class
 theColorful\Cards\ClearPallite.class
+theColorful\Cards\Warmth.class
 theColorful\Cards\LiveVolcano.class
 theColorful\Powers\ElDorado_pow.class
 theColorful\Cards\Cirrus.class
 theColorful\Cards\Choices\ToneGreen.class
 theColorful\Cards\PrimaryArmaYellow.class
 theColorful\Cards\ReTone.class
+theColorful\Cards\Peak.class
 theColorful\Cards\Dawn.class
 theColorful\Powers\ToneYellow.class
 theColorful\Cards\PauseTone.class

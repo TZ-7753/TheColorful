@@ -35,7 +35,7 @@ public class Pallite extends CustomRelic implements ClickableRelic {
 
     public Pallite() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
-        this.counter = 66;
+        this.counter = 6;
     }
 
     // 获取遗物描述，但原版游戏只在初始化和获取遗物时调用，故该方法等于初始描述

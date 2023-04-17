@@ -1,9 +1,12 @@
 package theColorful.Actions;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -13,12 +16,17 @@ import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.*;
 
+import java.util.Iterator;
+import java.util.Objects;
+import java.util.function.Predicate;
+
 public class ToningAction extends AbstractGameAction {
     public AbstractPlayer owner;
     public ToningCards.MainTone tone;
     public ToningAction(AbstractPlayer p,ToningCards.MainTone tone) {
         this.owner = p;
         this.tone = tone;
+        this.duration = 0.5F;
     }
 
     @Override
@@ -63,11 +71,16 @@ public class ToningAction extends AbstractGameAction {
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneBlue(this.owner)));
                     break;
             }
+            Predicate<AbstractCard> GS = AbstractCard -> Objects.equals(AbstractCard.cardID, NameAssist.MakePath("GrassShield"));
+            this.addToBot(new MoveCardsAction(AbstractDungeon.player.drawPile,AbstractDungeon.player.discardPile,GS));
+            AbstractDungeon.player.drawPile.shuffle();
         }
 
 //        if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("Pallite"))){
 //
 //        }
+
+
         this.isDone = true;
     }
 
