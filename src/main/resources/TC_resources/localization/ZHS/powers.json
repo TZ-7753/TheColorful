@@ -149,5 +149,33 @@
       "本回合内，有负面状态的所有敌人受到的伤害增加",
       "%"
     ]
+  },
+  "Decomposer_TC": {
+    "NAME": "分解者",
+    "DESCRIPTIONS": [
+      "回合结束时，附加",
+      "层 #y中毒 。"
+    ]
+  },
+  "MegaShroom_pow_TC": {
+    "NAME": "大蘑菇",
+    "DESCRIPTIONS": [
+      "受到攻击时，获得",
+      "层 #y再生 。"
+    ]
+  },
+  "Rafflesia_pow_TC": {
+    "NAME": "大王花",
+    "DESCRIPTIONS": [
+      "回合开始时，额外抽",
+      "张牌。"
+    ]
+  },
+  "ThornsLayer_pow_TC": {
+    "NAME": "荆棘秘牢",
+    "DESCRIPTIONS": [
+      "每当调色为 [#33ee33]绿[] ，获得",
+      "层 #y荆棘 。"
+    ]
   }
 }

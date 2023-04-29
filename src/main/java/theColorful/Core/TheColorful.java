@@ -74,19 +74,19 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new DustFog_TC());  //尘幕
         BaseMod.addCard(new Swamp_TC());    //化生泥沼
 
-        BaseMod.addCard(new Drought());     //干旱
-        BaseMod.addCard(new Cirrus());      //卷云
-        BaseMod.addCard(new Dune());        //塑造沙丘
+        BaseMod.addCard(new Drought());         //干旱
+        BaseMod.addCard(new Cirrus());          //卷云
+        BaseMod.addCard(new Dune());            //塑造沙丘
         BaseMod.addCard(new GlimpseofDark());   //一瞬黑暗
-        BaseMod.addCard(new Dawn());        //画中朝阳
-        BaseMod.addCard(new Desertify());   //沙漠化
-        BaseMod.addCard(new RockBreaker()); //碎岩击
-        BaseMod.addCard(new LavaFlow());    //熔岩流
-        BaseMod.addCard(new StonePile());   //石堆
-        BaseMod.addCard(new Peak());        //孤峰
-        BaseMod.addCard(new Warmth());      //温暖的火
-        BaseMod.addCard(new GrassShield()); //丛生蔓叶
-        BaseMod.addCard(new Tar());         //污泥
+        BaseMod.addCard(new Dawn());            //画中朝阳
+        BaseMod.addCard(new Desertify());       //沙漠化
+        BaseMod.addCard(new RockBreaker());     //碎岩击
+        BaseMod.addCard(new LavaFlow());        //熔岩流
+        BaseMod.addCard(new StonePile());       //石堆
+        BaseMod.addCard(new Peak());            //孤峰
+        BaseMod.addCard(new Warmth());          //温暖的火
+        BaseMod.addCard(new GrassShield());     //丛生蔓叶
+        BaseMod.addCard(new Tar());             //污泥
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -101,6 +101,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new WindBreak());       //防风林
         BaseMod.addCard(new StarLight());       //星辉
         BaseMod.addCard(new MilkyWay());        //银河
+        BaseMod.addCard(new Spores());          //孢子
+        BaseMod.addCard(new Leafgem());         //新叶
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
@@ -121,13 +123,27 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Aurora());          //极光
         BaseMod.addCard(new PrimaryArmaPurple());//原色武装-紫
 
-        BaseMod.addCard(new Minerals());    //化生矿床
-        BaseMod.addCard(new UnusedColor()); //弃用杂色
-        BaseMod.addCard(new ReTone());      //重新调色
-        BaseMod.addCard(new PauseTone());   //暂停调色
+        BaseMod.addCard(new Minerals());        //化生矿床
+        BaseMod.addCard(new UnusedColor());     //弃用杂色
+        BaseMod.addCard(new ReTone());          //重新调色
+        BaseMod.addCard(new PauseTone());       //暂停调色
         BaseMod.addCard(new Quicksand_TC());    //流沙陷阱
         BaseMod.addCard(new SandstoneBarrier_TC()); //砂岩屏障
-        BaseMod.addCard(new Oasis());       //绿洲
+        BaseMod.addCard(new Oasis());           //绿洲
+        BaseMod.addCard(new ColossalMatsutake());   //巨松茸
+        BaseMod.addCard(new Decomposer());      //分解者
+        BaseMod.addCard(new ParasiteFungus());  //寄生毒蕈
+        BaseMod.addCard(new MegaShroom());      //肥硕大蘑菇
+        BaseMod.addCard(new Penicillium());     //青霉菌
+        BaseMod.addCard(new Hypha());           //菌丝
+        BaseMod.addCard(new RainbowFlower());   //虹色之花
+        BaseMod.addCard(new Rafflesia());       //大王花
+        BaseMod.addCard(new Bud());             //花苞
+        BaseMod.addCard(new MegaTree());        //巨木
+        BaseMod.addCard(new ThornsLayer());     //荆棘秘牢
+        BaseMod.addCard(new Branch());          //硬枝
+
+
     }
 
     @Override

@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ThornsPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.AbstractRelic.LandingSound;
 import com.megacrit.cardcrawl.relics.AbstractRelic.RelicTier;
@@ -66,6 +68,10 @@ public class ToningAction extends AbstractGameAction {
                     break;
                 case GREEN:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneGreen(this.owner)));
+                    if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ThornsLayer_pow"))){
+                        AbstractPower p = AbstractDungeon.player.getPower(NameAssist.MakePath("ThornsLayer_pow"));
+                        this.addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new ThornsPower(AbstractDungeon.player,p.amount)));
+                    }
                     break;
                 case BLUE:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneBlue(this.owner)));

@@ -322,5 +322,85 @@
         "原色武装",
         "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
       ]
+    },
+    "Spores_TC": {
+      "NAME": "孢子",
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *寄生毒蕈 或 *菌丝 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *寄生毒蕈 或 *菌丝 加入抽牌堆并将此卡 消耗 。"
+    },
+    "ColossalMatsutake_TC": {
+      "NAME": "巨松茸",
+      "DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。"
+    },
+    "Decomposer_TC": {
+      "NAME": "分解者",
+      "DESCRIPTION": "使目标失去1 力量 ，每回合受到 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": "使目标失去1 力量 ，每回合受到 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。"
+    },
+    "ParasiteFungus_TC": {
+      "NAME": "寄生毒蕈",
+      "DESCRIPTION": " thecolorful:萌芽 。 施加 !M! 层 中毒 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸 或 *分解者 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": "施加 !M! 层 中毒 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸+ 或 *分解者+ 加入抽牌堆并将此卡 消耗 。"
+    },
+    "Hypha_TC": {
+      "NAME": "菌丝",
+      "DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *肥硕大蘑菇 或 *青霉菌 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *肥硕大蘑菇+ 或 *青霉菌+ 加入抽牌堆并将此卡 消耗 。"
+    },
+    "MegaShroom_TC": {
+      "NAME": "肥硕大蘑菇",
+      "DESCRIPTION": "你每受到一次攻击，便获得 !M! 再生 。",
+      "UPGRADE_DESCRIPTION": "你每受到一次攻击，便获得 !M! 再生 。"
+    },
+    "Penicillium_TC": {
+      "NAME": "青霉菌",
+      "DESCRIPTION": "获得 !M! 人工制品 。",
+      "UPGRADE_DESCRIPTION": "获得 !M! 人工制品 。"
+    },
+    "RainbowFlower_TC": {
+      "NAME": "虹色之花",
+      "DESCRIPTION": "选择：从手牌中选最多 !M! 张牌 消耗 ，或将3张 *重新调色 加入手牌。",
+      "UPGRADE_DESCRIPTION": "选择：从手牌中选最多 !M! 张牌 消耗 ，或将3张 *重新调色+ 加入手牌。"
+    },
+    "RainbowBlossom_TC": {
+      "NAME": "绽放",
+      "DESCRIPTION": "将3张 *重新调色 加入手牌。",
+      "UPGRADE_DESCRIPTION": "将3张 *重新调色+ 加入手牌。"
+    },
+    "RainbowPurifier_TC": {
+      "NAME": "净化",
+      "DESCRIPTION": "从手牌中选最多 !M! 张牌，将它们 消耗 。",
+      "UPGRADE_DESCRIPTION": "从手牌中选最多 !M! 张牌，将它们 消耗 。"
+    },
+    "Rafflesia_TC": {
+      "NAME": "大王花",
+      "DESCRIPTION": "你的回合开始时，多抽 !M! 张牌。",
+      "UPGRADE_DESCRIPTION": "你的回合开始时，多抽 !M! 张牌。"
+    },
+    "Bud_TC": {
+      "NAME": "花苞",
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *虹色之花 或 *大王花 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *虹色之花+ 或 *大王花+ 加入抽牌堆并将此卡 消耗 。"
+    },
+    "MegaTree_TC": {
+      "NAME": "巨木",
+      "DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#33ee33]绿[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。"
+    },
+    "ThornsLayer_TC": {
+      "NAME": "荆棘秘牢",
+      "DESCRIPTION": "获得3 荆棘 。每当 thecolorful:调色 为 [#33ee33]绿[] 时，获得 !M! 荆棘 。",
+      "UPGRADE_DESCRIPTION": "获得3 荆棘 。每当 thecolorful:调色 为 [#33ee33]绿[] 时，获得 !M! 荆棘 。"
+    },
+    "Branch_TC": {
+      "NAME": "硬枝",
+      "DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢 或 *巨木 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢 或 *巨木 加入抽牌堆并将此卡 消耗 。"
+    },
+    "Leafgem_TC": {
+      "NAME": "新叶",
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝 或 *花苞 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝+ 或 *花苞+ 加入抽牌堆并将此卡 消耗 。"
     }
 }

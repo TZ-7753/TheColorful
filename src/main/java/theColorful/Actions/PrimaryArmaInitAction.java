@@ -19,11 +19,9 @@ public class PrimaryArmaInitAction extends AbstractGameAction {
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
 
-        Iterator<AbstractCard> var5 = p.drawPile.group.iterator();
-        while(var5.hasNext()){
-            AbstractCard c = var5.next();
-            if(c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)){
-                this.addToTop(new ExhaustSpecificCardAction(c,p.drawPile));
+        for (AbstractCard c : p.drawPile.group) {
+            if (c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)) {
+                this.addToTop(new ExhaustSpecificCardAction(c, p.drawPile));
             }
         }
         Iterator<AbstractCard> var6 = p.discardPile.group.iterator();
