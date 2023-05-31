@@ -33,7 +33,7 @@ public class Tar extends ToningCards {
 
     public Tar() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 6;
+        this.damage = this.baseDamage = 8;
         this.cardsToPreview = new PauseTone();
     }
 

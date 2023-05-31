@@ -44,8 +44,8 @@
     },
     "Cirrus_TC": {
       "NAME": "卷云",
-      "DESCRIPTION": "抽 !M! 张牌，调色为 [#cc33ff]紫[] 。",
-      "UPGRADE_DESCRIPTION": "抽 !M! 张牌，调色为 [#cc33ff]紫[] 。"
+      "DESCRIPTION": "获得 !B! 格挡 ，调色为 [#cc33ff]紫[] 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，调色为 [#cc33ff]紫[] 。"
     },
     "Oasis_TC": {
       "NAME": "绿洲",
@@ -129,27 +129,27 @@
     },
     "ToneRed_TC": {
       "NAME": "红",
-      "DESCRIPTION": "thecolorful:调色 为 [#ff0000]红[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#ff0000]红[] 。 NL 活墨会使你获得2 力量 。"
     },
     "ToneOrange_TC": {
       "NAME": "橙",
-      "DESCRIPTION": "thecolorful:调色 为 [#ff9900]橙[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#ff9900]橙[] 。 NL 活墨会使你获得 [E] "
     },
     "ToneYellow_TC": {
       "NAME": "黄",
-      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[] 。 NL 活墨会使你在本回合将受到的所有伤害减少 *30% "
     },
     "ToneGreen_TC": {
       "NAME": "绿",
-      "DESCRIPTION": "thecolorful:调色 为 [#33ee33]绿[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#33ee33]绿[] 。 NL 活墨会使你获得2 敏捷 。"
     },
     "ToneBlue_TC": {
       "NAME": "蓝",
-      "DESCRIPTION": "thecolorful:调色 为 [#0099ff]蓝[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#0099ff]蓝[] 。 NL 活墨可使你在本回合结束时多 保留 2张牌。"
     },
     "TonePurple_TC": {
       "NAME": "紫",
-      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[]"
+      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[] 。 NL 活墨会使你的所有回合计数负面状态 *减少 一层。"
     },
       "ReTone_TC": {
       "NAME": "重新调色",
@@ -183,8 +183,8 @@
     },
     "InfernoHull_TC": {
       "NAME": "灼燃机壳",
-      "DESCRIPTION": "获得 !D! 格挡 2次， 力量 取代 敏捷 影响获得的数量。",
-      "UPGRADE_DESCRIPTION": "获得 !D! 格挡 3次， 力量 取代 敏捷 影响获得的数量。"
+      "DESCRIPTION": "获得 !M! 格挡 2次， 力量 取代 敏捷 影响获得的数量。",
+      "UPGRADE_DESCRIPTION": "获得 !M! 格挡 3次， 力量 取代 敏捷 影响获得的数量。"
     },
     "ReIgnition_TC": {
       "NAME": "复燃",
@@ -251,11 +251,11 @@
     },
     "LavaFlow_TC": {
       "NAME": "熔岩流",
-      "DESCRIPTION": "造成 !D! 伤害2次， thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成2次，否则 thecolorful:调色 为 [#ff0000]红[] 。",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害2次， thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成2次，否则 thecolorful:调色 为 [#ff0000]红[] 。"
+      "DESCRIPTION": "造成 !D! 伤害 !M! 次。 NL thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成 !M! 次，否则 thecolorful:调色 为 [#ff0000]红[] 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害 !M! 次。 NL thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时再造成 !M! 次，否则 thecolorful:调色 为 [#ff0000]红[] 。"
     },
     "StonePile_TC": {
-      "NAME": "石堆",
+      "NAME": "坚岩",
       "DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡 。",
       "UPGRADE_DESCRIPTION": "获得 !B! 格挡。 thecolorful:主色调 为 [#cc33ff]紫[] ， [#ff0000]红[] ， [#ff9900]橙[] 时在下回合开始时再获得 !B! 格挡 。"
     },
@@ -286,11 +286,11 @@
     },
     "StarLight_TC": {
       "NAME": "星辉",
-      "DESCRIPTION": "造成 !D! 伤害并施加 thecolorful:入画 。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将 *重新调色 加入手牌，否则施加 !M! 层 虚弱 并 thecolorful:调色 为 [#cc33ff]紫[] 。",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害并施加 thecolorful:入画 。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将 *重新调色+ 加入手牌，否则施加 !M! 层 虚弱 并 thecolorful:调色 为 [#cc33ff]紫[] 。"
+      "DESCRIPTION": "施加 thecolorful:入画 ，造成 !D! 伤害。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将 *重新调色 加入手牌，否则施加 !M! 层 虚弱 并 thecolorful:调色 为 [#cc33ff]紫[] 。",
+      "UPGRADE_DESCRIPTION": "施加 thecolorful:入画 ，造成 !D! 伤害。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时将 *重新调色+ 加入手牌，否则施加 !M! 层 虚弱 并 thecolorful:调色 为 [#cc33ff]紫[] 。"
     },
     "Tar_TC": {
-      "NAME": "污泥",
+      "NAME": "焦油",
       "DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时使攻击可以越过 格挡 。",
       "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色+ 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时使攻击可以越过 格挡 。"
     },
@@ -369,7 +369,7 @@
       "UPGRADE_DESCRIPTION": "将3张 *重新调色+ 加入手牌。"
     },
     "RainbowPurifier_TC": {
-      "NAME": "净化",
+      "NAME": "纯洁",
       "DESCRIPTION": "从手牌中选最多 !M! 张牌，将它们 消耗 。",
       "UPGRADE_DESCRIPTION": "从手牌中选最多 !M! 张牌，将它们 消耗 。"
     },
@@ -402,5 +402,85 @@
       "NAME": "新叶",
       "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝 或 *花苞 加入抽牌堆并将此卡 消耗 。",
       "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝+ 或 *花苞+ 加入抽牌堆并将此卡 消耗 。"
+    },
+    "PrairieBlaze_TC": {
+      "NAME": "燎原",
+      "DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 力量 并在回合结束时失去。",
+      "UPGRADE_DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 力量 并在回合结束时失去。"
+    },
+    "Nirvana_TC": {
+      "NAME": "涅槃之焰",
+      "DESCRIPTION": " 消耗 所有手牌并直接结束回合。 消耗 。 thecolorful:主色调 为 [#ff0000]红[] 时，每消耗一张手牌就永久获得1最大生命，否则获得1 力量 并 thecolorful:调色 为 [#ff0000]红[] 。",
+      "UPGRADE_DESCRIPTION": " 消耗 所有手牌并直接结束回合。 消耗 。 thecolorful:主色调 为 [#ff0000]红[] 时，每消耗一张手牌就永久获得1最大生命，否则获得1 力量 并 thecolorful:调色 为 [#ff0000]红[] 。"
+    },
+    "Drill_TC": {
+      "NAME": "钻探",
+      "DESCRIPTION": "造成 !D! 伤害， thecolorful:调色 为 [#ff0000]红[] 。 NL 如果敌人具有 thecolorful:入画 ，抽 !M! 张牌。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害， thecolorful:调色 为 [#ff0000]红[] 。 NL 如果敌人具有 thecolorful:入画 ，抽 !M! 张牌。"
+    },
+    "Inspiration_TC": {
+      "NAME": "灵感爆发",
+      "DESCRIPTION": "你的回合开始时，选择将一张 *暂停调色 或 *重新调色 加入手牌。",
+      "UPGRADE_DESCRIPTION": " 固有 。 NL 你的回合开始时，选择将一张 *暂停调色 或 *重新调色 加入手牌。"
+    },
+    "ScorchingSun_TC": {
+      "NAME": "烈阳",
+      "DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。"
+    },
+    "GoldCraft_TC": {
+      "NAME": "黄金造物",
+      "DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就在本回合内获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就在本回合内获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。"
+    },
+    "ShoalStrike_TC": {
+      "NAME": "鱼群打击",
+      "DESCRIPTION": "造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时抽一张牌并将一张手牌放回抽牌堆顶，否则 thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时抽一张牌并将一张手牌放回抽牌堆顶，否则 thecolorful:调色 为 [#0099ff]蓝[] 。"
+    },
+    "TideWaves_TC": {
+      "NAME": "潮汐",
+      "DESCRIPTION": "获得 !B! 格挡 。 NL 预见 2。 NL 抽 !M! 张牌。 NL thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 NL 预见 2。 NL 抽 !M! 张牌。 NL thecolorful:调色 为 [#0099ff]蓝[] 。"
+    },
+    "Migrate_TC": {
+      "NAME": "洄游",
+      "DESCRIPTION": "选择弃牌堆中的 !M! 张牌放回抽牌堆顶。 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时额外放回一张。",
+      "UPGRADE_DESCRIPTION": "选择弃牌堆中的 !M! 张牌依次放回抽牌堆顶。 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时额外放回一张。"
+    },
+    "GatheringClouds_TC": {
+      "NAME": "云层聚集",
+      "DESCRIPTION": " 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得3 格挡 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得3 格挡 。"
+    },
+    "Drizzle_TC": {
+      "NAME": "细雨",
+      "DESCRIPTION": "获得 !B! 格挡 。 消耗 。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时 预见 !M! ，否则 thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 消耗 。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时 预见 !M! ，否则 thecolorful:调色 为 [#0099ff]蓝[] 。"
+    },
+    "Draught_TC": {
+      "NAME": "冻气",
+      "DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外对所有敌人造成 !M! 虚弱 。",
+      "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外对所有敌人造成 !M! 虚弱 。"
+    },
+    "RogueWave_TC": {
+      "NAME": "巨浪",
+      "DESCRIPTION": "造成 !D! 伤害，将一张 *重新调色 添加到手牌。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,在本回合 保留 你的全部手牌。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害，将一张 *重新调色+ 添加到手牌。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,在本回合 保留 你的全部手牌。"
+    },
+    "FrostBite_TC": {
+      "NAME": "霜凌",
+      "DESCRIPTION": " thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时，每有一张手牌便在下回合开始时多抽一张牌。否则 thecolorful:调色 为 [#0099ff]蓝[] ,且每有一张手牌便使一个随机敌人失去 !D! 生命。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时，每有一张手牌便在下回合开始时多抽一张牌。否则 thecolorful:调色 为 [#0099ff]蓝[] ,且每有一张手牌便使一个随机敌人失去 !D! 生命。"
+    },
+    "ImperfectGlacialist_TC": {
+      "NAME": "粗暴的冰结",
+      "DESCRIPTION": "造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每打出一次，就使这张牌的伤害在本场战斗中翻倍。",
+      "UPGRADE_DESCRIPTION": " 固有 。 造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每打出一次，就使这张牌的伤害在本场战斗中翻倍。"
+    },
+    "Tundra_TC": {
+      "NAME": "化生冻原",
+      "DESCRIPTION": " 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": " 固有 。 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。"
     }
-}
+  }

@@ -33,7 +33,7 @@ public class RiftValley extends CustomCard {
 
     public RiftValley() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
+        this.damage = this.baseDamage = 10;
         this.cardsToPreview = new ReTone();
     }
 

@@ -32,8 +32,7 @@ public class InfernoHull extends CustomCard {
 
     public InfernoHull() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 4;
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 4;
     }
 
 
@@ -41,7 +40,6 @@ public class InfernoHull extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -53,8 +51,11 @@ public class InfernoHull extends CustomCard {
         if(this.upgraded){
             max +=1;
         }
+        if(p.hasPower("Strength")){
+            this.magicNumber += p.getPower("Strength").amount;
+        }
         for(int i=0;i<max;i++) {
-            this.addToBot(new GainBlockAction(p, this.damage));
+            this.addToBot(new GainBlockAction(p, this.magicNumber));
         }
     }
 

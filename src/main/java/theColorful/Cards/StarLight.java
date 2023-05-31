@@ -31,7 +31,7 @@ public class StarLight extends ToningCards {
 
     public StarLight() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
+        this.damage = this.baseDamage = 10;
         this.magicNumber = this.baseMagicNumber = 1;
         this.cardsToPreview = new ReTone();
     }
@@ -41,7 +41,7 @@ public class StarLight extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(5);
             this.upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
@@ -57,8 +57,8 @@ public class StarLight extends ToningCards {
         if(this.upgraded){
             c.upgrade();
         }
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.LIGHTNING));
         this.addToBot(new ApplyPowerAction(m,p,new Painted(p)));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.LIGHTNING));
         if(p.hasPower(NameAssist.MakePath("TonePurple")) || p.hasPower(NameAssist.MakePath("ToneBlue")) || p.hasPower(NameAssist.MakePath("ToneRed"))){
             this.addToBot(new MakeTempCardInHandAction(c,1));
         }else{

@@ -32,7 +32,7 @@ public class Cirrus extends ToningCards {
 
     public Cirrus() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.block = this.baseBlock = 8;
     }
 
 
@@ -40,14 +40,14 @@ public class Cirrus extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeBlock(4);
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new GainBlockAction(p,this.block));
         this.addToBot(new ToningAction(p,TONE));
-        this.addToBot(new DrawCardAction(p,this.magicNumber));
     }
 
     public AbstractCard makeCopy(){

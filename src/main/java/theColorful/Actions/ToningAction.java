@@ -10,6 +10,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.ThornsPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.AbstractRelic.LandingSound;
@@ -56,6 +58,11 @@ public class ToningAction extends AbstractGameAction {
             switch (tone) {
                 case RED:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneRed(this.owner)));
+                    if(AbstractDungeon.player.hasPower(NameAssist.MakePath("PrairieBlaze_pow"))){
+                        int amt = this.owner.getPower(NameAssist.MakePath("PrairieBlaze_pow")).amount;
+                        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, amt), amt));
+                        this.addToBot(new ApplyPowerAction(this.owner, this.owner, new LoseStrengthPower(this.owner, amt), amt));
+                    }
                     break;
                 case ORANGE:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneOrange(this.owner)));

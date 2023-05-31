@@ -27,17 +27,15 @@ public class Painted extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.DEBUFF;
+        this.isTurnBased = true;
 
-        // 如果需要不能叠加的能力，只需将上面的Amount参数删掉，并把下面的Amount改成-1就行
         this.amount = -1;
 
-        // 添加一大一小两张能力图
         String path128 = "TC_resources/img/powers/TonePurple84.png";
         String path48 = "TC_resources/img/powers/TonePurple32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
 
-        // 首次添加能力更新描述
         this.updateDescription();
     }
 

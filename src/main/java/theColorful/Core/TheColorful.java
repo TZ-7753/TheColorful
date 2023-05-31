@@ -86,7 +86,12 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Peak());            //孤峰
         BaseMod.addCard(new Warmth());          //温暖的火
         BaseMod.addCard(new GrassShield());     //丛生蔓叶
-        BaseMod.addCard(new Tar());             //污泥
+        BaseMod.addCard(new Tar());             //焦油
+        BaseMod.addCard(new Drill());           //钻探
+        BaseMod.addCard(new ShoalStrike());     //鱼群打击
+        BaseMod.addCard(new TideWaves());       //潮汐
+        BaseMod.addCard(new Migrate());         //洄游
+        BaseMod.addCard(new Draught());         //冻气
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -103,12 +108,23 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new MilkyWay());        //银河
         BaseMod.addCard(new Spores());          //孢子
         BaseMod.addCard(new Leafgem());         //新叶
+        BaseMod.addCard(new PrairieBlaze());    //星火燎原
+        BaseMod.addCard(new GoldCraft());       //黄金造物
+        BaseMod.addCard(new Drizzle());         //细雨
+        BaseMod.addCard(new GatheringClouds()); //云层聚集
+        BaseMod.addCard(new RogueWave());       //巨浪
+        BaseMod.addCard(new FrostBite());       //霜凌
+        BaseMod.addCard(new Tundra());          //化生冻原
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
         BaseMod.addCard(new ElDorado());        //黄金国度
         BaseMod.addCard(new AshesPaeon());      //灰烬赞歌
         BaseMod.addCard(new BloodPaeon());      //鲜血赞歌
+        BaseMod.addCard(new Nirvana());         //涅槃之焰
+        BaseMod.addCard(new Inspiration());     //灵感爆发
+        BaseMod.addCard(new ScorchingSun());    //烈阳
+        BaseMod.addCard(new ImperfectGlacialist()); //粗暴的冰结
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
         BaseMod.addCard(new InfernoHull());     //灼燃机壳

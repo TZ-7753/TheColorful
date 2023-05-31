@@ -6,11 +6,15 @@ import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.Aurora_pow;
 import theColorful.Powers.NightSkyBarrier_pow;
+import theColorful.Powers.Painted;
+
+import java.util.Iterator;
 
 public class Aurora extends CustomCard {
     public static final String ID = NameAssist.MakePath("Aurora");
@@ -43,7 +47,12 @@ public class Aurora extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p,p,new Aurora_pow(p,this.magicNumber)));
+        Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+        AbstractMonster mo;
+        while(var3.hasNext()) {
+            mo = var3.next();
+            this.addToBot(new ApplyPowerAction(mo,p,new Aurora_pow(p,this.magicNumber)));
+        }
     }
 
     public AbstractCard makeCopy(){

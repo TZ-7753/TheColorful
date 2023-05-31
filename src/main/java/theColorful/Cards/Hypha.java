@@ -3,10 +3,12 @@ package theColorful.Cards;
 import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
@@ -63,7 +65,6 @@ public class Hypha extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new HealAction(p, p, this.magicNumber));
         if(p.hasPower(NameAssist.MakePath("ToneGreen"))) {
-            this.exhaust = true;
             ArrayList<AbstractCard> stanceChoices = new ArrayList<>();
             AbstractCard c1 = new MegaShroom();
             AbstractCard c2 = new Penicillium();
@@ -74,7 +75,14 @@ public class Hypha extends ToningCards {
             stanceChoices.add(c1);
             stanceChoices.add(c2);
             this.addToBot(new ChooseOneAction(stanceChoices));
+            this.exhaust = true;
         }
+    }
+
+    @Override
+    public void onChoseThisOption() {
+        AbstractPlayer p = AbstractDungeon.player;
+        this.addToBot(new MakeTempCardInDrawPileAction(this,1,true,true,false));
     }
 
 
