@@ -46,6 +46,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Spores.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ImperfectGlacialist.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\RiftValley.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ToningAction.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Blue\SpringTide.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Dawn.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\GatheringClouds.java
@@ -75,18 +76,22 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SandstoneBarrier_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ClearPallite.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\PrairieBlaze_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ShoalStrike.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\Tundra_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Oasis.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Stream.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Hypha.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Minerals.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Penicillium.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkPurple.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Storm.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\PaintRandomEnemyAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\MegaTree.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Decomposer_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Dune.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\RainbowFlower.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\PrimaryArmaInitAction.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Tundra.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Quicksand_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneRed.java
@@ -97,6 +102,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Bud.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\Desert_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\DustFog_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\GrassShield.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrimaryArmaBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Desert.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Drill.java
@@ -110,6 +116,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneOrange.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Clouds_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\InkAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkRed.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Blue\Avalanche.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ThornsLayer.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Red\CrimsonMeteor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BloodPaeon.java
@@ -119,6 +126,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Yellow\GoldenSpear.jav
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Rafflesia.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\HueCalibrator_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\WindBreak.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Blue\Current.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Swamp_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LavaFlow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ScorchingSun.java
@@ -129,8 +137,11 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Abstract\ToningCards.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ReTone.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Purple\Aurora.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BirdsWatchout.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Storm_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\StonePile.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Blue\TigerShark.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneGreen.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Actions\AvalancheAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\MilkyWay.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ToneGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\ParasiteFungus.java

@@ -50,6 +50,7 @@ public class ImperfectGlacialist extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.addToBot(new ModifyDamageAction(this.uuid, this.damage));
+        this.addToBot(new ToningAction(p,TONE));
     }
 
 

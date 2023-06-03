@@ -16,6 +16,10 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 import static theColorful.characters.TC_character.Enums.TC_CHARACTER;
 
 import theColorful.Cards.*;
+import theColorful.Cards.Arma.Blue.Avalanche;
+import theColorful.Cards.Arma.Blue.Current;
+import theColorful.Cards.Arma.Blue.SpringTide;
+import theColorful.Cards.Arma.Blue.TigerShark;
 import theColorful.Cards.Arma.Purple.Aurora;
 import theColorful.Cards.Arma.Purple.BlackHole;
 import theColorful.Cards.Arma.Purple.NightSkyBarrier;
@@ -115,6 +119,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new RogueWave());       //巨浪
         BaseMod.addCard(new FrostBite());       //霜凌
         BaseMod.addCard(new Tundra());          //化生冻原
+        BaseMod.addCard(new Stream());          //溪流
 
         BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
@@ -125,6 +130,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Inspiration());     //灵感爆发
         BaseMod.addCard(new ScorchingSun());    //烈阳
         BaseMod.addCard(new ImperfectGlacialist()); //粗暴的冰结
+        BaseMod.addCard(new Storm());           //暴雨
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
         BaseMod.addCard(new InfernoHull());     //灼燃机壳
@@ -138,6 +144,11 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new NightSkyBarrier()); //夜色帷幕
         BaseMod.addCard(new Aurora());          //极光
         BaseMod.addCard(new PrimaryArmaPurple());//原色武装-紫
+        BaseMod.addCard(new TigerShark());      //虎鲨爆破拳
+        BaseMod.addCard(new SpringTide());      //碧海潮升
+        BaseMod.addCard(new Avalanche());       //雪崩
+        BaseMod.addCard(new Current());         //洋流
+        BaseMod.addCard(new PrimaryArmaBlue()); //原色武装-蓝
 
         BaseMod.addCard(new Minerals());        //化生矿床
         BaseMod.addCard(new UnusedColor());     //弃用杂色

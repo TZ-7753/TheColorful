@@ -1,3 +1,4 @@
+theColorful\Cards\Storm.class
 theColorful\Actions\ToningAction$1.class
 theColorful\Cards\MudstoneGolem.class
 theColorful\Cards\Desertify.class
@@ -41,11 +42,14 @@ theColorful\Cards\WindBreak.class
 theColorful\Cards\LavaFlow.class
 theColorful\Cards\LastQuarter_D.class
 theColorful\Cards\OpusMagnum.class
+theColorful\Actions\AvalancheAction.class
 theColorful\Powers\Aurora_pow.class
 theColorful\Cards\Oasis.class
 theColorful\Cards\LiveVolcano.class
 theColorful\Powers\NightSkyBarrier_pow.class
 theColorful\Cards\Choices\ToneGreen.class
+theColorful\Cards\PrimaryArmaBlue.class
+theColorful\Cards\Arma\Blue\Current.class
 theColorful\Cards\ReTone.class
 theColorful\Cards\Peak.class
 theColorful\Cards\ThornsLayer.class
@@ -57,6 +61,7 @@ theColorful\Cards\Arma\Yellow\GoldenSpear.class
 theColorful\Cards\Penicillium.class
 theColorful\Cards\HueCalibrator.class
 theColorful\Powers\ToneBlue.class
+theColorful\Cards\Stream.class
 theColorful\Cards\Swamp_TC.class
 theColorful\Cards\ElDorado.class
 theColorful\Cards\MegaTree.class
@@ -107,6 +112,7 @@ theColorful\Powers\Field\HueCalibrator_pow.class
 theColorful\Cards\RiftValley.class
 theColorful\Powers\Ink\InkBlue.class
 theColorful\Cards\Rafflesia.class
+theColorful\Cards\Arma\Blue\SpringTide.class
 theColorful\Cards\Leafgem.class
 theColorful\Cards\Choices\AshesStorm.class
 theColorful\Cards\Branch.class
@@ -114,6 +120,7 @@ theColorful\Powers\ToneRed.class
 theColorful\Powers\Ink\InkRed.class
 theColorful\Powers\ToneGreen.class
 theColorful\Powers\Rafflesia_pow.class
+theColorful\Cards\Arma\Blue\TigerShark.class
 theColorful\Cards\Defend_TC.class
 theColorful\Cards\Choices\RainbowPurifier.class
 theColorful\Cards\Choices\AshesShelter.class
@@ -122,6 +129,7 @@ theColorful\Cards\ClearPallite.class
 theColorful\Cards\Warmth.class
 theColorful\Powers\ElDorado_pow.class
 theColorful\Cards\Cirrus.class
+theColorful\Powers\Storm_pow.class
 theColorful\Cards\PrimaryArmaYellow.class
 theColorful\Powers\MegaShroom_pow.class
 theColorful\Powers\Decomposer_pow.class
@@ -129,6 +137,7 @@ theColorful\Powers\ToneYellow.class
 theColorful\Cards\PauseTone.class
 theColorful\Cards\PrairieBlaze.class
 theColorful\Cards\GlimpseofDark.class
+theColorful\Cards\Arma\Blue\Avalanche.class
 theColorful\Cards\Drizzle.class
 theColorful\Actions\PrimaryArmaInitAction.class
 theColorful\Cards\ColossalMatsutake.class

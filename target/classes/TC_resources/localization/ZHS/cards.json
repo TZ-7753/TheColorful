@@ -475,12 +475,54 @@
     },
     "ImperfectGlacialist_TC": {
       "NAME": "粗暴的冰结",
-      "DESCRIPTION": "造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每打出一次，就使这张牌的伤害在本场战斗中翻倍。",
-      "UPGRADE_DESCRIPTION": " 固有 。 造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每打出一次，就使这张牌的伤害在本场战斗中翻倍。"
+      "DESCRIPTION": "造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每次打出后，这张牌的伤害值增加其当前伤害值。",
+      "UPGRADE_DESCRIPTION": " 固有 。 造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。 NL 每次打出后，这张牌的伤害值增加其当前伤害值。"
     },
     "Tundra_TC": {
       "NAME": "化生冻原",
       "DESCRIPTION": " 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。",
       "UPGRADE_DESCRIPTION": " 固有 。 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。"
+    },
+    "Storm_TC": {
+      "NAME": "暴雨",
+      "DESCRIPTION": "你每抽一张牌，就获得 !M! 格挡 。",
+      "UPGRADE_DESCRIPTION": "你每抽一张牌，就获得 !M! 格挡 。"
+    },
+    "Stream_TC": {
+      "NAME": "溪流",
+      "DESCRIPTION": "抽 !M! 张牌。打出时若 thecolorful:主色调 为 [#0099ff]蓝[] 则使这张牌的耗能在接下来的战斗中变为1，否则 thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": "抽 !M! 张牌。打出时若 thecolorful:主色调 为 [#0099ff]蓝[] 则使这张牌的耗能在接下来的战斗中变为1，否则 thecolorful:调色 为 [#0099ff]蓝[] 。"
+    },
+    "TigerShark_TC": {
+      "NAME": "虎鲨爆破拳",
+      "DESCRIPTION": " 保留 。随机造成 !D! ~ 100伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使最低伤害增加 !M! 。",
+      "UPGRADE_DESCRIPTION": " 保留 。随机造成 !D! ~ 100伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使最低伤害增加 !M! 。",
+      "EXTENDED_DESCRIPTION": [
+        " 保留 。造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使伤害增加 !M! 。"
+      ]
+    },
+    "SpringTide_TC": {
+      "NAME": "碧海潮升",
+      "DESCRIPTION": " 保留 。丢弃所有手牌并抽取等量卡牌，每丢弃一张就随机获得1 力量 或 敏捷 。",
+      "UPGRADE_DESCRIPTION": " 保留 。丢弃所有手牌并抽取等量卡牌，每丢弃一张就随机获得1 力量 或 敏捷 。"
+    },
+    "Avalanche_TC": {
+      "NAME": "雪崩",
+      "DESCRIPTION": "获得 !B! X 格挡 ，下一回合开始时额外抽X张牌。",
+      "UPGRADE_DESCRIPTION": "获得 !B! (X+1) 格挡 ，下一回合开始时额外抽(X+1)张牌。"
+    },
+    "Current_TC": {
+      "NAME": "化生洋流",
+      "DESCRIPTION": "从抽牌堆中选择一张牌加入手牌。 消耗 。",
+      "UPGRADE_DESCRIPTION": "从抽牌堆中选择一张牌加入手牌。"
+    },
+    "PrimaryArmaBlue_TC": {
+      "NAME": "原色武装 - 蓝",
+      "DESCRIPTION": " thecolorful:调色 为 [#0099ff]蓝[] 。将4张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#0099ff]蓝[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
+      "EXTENDED_DESCRIPTION": [
+        "原色武装",
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+      ]
     }
-  }
+}
