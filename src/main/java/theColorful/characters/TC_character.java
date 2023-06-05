@@ -88,7 +88,6 @@ public class TC_character extends CustomPlayer {
 
     }
 
-    // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(Strike_TC.ID);
@@ -183,7 +182,7 @@ public class TC_character extends CustomPlayer {
     // 自定义模式选择你的人物时播放的音效
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "ATTACK_HEAVY";
+        return "SMASH";
     }
 
     // 游戏中左上角显示在你的名字之后的人物名称

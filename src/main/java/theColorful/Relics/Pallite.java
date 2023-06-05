@@ -3,11 +3,13 @@ package theColorful.Relics;
 import basemod.abstracts.CustomRelic;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.unique.DiscoveryAction;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
+import theColorful.Actions.InkCountAction;
 import theColorful.Actions.ReduceAllDebuffAction;
 import theColorful.Helpers.NameAssist;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -31,8 +33,6 @@ public class Pallite extends CustomRelic implements ClickableRelic {
 
     private boolean used;
 
-    public boolean firstTone;
-
     public Pallite() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
         this.counter = 6;
@@ -54,36 +54,41 @@ public class Pallite extends CustomRelic implements ClickableRelic {
 
             if (this.counter >= 1 && !this.used) {
                 this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneRed"))) {
+                if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneRed")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkRed"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new InkRed(AbstractDungeon.player)));
                     this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, 2), 2));
-                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneOrange"))) {
+                    this.addToBot(new InkCountAction());
+                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneOrange")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkOrange"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new InkOrange(AbstractDungeon.player)));
                     this.addToBot(new GainEnergyAction(1));
-                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneYellow"))) {
+                    this.addToBot(new InkCountAction());
+                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneYellow")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkYellow"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new InkYellow(AbstractDungeon.player)));
-                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneGreen"))) {
+                    this.addToBot(new InkCountAction());
+                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneGreen")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkGreen"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new InkGreen(AbstractDungeon.player)));
                     this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, 2), 2));
-                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneBlue"))) {
+                    this.addToBot(new InkCountAction());
+                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ToneBlue")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkBlue"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new InkBlue(AbstractDungeon.player)));
-                    this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, 2), 2));
-                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("TonePurple"))) {
+                    this.addToTop(new DrawCardAction(3));
+                    this.addToBot(new InkCountAction());
+                }else if(AbstractDungeon.player.hasPower(NameAssist.MakePath("TonePurple")) && !AbstractDungeon.player.hasPower(NameAssist.MakePath("InkPurple"))) {
                     this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                     this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player,new InkPurple(AbstractDungeon.player)));
                     this.addToBot(new ReduceAllDebuffAction(AbstractDungeon.player));
+                    this.addToBot(new InkCountAction());
                 }
-                this.used = true;
+                if(!AbstractDungeon.player.hasPower(NameAssist.MakePath("ConstructForm_pow"))){
+                    this.used = true;
+                }
                 this.flash();
-                this.counter--;
             }
-
-
         }
     }
 
@@ -93,6 +98,10 @@ public class Pallite extends CustomRelic implements ClickableRelic {
                 this.flash();
                 this.addToBot(new RelicAboveCreatureAction(m, this));
                 this.counter++;
+            }
+            if(AbstractDungeon.player.hasPower(NameAssist.MakePath("Creation_pow"))){
+                int amt = AbstractDungeon.player.getPower(NameAssist.MakePath("Creation_pow")).amount;
+                this.addToBot(new DiscoveryAction(true,amt));
             }
         }
     }

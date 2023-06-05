@@ -12,7 +12,7 @@
     <!-- 改成你需要的名称 -->
     <name>theColorful</name>
     <!-- 改不改由你 -->
-    <description>a sts mod.</description>
+    <description>Adds a new class.</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

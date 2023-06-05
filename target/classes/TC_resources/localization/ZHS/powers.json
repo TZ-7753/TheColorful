@@ -26,7 +26,7 @@
   "ToneBlue_TC": {
     "NAME": "主色调 - 蓝",
     "DESCRIPTIONS": [
-      "主色调为 [#0099ff]蓝[] 。一回合一次，可以右键点击遗物，消耗1活墨将手牌全部丢弃并重新抽取相同数量的牌"
+      "主色调为 [#0099ff]蓝[] 。一回合一次，可以右键点击遗物，消耗1活墨抽3张牌"
     ]
   },
   "TonePurple_TC": {
@@ -86,13 +86,13 @@
   "InkBlue_TC": {
     "NAME": "活墨 - 蓝",
     "DESCRIPTIONS": [
-      "[#0099ff]蓝[] 色活墨。你的回合结束时，最多保留 #b2 张手牌。"
+      "[#0099ff]蓝[] 色活墨。已抽取 #b3 张牌。"
     ]
   },
   "InkPurple_TC": {
       "NAME": "活墨 - 紫",
       "DESCRIPTIONS": [
-        "[#cc33ff]紫[] 色活墨。自身所有负面状态的层数已被减少 #b1 "
+        "[#cc33ff]紫[] 色活墨。自身所有负面状态的层数已被减少 #b1 。"
     ]
   },
   "LiveVolcano_pow_TC": {
@@ -150,10 +150,10 @@
       "%"
     ]
   },
-  "Decomposer_TC": {
+  "Decomposer_pow_TC": {
     "NAME": "分解者",
     "DESCRIPTIONS": [
-      "回合结束时，附加",
+      "回合结束时，获得",
       "层 #y中毒 。"
     ]
   },
@@ -219,6 +219,54 @@
     "DESCRIPTIONS": [
       "每抽一张牌，就获得",
       "格挡。"
+    ]
+  },
+  "Iridescence_pow_TC": {
+    "NAME": "彩云",
+    "DESCRIPTIONS": [
+      "下回合开始时，获得本回合结束时剩余数量的能量并 #y调色 为 [#ff9900]橙[] 。"
+    ]
+  },
+  "MountainsHeart_pow_TC": {
+    "NAME": "山脉之心",
+    "DESCRIPTIONS": [
+      "本回合内，每当你获得 #y力量 ，就对随机敌人造成",
+      "伤害。"
+    ]
+  },
+  "Creation_pow_TC": {
+    "NAME": "宇宙创生",
+    "DESCRIPTIONS": [
+      "每当敌人死亡， #y发现 ",
+      "张无色牌。"
+    ]
+  },
+  "ConstructForm_pow_TC": {
+    "NAME": "构念形态",
+    "DESCRIPTIONS": [
+      " #y调色 不再受到一回合一次的限制。"
+    ]
+  },
+  "Ink_pow_TC": {
+    "NAME": "活墨拟形",
+    "DESCRIPTIONS": [
+      "使用 #y活墨 时，代替绘盘计数减少。还可使用",
+      "次。"
+    ]
+  },
+  "Weald_pow_TC": {
+    "NAME": "原野",
+    "DESCRIPTIONS": [
+      " #y场地 。回合开始时若 #y主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则多抽",
+      "张牌。否则 #y调色 为 [#33ee33]绿[] 并获得",
+      " #y多层护甲 。"
+    ]
+  },
+  "RosyClouds_pow_TC": {
+    "NAME": "云霞漫天",
+    "DESCRIPTIONS": [
+      " #y场地 。回合开始时若 #y主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 则获得",
+      " #y能量 。否则 #y调色 为 [#ff9900]橙[] 。"
     ]
   }
 }

@@ -28,26 +28,50 @@ public class ApplyFieldAction extends AbstractGameAction {
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
         }else if(Objects.equals(field.ID, NameAssist.MakePath("Desert_pow"))){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("HueCalibrator_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
         }else if(Objects.equals(field.ID, NameAssist.MakePath("HueCalibrator_pow"))){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
         }else if(Objects.equals(field.ID, NameAssist.MakePath("MilkyWay_pow"))){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("HueCalibrator_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
         }else if(Objects.equals(field.ID, NameAssist.MakePath("Tundra_pow"))){
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("HueCalibrator_pow")));
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
+        }else if(Objects.equals(field.ID, NameAssist.MakePath("RosyClouds_pow"))){
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("HueCalibrator_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Weald_pow")));
+        }else if(Objects.equals(field.ID, NameAssist.MakePath("Weald_pow"))){
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("LiveVolcano_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Desert_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("HueCalibrator_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MilkyWay_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Tundra_pow")));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("RosyClouds_pow")));
         }
 
         //再添加传递的场地

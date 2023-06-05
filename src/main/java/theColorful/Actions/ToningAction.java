@@ -3,6 +3,7 @@ package theColorful.Actions;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
@@ -54,10 +55,12 @@ public class ToningAction extends AbstractGameAction {
             } else if (this.owner.hasPower(NameAssist.MakePath("ToneBlue")) && this.tone != ToningCards.MainTone.BLUE) {
                 this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("ToneBlue")));
             }
+
             //添加主色调
             switch (tone) {
                 case RED:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneRed(this.owner)));
+                    //处理燎原
                     if(AbstractDungeon.player.hasPower(NameAssist.MakePath("PrairieBlaze_pow"))){
                         int amt = this.owner.getPower(NameAssist.MakePath("PrairieBlaze_pow")).amount;
                         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, amt), amt));
@@ -75,6 +78,7 @@ public class ToningAction extends AbstractGameAction {
                     break;
                 case GREEN:
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneGreen(this.owner)));
+                    //处理荆棘秘牢
                     if(AbstractDungeon.player.hasPower(NameAssist.MakePath("ThornsLayer_pow"))){
                         AbstractPower p = AbstractDungeon.player.getPower(NameAssist.MakePath("ThornsLayer_pow"));
                         this.addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new ThornsPower(AbstractDungeon.player,p.amount)));
@@ -84,15 +88,19 @@ public class ToningAction extends AbstractGameAction {
                     this.addToBot(new ApplyPowerAction(this.owner, this.owner, new ToneBlue(this.owner)));
                     break;
             }
+
+            //处理丛生蔓叶
             Predicate<AbstractCard> GS = AbstractCard -> Objects.equals(AbstractCard.cardID, NameAssist.MakePath("GrassShield"));
             this.addToBot(new MoveCardsAction(AbstractDungeon.player.drawPile,AbstractDungeon.player.discardPile,GS));
             AbstractDungeon.player.drawPile.shuffle();
+
+            //处理洗笔桶
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (Objects.equals(c.cardID, NameAssist.MakePath("WashBucket"))) {
+                    this.addToBot(new ModifyDamageAction(c.uuid, c.magicNumber));
+                }
+            }
         }
-
-//        if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("Pallite"))){
-//
-//        }
-
 
         this.isDone = true;
     }

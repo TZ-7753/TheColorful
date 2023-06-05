@@ -85,7 +85,7 @@
     "ElDorado_TC": {
       "NAME": "黄金国度",
       "DESCRIPTION": "所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。",
-      "UPGRADE_DESCRIPTION": " 固有 。 所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。"
+      "UPGRADE_DESCRIPTION": " 固有 。 NL 所有 *流沙陷阱 将对目标敌人施加 thecolorful:入画 。"
     },
     "GlimpseofDark_TC": {
       "NAME": "一瞬黑暗",
@@ -129,27 +129,27 @@
     },
     "ToneRed_TC": {
       "NAME": "红",
-      "DESCRIPTION": "thecolorful:调色 为 [#ff0000]红[] 。 NL 活墨会使你获得2 力量 。"
+      "DESCRIPTION": "thecolorful:调色 为 [#ff0000]红[] 。 NL thecolorful:活墨 会使你获得2 力量 。"
     },
     "ToneOrange_TC": {
       "NAME": "橙",
-      "DESCRIPTION": "thecolorful:调色 为 [#ff9900]橙[] 。 NL 活墨会使你获得 [E] "
+      "DESCRIPTION": "thecolorful:调色 为 [#ff9900]橙[] 。 NL thecolorful:活墨 会使你获得 [E] "
     },
     "ToneYellow_TC": {
       "NAME": "黄",
-      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[] 。 NL 活墨会使你在本回合将受到的所有伤害减少 *30% "
+      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[] 。 NL thecolorful:活墨 会使你在本回合将受到的所有伤害减少 *30% 。"
     },
     "ToneGreen_TC": {
       "NAME": "绿",
-      "DESCRIPTION": "thecolorful:调色 为 [#33ee33]绿[] 。 NL 活墨会使你获得2 敏捷 。"
+      "DESCRIPTION": "thecolorful:调色 为 [#33ee33]绿[] 。 NL thecolorful:活墨 会使你获得2 敏捷 。"
     },
     "ToneBlue_TC": {
       "NAME": "蓝",
-      "DESCRIPTION": "thecolorful:调色 为 [#0099ff]蓝[] 。 NL 活墨可使你在本回合结束时多 保留 2张牌。"
+      "DESCRIPTION": "thecolorful:调色 为 [#0099ff]蓝[] 。 NL thecolorful:活墨 会使你抽3张牌。"
     },
     "TonePurple_TC": {
       "NAME": "紫",
-      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[] 。 NL 活墨会使你的所有回合计数负面状态 *减少 一层。"
+      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[] 。 NL thecolorful:活墨 会使你的所有回合计数负面状态 *减少 一层。"
     },
       "ReTone_TC": {
       "NAME": "重新调色",
@@ -340,8 +340,8 @@
     },
     "ParasiteFungus_TC": {
       "NAME": "寄生毒蕈",
-      "DESCRIPTION": " thecolorful:萌芽 。 施加 !M! 层 中毒 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸 或 *分解者 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": "施加 !M! 层 中毒 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸+ 或 *分解者+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。 施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸 或 *分解者 加入抽牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸+ 或 *分解者+ 加入抽牌堆并将此卡 消耗 。"
     },
     "Hypha_TC": {
       "NAME": "菌丝",
@@ -396,7 +396,7 @@
     "Branch_TC": {
       "NAME": "硬枝",
       "DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢 或 *巨木 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢 或 *巨木 加入抽牌堆并将此卡 消耗 。"
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢+ 或 *巨木+ 加入抽牌堆并将此卡 消耗 。"
     },
     "Leafgem_TC": {
       "NAME": "新叶",
@@ -480,8 +480,8 @@
     },
     "Tundra_TC": {
       "NAME": "化生冻原",
-      "DESCRIPTION": " 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。",
-      "UPGRADE_DESCRIPTION": " 固有 。 场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。"
+      "DESCRIPTION": " thecolorful:场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。",
+      "UPGRADE_DESCRIPTION": " 固有 。 thecolorful:场地 。 NL 你的回合结束时，若 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 则从弃牌堆内将 !M! 张牌放回抽牌堆顶，否则预见 !M! 并 thecolorful:调色 为 [#0099ff]蓝[] 。"
     },
     "Storm_TC": {
       "NAME": "暴雨",
@@ -498,7 +498,8 @@
       "DESCRIPTION": " 保留 。随机造成 !D! ~ 100伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使最低伤害增加 !M! 。",
       "UPGRADE_DESCRIPTION": " 保留 。随机造成 !D! ~ 100伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使最低伤害增加 !M! 。",
       "EXTENDED_DESCRIPTION": [
-        " 保留 。造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使伤害增加 !M! 。"
+        " 保留 。造成 !D! 伤害， thecolorful:调色 为 [#0099ff]蓝[] 。你每有一张手牌，就使伤害增加 !M! 。",
+        "吔——————！"
       ]
     },
     "SpringTide_TC": {
@@ -524,5 +525,70 @@
         "原色武装",
         "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
       ]
+    },
+    "Enlightning_TC": {
+      "NAME": "鸣雷一闪",
+      "DESCRIPTION": " thecolorful:主色调 为 [#cc33ff]紫[] 才可打出。对所有敌人造成场上所有负面状态数量之和 !M! 倍的伤害。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#cc33ff]紫[] 才可打出。对所有敌人造成场上所有正面与负面状态数量之和 !M! 倍的伤害。"
+    },
+    "VineWhip_TC": {
+      "NAME": "藤鞭",
+      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，将 *长藤鞭 加入弃牌堆并将此卡 消耗 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，将 *长藤鞭+ 加入弃牌堆并将此卡 消耗 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。"
+    },
+    "VineWhipBig_TC": {
+      "NAME": "长藤鞭",
+      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时，将 *巨藤鞭 加入弃牌堆并将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时，将 *巨藤鞭+ 加入弃牌堆并将此卡 消耗 。"
+    },
+    "VineWhipMega_TC": {
+      "NAME": "巨藤鞭",
+      "DESCRIPTION": "造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害。"
+    },
+    "BirdsStrike_TC": {
+      "NAME": "鸟群打击",
+      "DESCRIPTION": "随机造成 !D! 伤害 !M! 次。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 。",
+      "UPGRADE_DESCRIPTION": "随机造成 !D! 伤害 !M! 次。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 。"
+    },
+    "WashBucket_TC": {
+      "NAME": "洗笔桶",
+      "DESCRIPTION": " 保留 。 NL 造成 !D! 伤害。 NL 在手中时，每次进行调色，就在本场战斗中使伤害 + !M! 。",
+      "UPGRADE_DESCRIPTION": " 固有 ， 保留 。 NL 造成 !D! 伤害。 NL 在手中时，每次进行调色，就在本场战斗中使伤害 + !M! 。"
+    },
+    "DrawMaterials_TC": {
+      "NAME": "万界取材",
+      "DESCRIPTION": "为绘盘增加 !M! thecolorful:活墨 计数。",
+      "UPGRADE_DESCRIPTION": "为绘盘增加 !M! thecolorful:活墨 计数。"
+    },
+    "Iridescence_TC": {
+      "NAME": "彩云",
+      "DESCRIPTION": " 虚无 。 NL 下一回合开始时，获得本回合结束时剩余数量的 [E] 并 thecolorful:调色 为 [#ff9900]橙[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "下一回合开始时，获得本回合结束时剩余数量的 [E] 并 thecolorful:调色 为 [#ff9900]橙[] 。 NL 消耗 。"
+    },
+    "MountainsHeart_TC": {
+      "NAME": "山脉之心",
+      "DESCRIPTION": "本回合内，每当你获得 力量 ，就对随机敌人造成力量层数+ !M! 的伤害。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "本回合内，每当你获得 力量 ，就对随机敌人造成力量层数+ !M! 的伤害。"
+    },
+    "Creation_TC": {
+      "NAME": "星辰创生",
+      "DESCRIPTION": "每有一个敌人死亡，就从3张无色牌中选择一张牌加入手牌。加入的牌在本回合耗能为0。",
+      "UPGRADE_DESCRIPTION": "每有一个敌人死亡，就从3张无色牌中选择一张牌加入手牌。加入的牌在本回合耗能为0。"
+    },
+    "ConstructForm_TC": {
+      "NAME": "构念形态",
+      "DESCRIPTION": " 使用 thecolorful:活墨 不再受到一回合一次的限制，每一回合的首次使用将不会降低计数。 NL 虚无 。",
+      "UPGRADE_DESCRIPTION": " 使用 thecolorful:活墨 不再受到一回合一次的限制，每一回合的首次使用将不会降低计数。"
+    },
+    "RosyClouds_TC": {
+      "NAME": "云霞漫天",
+      "DESCRIPTION": " thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 则获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 则获得 [E] ，否则 thecolorful:调色 为 [#ff9900]橙[] 。"
+    },
+    "Wilderness_TC": {
+      "NAME": "原野",
+      "DESCRIPTION": " thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则多抽 !M! 张牌，否则 thecolorful:调色 为 [#33ee33]绿[] 并获得 !M! 多层护甲 。",
+      "UPGRADE_DESCRIPTION": " 固有 。 thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则多抽 !M! 张牌，否则 thecolorful:调色 为 [#33ee33]绿[] 并获得 !M! 多层护甲 。"
     }
 }

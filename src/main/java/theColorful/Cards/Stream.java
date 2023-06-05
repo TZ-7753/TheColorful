@@ -55,7 +55,8 @@ public class Stream extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DrawCardAction(this.magicNumber));
         if(p.hasPower(NameAssist.MakePath("TonePurple"))||p.hasPower(NameAssist.MakePath("ToneBlue"))||p.hasPower(NameAssist.MakePath("ToneGreen"))){
-            this.updateCost(-1);
+            this.cost = 1;
+            this.isCostModified = true;
         }else{
             this.addToBot(new ToningAction(p,TONE));
         }

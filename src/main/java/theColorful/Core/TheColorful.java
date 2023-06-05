@@ -96,6 +96,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new TideWaves());       //潮汐
         BaseMod.addCard(new Migrate());         //洄游
         BaseMod.addCard(new Draught());         //冻气
+        BaseMod.addCard(new VineWhip());        //藤鞭
+        BaseMod.addCard(new BirdsStrike());     //鸟群打击
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -112,7 +114,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new MilkyWay());        //银河
         BaseMod.addCard(new Spores());          //孢子
         BaseMod.addCard(new Leafgem());         //新叶
-        BaseMod.addCard(new PrairieBlaze());    //星火燎原
+        BaseMod.addCard(new PrairieBlaze());    //燎原
         BaseMod.addCard(new GoldCraft());       //黄金造物
         BaseMod.addCard(new Drizzle());         //细雨
         BaseMod.addCard(new GatheringClouds()); //云层聚集
@@ -120,8 +122,12 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new FrostBite());       //霜凌
         BaseMod.addCard(new Tundra());          //化生冻原
         BaseMod.addCard(new Stream());          //溪流
+        BaseMod.addCard(new WashBucket());      //洗笔桶
+        BaseMod.addCard(new Iridescence());     //彩云
+        BaseMod.addCard(new RosyClouds());      //云霞漫天
+        BaseMod.addCard(new Wilderness());      //原野
 
-        BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
+//        BaseMod.addCard(new DarknessPaeon());   //深暗赞歌
         BaseMod.addCard(new OpusMagnum());      //尽归巨作
         BaseMod.addCard(new ElDorado());        //黄金国度
         BaseMod.addCard(new AshesPaeon());      //灰烬赞歌
@@ -131,6 +137,11 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new ScorchingSun());    //烈阳
         BaseMod.addCard(new ImperfectGlacialist()); //粗暴的冰结
         BaseMod.addCard(new Storm());           //暴雨
+        BaseMod.addCard(new Enlightning());     //鸣雷一闪
+        BaseMod.addCard(new DrawMaterials());   //万界取材
+        BaseMod.addCard(new MountainsHeart());  //山脉之心
+        BaseMod.addCard(new Creation());        //宇宙创生
+        BaseMod.addCard(new ConstructForm());   //构念形态
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
         BaseMod.addCard(new InfernoHull());     //灼燃机壳
@@ -150,7 +161,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Current());         //洋流
         BaseMod.addCard(new PrimaryArmaBlue()); //原色武装-蓝
 
-        BaseMod.addCard(new Minerals());        //化生矿床
+//        BaseMod.addCard(new Minerals());        //化生矿床
         BaseMod.addCard(new UnusedColor());     //弃用杂色
         BaseMod.addCard(new ReTone());          //重新调色
         BaseMod.addCard(new PauseTone());       //暂停调色
@@ -169,7 +180,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new MegaTree());        //巨木
         BaseMod.addCard(new ThornsLayer());     //荆棘秘牢
         BaseMod.addCard(new Branch());          //硬枝
-
+        BaseMod.addCard(new VineWhipBig());     //长藤鞭
+        BaseMod.addCard(new VineWhipMega());    //巨藤鞭
 
     }
 
@@ -214,6 +226,6 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
     }
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelic(new Pallite(), RelicType.SHARED); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
+        BaseMod.addRelicToCustomPool(new Pallite(), TC_CARD); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
     }
 }
