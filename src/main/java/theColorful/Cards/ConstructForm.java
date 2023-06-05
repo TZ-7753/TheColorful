@@ -19,7 +19,7 @@ public class ConstructForm extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/ConstructForm.png";
-    private static final int COST = 0;
+    private static final int COST = 3;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = TC_CARD;
@@ -36,6 +36,7 @@ public class ConstructForm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.upgradeBaseCost(2);
             this.isEthereal = false;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
