@@ -29,8 +29,8 @@ public class InkGreen extends AbstractPower {
         this.amount = -1;
 
         // 添加一大一小两张能力图
-        String path128 = "TC_resources/img/powers/InkRed84.png";
-        String path48 = "TC_resources/img/powers/InkRed32.png";
+        String path128 = "TC_resources/img/powers/InkGreen84.png";
+        String path48 = "TC_resources/img/powers/InkGreen32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 48, 48);
 

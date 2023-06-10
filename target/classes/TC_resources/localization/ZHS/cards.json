@@ -49,8 +49,8 @@
     },
     "Oasis_TC": {
       "NAME": "绿洲",
-      "DESCRIPTION": " 虚无 。获得3层 再生 。 消耗 。",
-      "UPGRADE_DESCRIPTION": " 虚无 。获得3层 再生 。 消耗 。"
+      "DESCRIPTION": " 虚无 。回复 !M! 生命。 消耗 。",
+      "UPGRADE_DESCRIPTION": " 虚无 。回复 !M! 生命。 消耗 。"
     },
     "Dune_TC": {
       "NAME": "塑造沙丘",
@@ -197,7 +197,7 @@
       "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ff0000]红[] 。将5张特殊的已升级卡牌洗入抽牌堆。",
       "EXTENDED_DESCRIPTION": [
         "原色武装",
-        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
       ]
     },
     "ClearPallite_TC": {
@@ -226,7 +226,7 @@
       "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ffff00]黄[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
       "EXTENDED_DESCRIPTION": [
         "原色武装",
-        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
       ]
     },
     "MirageDoppel_TC": {
@@ -236,8 +236,8 @@
     },
     "MirageCity_TC": {
       "NAME": "蜃楼之城",
-      "DESCRIPTION": "被手动丢弃时获得 !M! *金币 。 NL *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。",
-      "UPGRADE_DESCRIPTION": "被手动丢弃时获得 !M! *金币 。 NL *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。"
+      "DESCRIPTION": " *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。 NL 消耗。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。",
+      "UPGRADE_DESCRIPTION": " *选择 ：将3张 *流沙陷阱+ 或 *砂岩屏障+ 加入手牌。 NL 消耗。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。"
     },
     "GoldenSpear_TC": {
       "NAME": "黄金长枪",
@@ -281,8 +281,8 @@
     },
     "WindBreak_TC": {
       "NAME": "防风林",
-      "DESCRIPTION": " 不能被打出 ， 虚无 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得5 多层护甲 ，否则获得2 力量 。",
-      "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得5 多层护甲 ，否则获得2 力量 。"
+      "DESCRIPTION": " 不能被打出 ， 虚无 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得3 多层护甲 ，否则获得1 力量 。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 回合结束时若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则获得3 多层护甲 ，否则获得1 力量 。"
     },
     "StarLight_TC": {
       "NAME": "星辉",
@@ -320,7 +320,7 @@
       "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#cc33ff]紫[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
       "EXTENDED_DESCRIPTION": [
         "原色武装",
-        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
       ]
     },
     "Spores_TC": {
@@ -330,8 +330,8 @@
     },
     "ColossalMatsutake_TC": {
       "NAME": "巨松茸",
-      "DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入抽牌堆，被手动丢弃时将此卡 消耗 。"
+      "DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入弃牌堆，被手动丢弃时将此卡 消耗 。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 ，对所有敌人施加 !M! 中毒 。打出时将此卡的复制加入弃牌堆，被手动丢弃时将此卡 消耗 。"
     },
     "Decomposer_TC": {
       "NAME": "分解者",
@@ -385,8 +385,8 @@
     },
     "MegaTree_TC": {
       "NAME": "巨木",
-      "DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#33ee33]绿[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。"
+      "DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#33ee33]绿[] 时，在那之前对一个随机敌人造成与当前 格挡 相等的伤害。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，在那之前对一个随机敌人造成与当前 格挡 相等的伤害。"
     },
     "ThornsLayer_TC": {
       "NAME": "荆棘秘牢",
@@ -485,8 +485,8 @@
     },
     "Storm_TC": {
       "NAME": "暴雨",
-      "DESCRIPTION": "你每抽一张牌，就获得 !M! 格挡 。",
-      "UPGRADE_DESCRIPTION": "你每抽一张牌，就获得 !M! 格挡 。"
+      "DESCRIPTION": " thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时，你每抽一张牌，就获得 !M! 格挡 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时，你每抽一张牌，就获得 !M! 格挡 。"
     },
     "Stream_TC": {
       "NAME": "溪流",
@@ -523,7 +523,7 @@
       "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#0099ff]蓝[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
       "EXTENDED_DESCRIPTION": [
         "原色武装",
-        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 消耗 。"
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
       ]
     },
     "Enlightning_TC": {
@@ -590,5 +590,77 @@
       "NAME": "原野",
       "DESCRIPTION": " thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则多抽 !M! 张牌，否则 thecolorful:调色 为 [#33ee33]绿[] 并获得 !M! 多层护甲 。",
       "UPGRADE_DESCRIPTION": " 固有 。 thecolorful:场地 。 NL 回合开始时，若 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 则多抽 !M! 张牌，否则 thecolorful:调色 为 [#33ee33]绿[] 并获得 !M! 多层护甲 。"
+    },
+    "SunriseVariine_TC": {
+      "NAME": "黎明变奏",
+      "DESCRIPTION": " 保留 。 NL 使所有敌人失去 !M! X 生命。 NL 获得 (X-1) [E] 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 使所有敌人失去 !M! （X+1） 生命。 NL 获得X [E] 。"
+    },
+    "MeridiemChords_TC": {
+      "NAME": "骄阳和弦",
+      "DESCRIPTION": "施加 thecolorful:入画 。 NL 获得 [E] [E] 。 消耗 。",
+      "UPGRADE_DESCRIPTION": "施加 thecolorful:入画 。 NL 获得 [E] [E] 。"
+    },
+    "SunsetSonata_TC": {
+      "NAME": "黄昏奏鸣",
+      "DESCRIPTION": " 不能被打出 ， 虚无 。 NL 在手中时，你每打出一张牌就获得 [E] 。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 NL 在手中时，你每打出一张牌就获得 [E] 。"
+    },
+    "PrimaryArmaOrange_TC": {
+      "NAME": "原色武装 - 橙",
+      "DESCRIPTION": " thecolorful:调色 为 [#ff9900]橙[] 。将4张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#ff9900]橙[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
+      "EXTENDED_DESCRIPTION": [
+        "原色武装",
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
+      ]
+    },
+    "Foehn_TC": {
+      "NAME": "焚风",
+      "DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 时才能打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 时才能打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 保留 。 消耗 。"
+    },
+    "MagicGro_TC": {
+      "NAME": "催生秘术",
+      "DESCRIPTION": "获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。",
+      "UPGRADE_DESCRIPTION": " 获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。"
+    },
+    "LeavesHail_TC": {
+      "NAME": "锐叶箭雨",
+      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害 !M! 次。 NL thecolorful:主色调 为 [#33ee33]绿[] 时将此卡升级。 NL 可被多次升级。"
+    },
+    "Blendin_TC": {
+      "NAME": "藏木于林",
+      "DESCRIPTION": "本回合内若你的生命值未因任何原因减少，则在下一回合将接下来的 !M! 次伤害降低到0。",
+      "UPGRADE_DESCRIPTION": "本回合内若你的生命值未因任何原因减少，则在下一回合将接下来的 !M! 次伤害降低到0。"
+    },
+    "ProfusionInk_TC": {
+      "NAME": "化墨",
+      "DESCRIPTION": "为绘盘添加 !M! thecolorful:活墨 计数。",
+      "UPGRADE_DESCRIPTION": "为绘盘添加 !M! thecolorful:活墨 计数。"
+    },
+    "ProfusionSprout_TC": {
+      "NAME": "抽芽",
+      "DESCRIPTION": "将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": "将一张已升级的随机原始 thecolorful:萌芽 卡牌洗入抽牌堆。"
+    },
+    "Profusion_TC": {
+      "NAME": "花海",
+      "DESCRIPTION": "抽到时,恢复5%的最大生命。 虚无 。 NL *选择 : NL 获得1 thecolorful:活墨 计数，或将一张随机的原始 thecolorful:萌芽 卡牌加入抽牌堆。 NL 若回合结束时仍在手中，则将一张复制品洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": "抽到时,恢复5%的最大生命。 虚无 。 NL *选择 : NL 获得2 thecolorful:活墨 计数，或将一张已升级的随机原始 thecolorful:萌芽 卡牌加入抽牌堆。 NL 若回合结束时仍在手中，则将一张复制品洗入抽牌堆。"
+    },
+    "Overgrow_TC": {
+      "NAME": "野蛮生长",
+      "DESCRIPTION": "打出所有能被打出的手牌。能量不足时，失去等量生命值以代替。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 打出所有能被打出的手牌。能量不足时，失去等量生命值以代替。"
+    },
+    "PrimaryArmaGreen_TC": {
+      "NAME": "原色武装 - 绿",
+      "DESCRIPTION": " thecolorful:调色 为 [#33ee33]绿[] 。将4张特殊的卡牌洗入抽牌堆。",
+      "UPGRADE_DESCRIPTION": " thecolorful:调色 为 [#33ee33]绿[] 。将4张特殊的已升级卡牌洗入抽牌堆。",
+      "EXTENDED_DESCRIPTION": [
+        "原色武装",
+        "六种原色之一具象化为的超级武装。打出时若你的卡组中有其他的 #y原色武装 ，则将它们全部 #y消耗 。"
+      ]
     }
 }

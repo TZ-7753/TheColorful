@@ -24,18 +24,14 @@ public class PrimaryArmaInitAction extends AbstractGameAction {
                 this.addToTop(new ExhaustSpecificCardAction(c, p.drawPile));
             }
         }
-        Iterator<AbstractCard> var6 = p.discardPile.group.iterator();
-        while(var6.hasNext()){
-            AbstractCard c = var6.next();
-            if(c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)){
-                this.addToTop(new ExhaustSpecificCardAction(c,p.discardPile));
+        for (AbstractCard c : p.discardPile.group) {
+            if (c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)) {
+                this.addToTop(new ExhaustSpecificCardAction(c, p.discardPile));
             }
         }
-        Iterator<AbstractCard> var7 = p.hand.group.iterator();
-        while(var7.hasNext()){
-            AbstractCard c = var7.next();
-            if(c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)){
-                this.addToTop(new ExhaustSpecificCardAction(c,p.hand));
+        for (AbstractCard c : p.hand.group) {
+            if (c.cardID.contains("PrimaryArma") && !c.cardID.equals(this.ID)) {
+                this.addToTop(new ExhaustSpecificCardAction(c, p.hand));
             }
         }
         this.isDone = true;

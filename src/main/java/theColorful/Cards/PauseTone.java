@@ -51,6 +51,9 @@ public class PauseTone extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p,p,new NoTone_pow(p,1)));
+        if(this.upgraded){
+            this.addToBot(new DrawCardAction(1));
+        }
     }
 
     @Override

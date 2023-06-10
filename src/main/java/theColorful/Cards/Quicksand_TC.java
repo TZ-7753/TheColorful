@@ -20,11 +20,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class Quicksand_TC extends CustomCard {
     public static final String ID = NameAssist.MakePath("Quicksand");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/Quicksand.png";
     private static final int COST = 0;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final AbstractCard.CardType TYPE = AbstractCard.CardType.ATTACK;
     private static final AbstractCard.CardColor COLOR = CardColor.COLORLESS;
@@ -34,7 +32,7 @@ public class Quicksand_TC extends CustomCard {
 
     public Quicksand_TC() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
+        this.damage = this.baseDamage = 3;
         this.magicNumber = this.baseMagicNumber = 1;
         this.exhaust = true;
     }
@@ -44,7 +42,7 @@ public class Quicksand_TC extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
         }
     }
 

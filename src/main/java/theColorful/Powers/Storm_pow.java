@@ -1,7 +1,9 @@
 package theColorful.Powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -33,13 +35,13 @@ public class Storm_pow extends AbstractPower{
         this.updateDescription();
     }
 
-    // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
 
-    public void onCardDraw(AbstractCard card) {
-        this.addToBot(new GainBlockAction(AbstractDungeon.player,this.amount));
+    public void atStartOfTurnPostDraw() {
+        this.addToBot(new ApplyPowerAction(this.owner,this.owner,new Storm_Block_pow(this.owner,this.amount)));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner,this.owner,NameAssist.MakePath("Storm_pow")));
     }
 
 }

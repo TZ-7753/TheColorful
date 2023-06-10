@@ -64,7 +64,7 @@ public class Desertify extends ToningCards {
             c2.upgrade();
         }
         this.addToBot(new MakeTempCardInDrawPileAction(c1,this.magicNumber,true,true,false));
-        if(p.hasPower(NameAssist.MakePath("ToneYellow"))){
+        if(p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneGreen")) || p.hasPower(NameAssist.MakePath("ToneOrange"))){
             this.addToBot(new MakeTempCardInHandAction(c2,1));
         }else{
             this.addToBot(new ToningAction(p,TONE));

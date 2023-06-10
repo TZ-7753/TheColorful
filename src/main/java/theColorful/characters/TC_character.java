@@ -23,6 +23,7 @@ import theColorful.Cards.Defend_TC;
 import theColorful.Cards.DustFog_TC;
 import theColorful.Cards.Swamp_TC;
 import theColorful.Core.TheColorful;
+import theColorful.Relics.Painter;
 import theColorful.Relics.Pallite;
 
 import java.util.ArrayList;
@@ -107,6 +108,7 @@ public class TC_character extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         retVal.add(Pallite.ID);
+        retVal.add(Painter.ID);
         return retVal;
     }
 
@@ -238,6 +240,9 @@ public class TC_character extends CustomPlayer {
 
         @SpireEnum(name = "TC_COLOR")
         public static CardLibrary.LibraryType TC_LIBRARY;
+        @SpireEnum
+        public static AbstractCard.CardTags SPROUT;
     }
+
 }
 

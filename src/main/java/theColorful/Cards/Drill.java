@@ -35,7 +35,7 @@ public class Drill extends ToningCards {
 
     public Drill() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 12;
+        this.damage = this.baseDamage = 18;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 

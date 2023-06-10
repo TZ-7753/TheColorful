@@ -28,7 +28,7 @@ public class RiftValley extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = TC_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static CardTarget TARGET = CardTarget.ENEMY;
 
 
     public RiftValley() {
@@ -48,6 +48,14 @@ public class RiftValley extends CustomCard {
             AbstractCard c = new ReTone();
             c.upgrade();
             this.cardsToPreview = c;
+        }
+    }
+
+    @Override
+    public void applyPowers() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if(p.hasPower(NameAssist.MakePath("ToneOrange")) && !p.hasPower(NameAssist.MakePath("ToneGreen")) && !p.hasPower(NameAssist.MakePath("ToneYellow"))){
+            TARGET = CardTarget.ALL_ENEMY;
         }
     }
 

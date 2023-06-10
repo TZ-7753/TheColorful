@@ -36,7 +36,7 @@ public class RockBreaker extends ToningCards {
 
     public RockBreaker() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 8;
+        this.damage = this.baseDamage = 10;
         this.magicNumber = this.baseMagicNumber = 2;
     }
 
@@ -45,7 +45,7 @@ public class RockBreaker extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(5);
         }
     }
 

@@ -33,7 +33,7 @@ public class WindBreak extends ToningCards {
 
     public WindBreak() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 1;
         this.isEthereal = true;
     }
 
@@ -59,9 +59,9 @@ public class WindBreak extends ToningCards {
     public void triggerOnEndOfPlayerTurn() {
         AbstractPlayer p = AbstractDungeon.player;
         if(p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneGreen")) || p.hasPower(NameAssist.MakePath("ToneBlue"))){
-            this.addToBot(new ApplyPowerAction(p,p,new PlatedArmorPower(p,5)));
+            this.addToBot(new ApplyPowerAction(p,p,new PlatedArmorPower(p,3)));
         }else{
-            this.addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,2)));
+            this.addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1)));
         }
         if(!this.upgraded) {
             this.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));

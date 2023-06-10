@@ -1,6 +1,5 @@
 package theColorful.Core;
 
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -20,6 +19,12 @@ import theColorful.Cards.Arma.Blue.Avalanche;
 import theColorful.Cards.Arma.Blue.Current;
 import theColorful.Cards.Arma.Blue.SpringTide;
 import theColorful.Cards.Arma.Blue.TigerShark;
+import theColorful.Cards.Arma.Green.Blendin;
+import theColorful.Cards.Arma.Green.Overgrow;
+import theColorful.Cards.Arma.Green.Profusion;
+import theColorful.Cards.Arma.Orange.MeridiemChords;
+import theColorful.Cards.Arma.Orange.SunriseVariine;
+import theColorful.Cards.Arma.Orange.SunsetSonata;
 import theColorful.Cards.Arma.Purple.Aurora;
 import theColorful.Cards.Arma.Purple.BlackHole;
 import theColorful.Cards.Arma.Purple.NightSkyBarrier;
@@ -29,6 +34,9 @@ import theColorful.Cards.Arma.Red.ReIgnition;
 import theColorful.Cards.Arma.Yellow.GoldenSpear;
 import theColorful.Cards.Arma.Yellow.MirageCity;
 import theColorful.Cards.Arma.Yellow.MirageDoppel;
+import theColorful.Cards.Choices.ProfusionInk;
+import theColorful.Cards.Sprout.*;
+import theColorful.Relics.Painter;
 import theColorful.Relics.Pallite;
 import theColorful.Cards.StonePile;
 import theColorful.characters.TC_character;
@@ -98,6 +106,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Draught());         //冻气
         BaseMod.addCard(new VineWhip());        //藤鞭
         BaseMod.addCard(new BirdsStrike());     //鸟群打击
+        BaseMod.addCard(new MagicGro());        //催生秘术
 
         BaseMod.addCard(new MudstoneGolem());   //泥岩魔偶
         BaseMod.addCard(new FirstQuarter());    //上弦月
@@ -142,6 +151,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new MountainsHeart());  //山脉之心
         BaseMod.addCard(new Creation());        //宇宙创生
         BaseMod.addCard(new ConstructForm());   //构念形态
+        BaseMod.addCard(new Foehn());           //焚风
+        BaseMod.addCard(new LeavesHail());      //锐叶箭雨
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
         BaseMod.addCard(new InfernoHull());     //灼燃机壳
@@ -160,6 +171,15 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new Avalanche());       //雪崩
         BaseMod.addCard(new Current());         //洋流
         BaseMod.addCard(new PrimaryArmaBlue()); //原色武装-蓝
+        BaseMod.addCard(new SunriseVariine());  //黎明变奏
+        BaseMod.addCard(new MeridiemChords());  //骄阳和弦
+        BaseMod.addCard(new SunsetSonata());    //黄昏奏鸣
+        BaseMod.addCard(new PrimaryArmaOrange());//原色武装-橙
+        BaseMod.addCard(new Blendin());         //藏木于林
+        BaseMod.addCard(new Profusion());       //花海
+        BaseMod.addCard(new Overgrow());        //野蛮生长
+        BaseMod.addCard(new PrimaryArmaGreen());//原色武装-绿
+
 
 //        BaseMod.addCard(new Minerals());        //化生矿床
         BaseMod.addCard(new UnusedColor());     //弃用杂色
@@ -227,5 +247,6 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new Pallite(), TC_CARD); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
+        BaseMod.addRelicToCustomPool(new Painter(), TC_CARD);
     }
 }

@@ -1,9 +1,6 @@
 package theColorful.Cards.Arma.Yellow;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.common.GainGoldAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -39,7 +36,7 @@ public class MirageCity extends ToningCards {
 
     public MirageCity() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 10;
+        this.exhaust = true;
     }
 
 
@@ -47,7 +44,6 @@ public class MirageCity extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(5);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -67,8 +63,9 @@ public class MirageCity extends ToningCards {
         this.addToBot(new ChooseOneAction(stanceChoices));
     }
 
-    public void triggerOnManualDiscard() {
-        this.addToTop(new GainGoldAction(this.magicNumber));
+    @Override
+    public void triggerOnEndOfPlayerTurn() {
+        this.addToBot(new MakeTempCardInDiscardAction(this,1));
     }
 
     public AbstractCard makeCopy(){

@@ -13,13 +13,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import theColorful.Helpers.NameAssist;
 
 public class NightSkyBarrier_pow extends AbstractPower {
-    // 能力的ID
+
     public static final String POWER_ID = NameAssist.MakePath("NightSkyBarrier_pow");
-    // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    // 能力的名称
     private static final String NAME = powerStrings.NAME;
-    // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public NightSkyBarrier_pow(AbstractCreature owner) {

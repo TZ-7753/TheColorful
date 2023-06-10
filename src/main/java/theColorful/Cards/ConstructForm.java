@@ -36,7 +36,6 @@ public class ConstructForm extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(2);
             this.isEthereal = false;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();

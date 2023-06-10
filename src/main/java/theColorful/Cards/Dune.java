@@ -30,7 +30,6 @@ public class Dune extends ToningCards {
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/Dune.png";
     private static final int COST = 1;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;
@@ -71,7 +70,7 @@ public class Dune extends ToningCards {
             c2.upgrade();
         }
         this.addToBot(new MakeTempCardInHandAction(c1,2));
-        if(p.hasPower(NameAssist.MakePath("ToneYellow"))){
+        if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneGreen"))){
             this.addToBot(new MakeTempCardInHandAction(c2,1));
         }else{
             this.addToBot(new ToningAction(p,TONE));

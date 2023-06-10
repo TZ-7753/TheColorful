@@ -30,7 +30,7 @@ public class SandstoneBarrier_TC extends CustomCard {
 
     public SandstoneBarrier_TC() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 4;
+        this.block = this.baseBlock = 3;
         this.magicNumber = this.baseMagicNumber = 1;
         this.exhaust = true;
     }
@@ -40,7 +40,7 @@ public class SandstoneBarrier_TC extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(2);
         }
     }
 
