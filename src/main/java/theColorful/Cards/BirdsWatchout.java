@@ -16,6 +16,8 @@ import theColorful.Helpers.NameAssist;
 import theColorful.Powers.Field.Desert_pow;
 import theColorful.Powers.NoTone_pow;
 
+import java.util.Iterator;
+
 import static theColorful.characters.TC_character.Enums.TC_CARD;
 
 public class BirdsWatchout extends ToningCards {
@@ -33,7 +35,7 @@ public class BirdsWatchout extends ToningCards {
 
     public BirdsWatchout() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 5;
+        this.block = this.baseBlock = 7;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 
@@ -44,19 +46,24 @@ public class BirdsWatchout extends ToningCards {
             upgradeName();
             this.selfRetain = true;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.upgradeBlock(3);
             this.initializeDescription();
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        int cnt = 0;
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if(!mo.isDying && !mo.isDead && !mo.escaped){
+                cnt++;
+            }
+        }
+        for(int i=0;i<cnt;i++){
+            this.addToBot(new GainBlockAction(p,this.block));
+        }
         if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneRed"))){
             this.addToBot(new ApplyPowerAction(p,p,new NoTone_pow(p,1)));
-        }else{
-            int g = AbstractDungeon.getCurrRoom().monsters.monsters.size();
-            for(int i=0;i<g;i++){
-                this.addToBot(new GainBlockAction(p,this.block));
-            }
         }
     }
 

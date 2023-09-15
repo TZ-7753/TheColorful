@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import theColorful.Actions.PaintAction;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -35,8 +36,8 @@ public class MilkyWay_pow extends AbstractPower{
 
         this.amount = amount;
 
-        String path128 = "TC_resources/img/powers/dummy2.png";
-        String path48 = "TC_resources/img/powers/dummy2.png";
+        String path128 = "TC_resources/img/powers/MilkyWay_84.png";
+        String path48 = "TC_resources/img/powers/MilkyWay_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
 
@@ -50,7 +51,7 @@ public class MilkyWay_pow extends AbstractPower{
             AbstractMonster mo;
             while(var3.hasNext()) {
                 mo = var3.next();
-                this.addToBot(new ApplyPowerAction(mo, this.owner, new Painted(mo)));
+                this.addToBot(new PaintAction(mo));
             }
         }else{
             this.addToBot(new ToningAction(AbstractDungeon.player, ToningCards.MainTone.PURPLE));

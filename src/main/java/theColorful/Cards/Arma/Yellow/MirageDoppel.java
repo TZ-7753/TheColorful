@@ -53,11 +53,11 @@ public class MirageDoppel extends ToningCards {
 
     @Override
     public void triggerOnEndOfPlayerTurn() {
-        AbstractCard c = new Oasis();
         if(this.upgraded){
-            c.upgrade();
+            this.addToTop(new HealAction(AbstractDungeon.player,AbstractDungeon.player,(int)(AbstractDungeon.player.maxHealth * (0.2F))));
+        }else {
+            this.addToTop(new HealAction(AbstractDungeon.player,AbstractDungeon.player,(int)(AbstractDungeon.player.maxHealth * (0.15F))));
         }
-        this.addToTop(new MakeTempCardInDrawPileAction(c,2,true,true,false));
         this.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
     }
     public AbstractCard makeCopy(){

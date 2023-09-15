@@ -1,19 +1,19 @@
 package theColorful.Cards;
 
 import basemod.helpers.TooltipInfo;
-import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theColorful.Actions.PrimaryArmaInitAction;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Cards.Arma.Red.CrimsonMeteor;
-import theColorful.Cards.Arma.Red.InfernoHull;
+import theColorful.Cards.Arma.Red.InfernoCasing;
 import theColorful.Cards.Arma.Red.ReIgnition;
 import theColorful.Helpers.NameAssist;
 
@@ -55,7 +55,7 @@ public class PrimaryArmaRed extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToTop(new PrimaryArmaInitAction(ID));
         AbstractCard card1 = new CrimsonMeteor();
-        AbstractCard card2 = new InfernoHull();
+        AbstractCard card2 = new InfernoCasing();
         AbstractCard card3 = new ReIgnition();
         if(this.upgraded){
             card1.upgrade();
@@ -77,5 +77,13 @@ public class PrimaryArmaRed extends ToningCards {
 
     public AbstractCard makeCopy(){
         return new PrimaryArmaRed();
+    }
+
+    public void onChoseThisOption() {
+        int a = 1;
+        if(AbstractDungeon.player.hasRelic("SacredBark")){
+            a += 1;
+        }
+        this.addToBot(new MakeTempCardInHandAction(this,a));
     }
 }

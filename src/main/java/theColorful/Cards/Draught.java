@@ -36,8 +36,8 @@ public class Draught extends CustomCard {
 
     public Draught() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 6;
-        this.magicNumber = this.baseMagicNumber = 1;
+        this.damage = this.baseDamage = 8;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
 
@@ -45,7 +45,7 @@ public class Draught extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(4);
             this.upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();

@@ -27,7 +27,7 @@ public class LiveVolcano extends CustomCard {
 
     public LiveVolcano() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 8;
+        this.magicNumber = this.baseMagicNumber = 6;
     }
 
 
@@ -36,7 +36,6 @@ public class LiveVolcano extends CustomCard {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeBaseCost(1);
-            this.upgradeMagicNumber(3);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

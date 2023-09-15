@@ -34,7 +34,6 @@ public class Enlightning extends CustomCard {
     public Enlightning() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = 3;
-        this.exhaust = true;
     }
 
     @Override
@@ -46,7 +45,6 @@ public class Enlightning extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.exhaust = false;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

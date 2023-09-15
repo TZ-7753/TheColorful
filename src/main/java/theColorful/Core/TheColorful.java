@@ -1,10 +1,12 @@
 package theColorful.Core;
 
+import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
@@ -29,15 +31,18 @@ import theColorful.Cards.Arma.Purple.Aurora;
 import theColorful.Cards.Arma.Purple.BlackHole;
 import theColorful.Cards.Arma.Purple.NightSkyBarrier;
 import theColorful.Cards.Arma.Red.CrimsonMeteor;
-import theColorful.Cards.Arma.Red.InfernoHull;
+import theColorful.Cards.Arma.Red.InfernoCasing;
 import theColorful.Cards.Arma.Red.ReIgnition;
 import theColorful.Cards.Arma.Yellow.GoldenSpear;
 import theColorful.Cards.Arma.Yellow.MirageCity;
 import theColorful.Cards.Arma.Yellow.MirageDoppel;
-import theColorful.Cards.Choices.ProfusionInk;
 import theColorful.Cards.Sprout.*;
-import theColorful.Relics.Painter;
-import theColorful.Relics.Pallite;
+import theColorful.Helpers.NameAssist;
+import theColorful.Potions.BottledInk;
+import theColorful.Potions.BottledThoughts;
+import theColorful.Potions.FretPotion;
+import theColorful.Potions.PrimaryExtractive;
+import theColorful.Relics.*;
 import theColorful.Cards.StonePile;
 import theColorful.characters.TC_character;
 
@@ -66,7 +71,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
     private static final String BIG_ORB = "TC_resources/img/char/card_orb.png";
     // 小尺寸的能量图标（战斗中，牌堆预览）
     private static final String ENERGY_ORB = "TC_resources/img/char/cost_orb.png";
-    public static final Color TC_COLOR = new Color(220.0F / 255.0F, 200.0F / 255.0F, 230.0F / 255.0F, 1.0F);
+    public static final Color TC_COLOR = new Color(218.0F / 255.0F, 168.0F / 255.0F, 32.0F / 255.0F, 1.0F);
     public TheColorful(){
         BaseMod.subscribe(this);
         BaseMod.addColor(TC_CARD, TC_COLOR, TC_COLOR, TC_COLOR,
@@ -155,7 +160,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addCard(new LeavesHail());      //锐叶箭雨
 
         BaseMod.addCard(new CrimsonMeteor());   //赤色流星
-        BaseMod.addCard(new InfernoHull());     //灼燃机壳
+        BaseMod.addCard(new InfernoCasing());     //灼燃机壳
         BaseMod.addCard(new ReIgnition());      //复燃
         BaseMod.addCard(new PrimaryArmaRed());  //原色武装-红
         BaseMod.addCard(new MirageCity());      //蜃楼之城
@@ -207,8 +212,8 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
 
     @Override
     public void receiveEditCharacters() {
-        // 向basemod注册人物
         BaseMod.addCharacter(new TC_character(CardCrawlGame.playerName), TC_CHARACTER_BUTTON, TC_CHARACTER_PORTRAIT, TC_CHARACTER);
+        this.receiveEditPotions();
     }
     public void receiveEditStrings() {
         String lang;
@@ -218,35 +223,47 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
             lang = "ENG"; // 如果没有相应语言的版本，默认加载英语
         }
         BaseMod.loadCustomStringsFile(CardStrings.class, "TC_resources/localization/" + lang + "/cards.json"); // 加载相应语言的卡牌本地化内容。
-        // 如果是中文，加载的就是"ExampleResources/localization/ZHS/cards.json"
         BaseMod.loadCustomStringsFile(CharacterStrings.class, "TC_resources/localization/" + lang + "/characters.json"); // 加载属于角色的本地化内容。
         BaseMod.loadCustomStringsFile(PowerStrings.class, "TC_resources/localization/" + lang + "/powers.json");
+        BaseMod.loadCustomStringsFile(PotionStrings.class, "TC_resources/localization/" + lang + "/potions.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "TC_resources/localization/" + lang + "/relics.json");
     }
 
-    @Override
     public void receiveEditKeywords() {
-
         Gson gson = new Gson();
         String lang = "ENG";
-        if (language == Settings.GameLanguage.ZHS) {
+        if (Settings.language == Settings.GameLanguage.ZHS) {
             lang = "ZHS";
         }
 
-        String json = Gdx.files.internal("TC_resources/localization/"+ lang +"/Keywords.json")
-                .readString(String.valueOf(StandardCharsets.UTF_8));
-        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+        String json = Gdx.files.internal("TC_resources/localization/" + lang + "/Keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = (Keyword[])gson.fromJson(json, Keyword[].class);
         if (keywords != null) {
-            for (Keyword keyword : keywords) {
+            Keyword[] var5 = keywords;
+            int var6 = keywords.length;
+
+            for(int var7 = 0; var7 < var6; ++var7) {
+                Keyword keyword = var5[var7];
                 BaseMod.addKeyword("thecolorful", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
             }
         }
-
-
+    }
+    public void receiveEditPotions() {
+        BaseMod.addPotion(BottledThoughts.class, (Color)null, (Color)null, (Color)null, NameAssist.MakePath(BottledThoughts.class.getSimpleName()), TC_CHARACTER);
+        BaseMod.addPotion(BottledInk.class, (Color)null, (Color)null, (Color)null, NameAssist.MakePath(BottledInk.class.getSimpleName()), TC_CHARACTER);
+        BaseMod.addPotion(PrimaryExtractive.class, (Color)null, (Color)null, (Color)null, NameAssist.MakePath(PrimaryExtractive.class.getSimpleName()), TC_CHARACTER);
+        BaseMod.addPotion(FretPotion.class, (Color)null, (Color)null, (Color)null, NameAssist.MakePath(FretPotion.class.getSimpleName()));
     }
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelicToCustomPool(new Pallite(), TC_CARD); // RelicType表示是所有角色都能拿到的遗物，还是一个角色的独有遗物
+        BaseMod.addRelicToCustomPool(new Pallite(), TC_CARD);
         BaseMod.addRelicToCustomPool(new Painter(), TC_CARD);
+        BaseMod.addRelic(new TransmutationReactor(),RelicType.SHARED);
+        BaseMod.addRelic(new JukeBox(),RelicType.SHARED);
+        BaseMod.addRelicToCustomPool(new LivePaint(), TC_CARD);
+        BaseMod.addRelic(new BigHorn(),RelicType.SHARED);
+        BaseMod.addRelicToCustomPool(new Tripling(),TC_CARD);
+        BaseMod.addRelicToCustomPool(new JointFigure(),TC_CARD);
+        BaseMod.addRelicToCustomPool(new GoldenPage(),TC_CARD);
     }
 }

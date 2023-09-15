@@ -20,7 +20,7 @@ public class Ink_pow extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.isTurnBased = true;
+        this.isTurnBased = false;
 
         this.amount = amount;
 
@@ -32,14 +32,8 @@ public class Ink_pow extends AbstractPower {
         this.updateDescription();
     }
 
-    public void atEndOfRound() {
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Ink_pow")));
-    }
-
-    // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
-
 
 }

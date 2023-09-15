@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import theColorful.Actions.PaintAction;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -22,11 +23,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class GlimpseofDark extends ToningCards {
     public static final String ID = NameAssist.MakePath("GlimpseofDark");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/GlimpseofDark.png";
     private static final int COST = 1;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;
@@ -55,7 +54,7 @@ public class GlimpseofDark extends ToningCards {
         AbstractMonster mo;
         while(var3.hasNext()) {
             mo = var3.next();
-            this.addToBot(new ApplyPowerAction(mo, p, new Painted(mo)));
+            this.addToBot(new PaintAction(m));
         }
         this.addToBot(new ToningAction(p,TONE));
     }

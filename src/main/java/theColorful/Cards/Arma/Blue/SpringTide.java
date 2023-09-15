@@ -59,7 +59,7 @@ public class SpringTide extends ToningCards {
             this.addToBot(new DiscardAction(p,p,cnt,false));
             for(int i = 0; i < cnt; i++){
                 int j = AbstractDungeon.cardRandomRng.random(10);
-                if(j <= 5){
+                if(j < 5){
                     this.addToBot(new ApplyPowerAction(p,p,new StrengthPower(p,1)));
                 }else{
                     this.addToBot(new ApplyPowerAction(p,p,new DexterityPower(p,1)));

@@ -50,7 +50,7 @@ public class NightSkyBarrier extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new LoseHPAction(p,p,this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p,p,new NightSkyBarrier_pow(p)));
+        this.addToBot(new ApplyPowerAction(p,p,new NightSkyBarrier_pow(p,1)));
     }
 
     public AbstractCard makeCopy(){

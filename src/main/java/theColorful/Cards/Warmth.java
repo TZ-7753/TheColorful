@@ -33,6 +33,7 @@ public class Warmth extends ToningCards {
     public Warmth() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = 1;
+        this.block = this.baseBlock = 4;
         this.isEthereal = true;
     }
 
@@ -55,16 +56,16 @@ public class Warmth extends ToningCards {
     @Override
     public void triggerWhenDrawn() {
         AbstractPlayer p = AbstractDungeon.player;
-        this.addToTop(new GainEnergyAction(1));
         if(this.upgraded){
-            if(!p.hasPower(NameAssist.MakePath("ToneOrange")) && !p.hasPower(NameAssist.MakePath("ToneRed")) && !p.hasPower(NameAssist.MakePath("ToneYellow"))){
-                this.addToBot(new ApplyPowerAction(p,p,new FrailPower(p,1,false),1));
+            if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneRed")) || p.hasPower(NameAssist.MakePath("ToneYellow"))){
+                this.addToTop(new GainEnergyAction(1));
             }
         }else{
-            if(!p.hasPower(NameAssist.MakePath("ToneOrange"))){
-                this.addToBot(new ApplyPowerAction(p,p,new FrailPower(p,1,false),1));
+            if(p.hasPower(NameAssist.MakePath("ToneOrange"))){
+                this.addToTop(new GainEnergyAction(1));
             }
         }
+        this.addToBot(new GainBlockAction(p,this.block));
     }
 
     public AbstractCard makeCopy(){

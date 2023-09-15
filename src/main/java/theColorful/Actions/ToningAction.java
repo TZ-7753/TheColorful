@@ -2,10 +2,7 @@ package theColorful.Actions;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.DiscardPileToTopOfDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -99,6 +96,19 @@ public class ToningAction extends AbstractGameAction {
                 if (Objects.equals(c.cardID, NameAssist.MakePath("WashBucket"))) {
                     this.addToBot(new ModifyDamageAction(c.uuid, c.magicNumber));
                 }
+            }
+
+            //处理星辰创生
+            if(AbstractDungeon.player.hasPower(NameAssist.MakePath("Creation_pow"))){
+                int amt = this.owner.getPower(NameAssist.MakePath("Creation_pow")).amount;
+                this.addToBot(new ApplyPowerAction(this.owner,this.owner,new Ink_pow(this.owner,amt)));
+            }
+
+            //
+            if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("GoldenPage"))){
+                AbstractRelic page = AbstractDungeon.player.getRelic(NameAssist.MakePath("GoldenPage"));
+                page.flash();
+                this.addToBot(new GainGoldAction(3));
             }
         }
 

@@ -30,7 +30,7 @@ public class Drizzle extends ToningCards {
 
     public Drizzle() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 8;
+        this.block = this.baseBlock = 10;
         this.magicNumber = this.baseMagicNumber = 3;
         this.exhaust = true;
     }
@@ -41,7 +41,7 @@ public class Drizzle extends ToningCards {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeMagicNumber(2);
-            this.upgradeBlock(2);
+            this.upgradeBlock(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

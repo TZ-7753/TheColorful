@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theColorful.Actions.PaintAction;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -23,11 +24,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class Swamp_TC extends ToningCards {
     public static final String ID = NameAssist.MakePath("Swamp");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/Swamp_TC.png";
     private static final int COST = 1;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = TC_CARD;
@@ -56,10 +55,11 @@ public class Swamp_TC extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
+        this.addToTop(new PaintAction(m));
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         if(p.hasPower(NameAssist.MakePath("TonePurple"))||p.hasPower(NameAssist.MakePath("ToneBlue"))||p.hasPower(NameAssist.MakePath("ToneRed"))){
             this.updateCost(-1);
+            this.cost = 0;
         }else{
             this.addToBot(new ToningAction(p,TONE));
         }
@@ -67,7 +67,7 @@ public class Swamp_TC extends ToningCards {
     }
 
     public List<TooltipInfo> getCustomTooltips() {
-        List<TooltipInfo> tips = new ArrayList();
+        List<TooltipInfo> tips = new ArrayList<>();
         tips.add(new TooltipInfo(cardStrings.EXTENDED_DESCRIPTION[0], cardStrings.EXTENDED_DESCRIPTION[1]));
         return tips;
     }

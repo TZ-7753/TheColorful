@@ -42,7 +42,6 @@ public class RainbowFlower extends ToningCards {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeBaseCost(0);
-            this.upgradeMagicNumber(2);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             AbstractCard c = new ReTone();

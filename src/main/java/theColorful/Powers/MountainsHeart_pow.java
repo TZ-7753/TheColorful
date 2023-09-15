@@ -2,10 +2,7 @@ package theColorful.Powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -13,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
@@ -23,8 +21,6 @@ public class MountainsHeart_pow extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String NAME = powerStrings.NAME;
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private int str = 0;
-    private int dmg = 0;
 
     public MountainsHeart_pow(AbstractCreature owner,int amount) {
         this.name = NAME;
@@ -46,9 +42,7 @@ public class MountainsHeart_pow extends AbstractPower {
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(power.ID.equals("Strength") && target == this.owner && power.amount > 0){
             this.flash();
-            this.str += power.amount;
-            this.dmg = this.amount + this.str;
-            this.addToBot(new DamageRandomEnemyAction(new DamageInfo(this.owner, this.dmg, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+            this.addToBot(new ApplyPowerAction(this.owner,this.owner,new VigorPower(this.owner,this.amount)));
         }
     }
 

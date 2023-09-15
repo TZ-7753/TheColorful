@@ -36,8 +36,8 @@ public class Desert_pow extends AbstractPower{
         // 如果需要不能叠加的能力，只需将上面的Amount参数删掉，并把下面的Amount改成-1就行
         this.amount = amount;
 
-        String path128 = "TC_resources/img/powers/dummy2.png";
-        String path48 = "TC_resources/img/powers/dummy2.png";
+        String path128 = "TC_resources/img/powers/Desert_84.png";
+        String path48 = "TC_resources/img/powers/Desert_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
 

@@ -2,10 +2,7 @@ package theColorful.Cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,7 +25,7 @@ public class RiftValley extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = TC_CARD;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
 
     public RiftValley() {
@@ -52,21 +49,13 @@ public class RiftValley extends CustomCard {
     }
 
     @Override
-    public void applyPowers() {
-        AbstractPlayer p = AbstractDungeon.player;
-        if(p.hasPower(NameAssist.MakePath("ToneOrange")) && !p.hasPower(NameAssist.MakePath("ToneGreen")) && !p.hasPower(NameAssist.MakePath("ToneYellow"))){
-            TARGET = CardTarget.ALL_ENEMY;
-        }
-    }
-
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractCard c = new ReTone();
         if(this.upgraded){
             c.upgrade();
         }
         if(!p.hasPower(NameAssist.MakePath("ToneOrange")) && !p.hasPower(NameAssist.MakePath("ToneGreen")) && !p.hasPower(NameAssist.MakePath("ToneYellow"))){
-            this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
             this.addToBot(new MakeTempCardInHandAction(c,1));
         }else{
             this.addToBot(new DamageAllEnemiesAction(p,this.damage,DamageInfo.DamageType.NORMAL,AbstractGameAction.AttackEffect.BLUNT_LIGHT));

@@ -2,9 +2,11 @@ package theColorful.Cards;
 
 import basemod.helpers.TooltipInfo;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theColorful.Actions.PrimaryArmaInitAction;
@@ -78,5 +80,13 @@ public class PrimaryArmaGreen extends ToningCards {
 
     public AbstractCard makeCopy(){
         return new PrimaryArmaGreen();
+    }
+
+    public void onChoseThisOption() {
+        int a = 1;
+        if(AbstractDungeon.player.hasRelic("SacredBark")){
+            a += 1;
+        }
+        this.addToBot(new MakeTempCardInHandAction(this,a));
     }
 }

@@ -13,15 +13,13 @@ import java.util.Iterator;
 
 public class PaintRandomEnemyAction extends AbstractGameAction {
     public AbstractMonster target;
-    public PaintRandomEnemyAction(AbstractMonster m) {
-        this.target = m;
-    }
+    public PaintRandomEnemyAction() {}
 
     @Override
     public void update() {
         this.target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (this.target != null) {
-            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, this.target, new Painted(this.target)));
+            this.addToBot(new PaintAction(this.target));
         }
         this.isDone = true;
     }

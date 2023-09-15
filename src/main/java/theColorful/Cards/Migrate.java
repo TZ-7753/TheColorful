@@ -49,7 +49,9 @@ public class Migrate extends ToningCards {
     public void use(AbstractPlayer p, AbstractMonster m) {
         int num = this.magicNumber;
         if(p.hasPower(NameAssist.MakePath("ToneGreen")) || p.hasPower(NameAssist.MakePath("ToneBlue")) || p.hasPower(NameAssist.MakePath("TonePurple"))){
-            num += 1;
+            this.exhaust = false;
+        }else{
+            this.exhaust = true;
         }
         for(int i = 0; i < num; i++) {
             this.addToBot(new DiscardPileToTopOfDeckAction(p));

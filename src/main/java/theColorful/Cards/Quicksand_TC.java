@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import theColorful.Actions.PaintAction;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.ElDorado_pow;
 import theColorful.Powers.Painted;
@@ -32,7 +33,7 @@ public class Quicksand_TC extends CustomCard {
 
     public Quicksand_TC() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 3;
+        this.damage = this.baseDamage = 4;
         this.magicNumber = this.baseMagicNumber = 1;
         this.exhaust = true;
     }
@@ -51,7 +52,7 @@ public class Quicksand_TC extends CustomCard {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
         this.addToBot(new DrawCardAction(p,this.magicNumber));
         if(p.hasPower(NameAssist.MakePath("ElDorado_pow"))){
-            this.addToBot(new ApplyPowerAction(m, p, new Painted(m)));
+            this.addToBot(new PaintAction(m));
         }
     }
 

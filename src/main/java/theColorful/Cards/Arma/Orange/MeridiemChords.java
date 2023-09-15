@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theColorful.Actions.PaintAction;
 import theColorful.Actions.SunriseAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -45,7 +46,7 @@ public class MeridiemChords extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(m,p,new Painted(m)));
+        this.addToBot(new PaintAction(m));
         this.addToBot(new GainEnergyAction(this.magicNumber));
     }
 

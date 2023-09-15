@@ -34,7 +34,7 @@ public class Desertify extends ToningCards {
     public Desertify() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         MultiCardPreview.add(this, new Quicksand_TC(), new Oasis());
-        this.magicNumber = this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber = 3;
     }
 
 
@@ -42,7 +42,6 @@ public class Desertify extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             AbstractCard c1 = new Quicksand_TC();

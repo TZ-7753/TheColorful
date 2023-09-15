@@ -1,0 +1,64 @@
+[
+  {
+    "NAMES": [
+      "Tone",
+      "tone",
+      "tones",
+      "toning"
+    ],
+    "DESCRIPTION": "Activities that changes #yThemes. Effects of some cards are determined by different #yThemes ."
+  },
+  {
+    "NAMES": [
+      "Theme",
+      "theme",
+      "themes"
+    ],
+    "DESCRIPTION": "Determines the effects of #yInk and certain cards. NL There should always be no more than 1 #ymain #ytheme during the battle at the same time."
+  },
+  {
+    "NAMES": [
+      "Painted",
+      "painted"
+    ],
+    "DESCRIPTION": "The enemy is being dragged into your painting! They take #b50% more damage, and will be converted to #yInk charges upon death."
+  },
+  {
+    "NAMES": [
+      "Field",
+      "field",
+      "fields"
+    ],
+    "DESCRIPTION": "A form of power that provides buff based on current #ytheme. NL There should always be no more than 1 #yfield present during the battle at the same time, a new #yfield would replace the old one if different."
+  },
+  {
+    "NAMES": [
+      "Sprout",
+      "sprout"
+    ],
+    "DESCRIPTION": "Transforms to stronger cards when played."
+  },
+  {
+    "NAMES": [
+      "Ink",
+      "ink"
+    ],
+    "DESCRIPTION": "Gain temporarily buff depending on current #yTheme at cost of #Pallite charges. NL Normally, #yInk can only be applied once per turn."
+  },
+  {
+    "NAMES": [
+      "Ink Alternate",
+      "alternate"
+    ],
+    "DESCRIPTION": "Will be consumed instead of #yPallite charges when applying #yInk."
+  },
+  {
+    "NAMES": [
+      "Grow",
+      "grow",
+      "grows",
+      "grown"
+    ],
+    "DESCRIPTION": "Shuffle the new card into draw pile and #yexhaust self."
+  }
+]

@@ -1,0 +1,281 @@
+{
+  "ToneRed_TC": {
+    "NAME": "Theme - Red",
+    "DESCRIPTIONS": [
+      "#yTheme of [#ff0000]Red[]. NL Applying #yInk grants #b2 #yStrength."
+    ]
+  },
+  "ToneOrange_TC": {
+    "NAME": "Theme - Orange",
+    "DESCRIPTIONS": [
+      "#yTheme of [#ff9900]Orange[]. NL Applying #yInk Grants #b1 #yEnergy."
+    ]
+  },
+  "ToneYellow_TC": {
+    "NAME": "Theme - Yellow",
+    "DESCRIPTIONS": [
+      "#yTheme of [#ffff00]Yellow[]. Applying #yInk reduces 30% of incoming damage in this turn."
+    ]
+  },
+  "ToneGreen_TC": {
+    "NAME": "Theme - Green",
+    "DESCRIPTIONS": [
+      "#yTheme of [#33ee33]Green[]. Applying #yInk grants #b2 #yDexterity."
+    ]
+  },
+  "ToneBlue_TC": {
+    "NAME": "Theme - Blue",
+    "DESCRIPTIONS": [
+      "#yTheme of [#0099ff]Blue[]. Applying #yInk draws #b3 cards."
+    ]
+  },
+  "TonePurple_TC": {
+    "NAME": "Theme - Purple",
+    "DESCRIPTIONS": [
+      "#yTheme of [#cc33ff]Purple[]. Applying #yInk reduces all your turn-based debuffs by 1."
+    ]
+  },
+  "Painted_TC": {
+    "NAME": "Painted",
+    "DESCRIPTIONS": [
+      "#b50% more damage inflicted. Adds #yPallite charge by 1 upon death. Removed at end of turn.","#b100% more damage inflicted. Adds #yPallite charge by 1 upon death. Removed at end of turn."
+    ]
+  },
+  "LoseNRGNextTurn_TC": {
+    "NAME": "Energy Loss",
+    "DESCRIPTIONS": [
+      "Lose #b%d Energy at start of next turn."
+    ]
+  },
+  "OpusMagnum_pow_TC": {
+    "NAME": "Opus Magnum",
+    "DESCRIPTIONS": [
+      " #yPainted will now inflict #b100% more damage."
+    ]
+  },
+  "ElDorado_pow_TC": {
+    "NAME": "El Dorado",
+    "DESCRIPTIONS": [
+      "#yQuicksand will now apply #yPainted to its target."
+    ]
+  },
+  "InkRed_TC": {
+    "NAME": "Ink - Red",
+    "DESCRIPTIONS": [
+      "[#ff0000]Red[] Ink. Gained 2 #yStrength. "
+    ]
+  },
+  "InkOrange_TC": {
+    "NAME": "Ink - Orange",
+    "DESCRIPTIONS": [
+      "[#ff9900]Orange[] Ink. Gained #yEnergy. "
+    ]
+  },
+  "InkYellow_TC": {
+    "NAME": "Ink - Yellow",
+    "DESCRIPTIONS": [
+      "[#ffff00]Yellow[] Ink. Incoming damages reduced by #b30% this turn."
+    ]
+  },
+  "InkGreen_TC": {
+    "NAME": "Ink - Green",
+    "DESCRIPTIONS": [
+      "[#33ee33]Green[] Ink. Gained 2 #yDexterity. "
+    ]
+  },
+  "InkBlue_TC": {
+    "NAME": "Ink - Blue",
+    "DESCRIPTIONS": [
+      "[#0099ff]Blue[] Ink. #b3 cards drawn."
+    ]
+  },
+  "InkPurple_TC": {
+      "NAME": "Ink - Purple",
+      "DESCRIPTIONS": [
+        "[#cc33ff]Purple[] Ink. All turn-based debuffs are reduced by #b1."
+    ]
+  },
+  "LiveVolcano_pow_TC": {
+    "NAME": "Live Volcano",
+    "DESCRIPTIONS": [
+      "#yField. Deal #b",
+      " damage to all enemies at end of your turn when #yTheme is [#cc33ff]Purple[]/[#ff0000]Red[]/[#ff9900]Orange[], otherwise #yTone to [#ff0000]Red[]."
+    ]
+  },
+  "Desert_pow_TC": {
+    "NAME": "Desert",
+    "DESCRIPTIONS": [
+      "#yField. When #yTheme is [#ff9900]Orange[]/[#ffff00]Yellow[]/[#33ee33]Green[] at start of your turn, add #b",
+      " #yQuicksand to hand, otherwise add #ySandstone #yBarrier to hand and #yTone to [#ffff00]Yellow[]."
+    ]
+  },
+  "HueCalibrator_pow_TC": {
+    "NAME": "HUE Calibrator",
+    "DESCRIPTIONS": [
+      "#yField. If no successful #yToning was conducted in a turn, gain #b",
+      " #yArtifact and add #b",
+      " #yRetone to hand."
+    ]
+  },
+  "Calibrating_TC": {
+    "NAME": "Calibrating...",
+    "DESCRIPTIONS": [
+      "Calibrator operating, please do not #ytone."
+    ]
+  },
+  "NoTone_pow_TC": {
+    "NAME": "Tone Prevention",
+    "DESCRIPTIONS": [
+      "In this turn, next #b",
+      " #yTone(s) will not have any effect."
+    ]
+  },
+  "MilkyWay_pow_TC": {
+    "NAME": "Galaxy",
+    "DESCRIPTIONS": [
+      "#yField. When #yTheme is [#0099ff]Blue[]/[#cc33ff]Purple[]/[#ff0000]Red[] at start of your turn, apply #yPainted to all enemies. Otherwise gain #b",
+      " block and #yTone to [#cc33ff]Purple[]."
+    ]
+  },
+  "NightSkyBarrier_pow_TC": {
+    "NAME": "Nightsky Barrier",
+    "DESCRIPTIONS": [
+      "For #b",
+      " turn, all #yPainted enemies will deal 0 damage to you."
+    ]
+  },
+  "Aurora_pow_TC": {
+    "NAME": "极光",
+    "DESCRIPTIONS": [
+      "本回合内，如果这一敌人拥有其他负面状态，其受到的伤害将增加",
+      "%"
+    ]
+  },
+  "Decomposer_pow_TC": {
+    "NAME": "Decomposer",
+    "DESCRIPTIONS": [
+      "Gets #b",
+      " #yPoison when turn ends."
+    ]
+  },
+  "MegaShroom_pow_TC": {
+    "NAME": "Mega Shroom",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked, gain #b",
+      " #yRegen."
+    ]
+  },
+  "Rafflesia_pow_TC": {
+    "NAME": "Rafflesia",
+    "DESCRIPTIONS": [
+      "Draw #b",
+      " additional cards at start of your turn."
+    ]
+  },
+  "ThornsLayer_pow_TC": {
+    "NAME": "Thorns Layer",
+    "DESCRIPTIONS": [
+      "Whenever you #yTone to [#33ee33]Green[], gain #b",
+      " #yThorns."
+    ]
+  },
+  "PrairieBlaze_pow_TC": {
+    "NAME": "Prairie Blaze",
+    "DESCRIPTIONS": [
+      "Whenever you #yTone to [#ff0000]Red[], gain #b",
+      " temporal #yStrength."
+    ]
+  },
+  "Inspiration_pow_TC": {
+    "NAME": "Inspiration",
+    "DESCRIPTIONS": [
+      "At start of your turn, choose #b",
+      " times between #yPause #yTone and #yRetone and add them to hand."
+    ]
+  },
+  "Clouds_pow_TC": {
+    "NAME": "Gathering Clouds",
+    "DESCRIPTIONS": [
+      "In this turn, gain #b",
+      " block whenever you play a card."
+    ]
+  },
+  "Tundra_pow_TC": {
+    "NAME": "Tundra",
+    "DESCRIPTIONS": [
+      "#yField. When #yTheme is [#33ee33]Green[]/[#0099ff]Blue[]/[#cc33ff]Purple[] at end of your turn, put #b",
+      " card(s) in discard pile to top of draw pile in order. Otherwise #yScry #b",
+      " and #yTone to [#0099ff]Blue[]."
+    ]
+  },
+  "Storm_pow_TC": {
+    "NAME": "Storm",
+    "DESCRIPTIONS": [
+      "#yTheme of [#33ee33]Green[]/[#0099ff]Blue[]/[#cc33ff]Purple[] - Gain #b",
+      " block whenever you draw a card."
+    ]
+  },
+  "Storm_Block_pow_TC": {
+    "NAME": "Storm",
+    "DESCRIPTIONS": [
+      "#yTheme of [#33ee33]Green[]/[#0099ff]Blue[]/[#cc33ff]Purple[] - Gain #b",
+      " block whenever you draw a card."
+    ]
+  },
+  "Iridescence_pow_TC": {
+    "NAME": "Iridescence",
+    "DESCRIPTIONS": [
+      "At start of next turn, gain energy equal to the amount left at the end of this turn and #yTone to [#ff9900]Orange[]."
+    ]
+  },
+  "MountainsHeart_pow_TC": {
+    "NAME": "Mountains Heart",
+    "DESCRIPTIONS": [
+      "In this turn, whenever you gain #yStrength, gain #b",
+      " #yVigor."
+    ]
+  },
+  "Creation_pow_TC": {
+    "NAME": "Creation",
+    "DESCRIPTIONS": [
+      "Whenever you #yTone successfully, gain #b",
+      " #yInk #yAlternate."
+    ]
+  },
+  "ConstructForm_pow_TC": {
+    "NAME": "Construct Form",
+    "DESCRIPTIONS": [
+      "At start of your turn, select",
+      "cards from draw pile and move to your hand."
+    ]
+  },
+  "Ink_pow_TC": {
+    "NAME": "Ink Alternate",
+    "DESCRIPTIONS": [
+      "Will be consumed instead of #yPallite charges when applying next #b",
+      " #yInk."
+    ]
+  },
+  "Weald_pow_TC": {
+    "NAME": "Weald",
+    "DESCRIPTIONS": [
+      "#yField. When #yTheme is [#ffff00]Yellow[]/[#33ee33]Green[]/[#0099ff]Blue[] at start of your turn, draw #b",
+      " more cards. Otherwise #yTone to [#33ee33]Green[] and gain #b",
+      " #yPlated #yArmor."
+    ]
+  },
+  "RosyClouds_pow_TC": {
+    "NAME": "Rosy Clouds",
+    "DESCRIPTIONS": [
+      "#yField. Gain #b",
+      " #yenergy when #yTheme is [#ff0000]Red[]/[#ff9900]Orange[]/[#ffff00]Yellow[] at start of your turn. Otherwise #yTone to [#ff9900]Orange[]."
+    ]
+  },
+  "Blendin_pow_TC": {
+    "NAME": "Blend in",
+    "DESCRIPTIONS": [
+      "If you do not lose any HP in this turn, gain #b",
+      " #yBuffer at start of next turn."
+    ]
+  }
+}

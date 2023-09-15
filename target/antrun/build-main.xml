@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="target/TheColorful.jar" tofile="E:\Games\SteamLibrary\steamapps/common/SlayTheSpire/mods/TheColorful.jar"/>
+  <copy file="target/TheColorful.jar" tofile="F:\SteamLibrary\steamapps/common/SlayTheSpire/mods/TheColorful.jar"/>
 </target>
 </project>

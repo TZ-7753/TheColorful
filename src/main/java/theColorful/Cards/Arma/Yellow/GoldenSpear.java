@@ -63,11 +63,7 @@ public class GoldenSpear extends CustomCard {
         } else {
             this.addToBot(new VFXAction(p, new CleaveEffect(), 0.2F));
         }
-        if (p.hasPower(NameAssist.MakePath("ToneYellow"))) {
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, 2*this.damage, DamageInfo.DamageType.HP_LOSS), AbstractGameAction.AttackEffect.NONE));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, 2*this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
-        }
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, 2*this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
     }
     public AbstractCard makeCopy(){
         return new GoldenSpear();

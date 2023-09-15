@@ -45,7 +45,6 @@ public class ConstructForm extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p,p,new ConstructForm_pow(p,this.magicNumber)));
-        this.addToBot(new ApplyPowerAction(p,p,new Ink_pow(p,this.magicNumber)));
     }
 
     public AbstractCard makeCopy(){

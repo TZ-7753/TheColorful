@@ -1,0 +1,666 @@
+{
+    "Strike_TC": {
+      "NAME": "Strike",
+     "DESCRIPTION": "Deal !D! damage.",
+     "UPGRADE_DESCRIPTION": "Deal !D! damage."
+    },
+    "Defend_TC": {
+      "NAME": "Defend",
+      "DESCRIPTION": "Gain !B! Block.",
+      "UPGRADE_DESCRIPTION": "Gain !B! Block."
+    },
+    "SandstoneBarrier_TC": {
+      "NAME": "Sandstone Barrier",
+      "DESCRIPTION": "Gain !B! block. NL Discard 1 card. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL Discard 1 card. NL Exhaust."
+    },
+    "Quicksand_TC": {
+      "NAME": "Quicksand",
+      "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Exhaust."
+    },
+    "DustFog_TC": {
+      "NAME": "Dust Fog",
+      "DESCRIPTION": "Add 1 *Quicksand & *Sandstone *Barrier to hand. NL thecolorful:Tone to [#ffff00]yellow[]. ",
+      "UPGRADE_DESCRIPTION": "Add 1 *Quicksand+ & *Sandstone *Barrier+ to hand. NL thecolorful:Tone to [#ffff00]yellow[].",
+      "EXTENDED_DESCRIPTION": [
+        "Theme",
+        "Determines the effects of #yInk and certain cards. NL There should always be no more than 1 #ymain #ytheme during the battle at the same time."
+      ]
+    },
+    "Swamp_TC": {
+      "NAME": "Swamp",
+      "DESCRIPTION": "Deal !D! damage, apply thecolorful:Painted. NL *Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Reduce the cost of this card by 1 in the remaining battle, otherwise thecolorful:Tone to [#cc33ff]Purple[] .",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage, apply thecolorful:Painted. NL *Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Reduce the cost of this card by 1 in the remaining battle, otherwise thecolorful:Tone to [#cc33ff]Purple[] . ",
+      "EXTENDED_DESCRIPTION": [
+        "Theme",
+        "Determines the effects of #yInk and certain cards. NL There should always be no more than 1 #ymain #ytheme during the battle at the same time."
+      ]
+    },
+    "Drought_TC": {
+      "NAME": "Drought",
+      "DESCRIPTION": "Deal !D! damage, add 1 *Quicksand to hand.  NL Lose [E] at start of next turn. NL thecolorful:Theme of [#ffff00]Yellow[] - Avoid loss.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage, add 1 *Quicksand+ to hand. NL Lose [E] at start of next turn. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Avoid loss."
+    },
+    "Cirrus_TC": {
+      "NAME": "Cirrus",
+      "DESCRIPTION": "Gain !B! block, NL thecolorful:Tone to [#cc33ff]Purple[].",
+      "UPGRADE_DESCRIPTION": "Gain !B! block, NL thecolorful:Tone to [#cc33ff]Purple[]."
+    },
+    "Oasis_TC": {
+      "NAME": "Oasis",
+      "DESCRIPTION": "Ethereal. NL Heal !M! HP. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Ethereal. NL Heal !M! HP. NL Exhaust."
+    },
+    "Dune_TC": {
+      "NAME": "Dune",
+      "DESCRIPTION": "Add 2 *Sandstone *Barrier to hand. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - add 1 *Oasis to hand, otherwise thecolorful:Tone to [#ffff00]Yellow[].",
+      "UPGRADE_DESCRIPTION": "Add 2 *Sandstone *Barrier+ to hand. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - add 1 *Oasis+ to hand, otherwise thecolorful:Tone to [#ffff00]Yellow[]."
+    },
+    "MudstoneGolem_TC": {
+      "NAME": "Mudstone Golem",
+      "DESCRIPTION": "Gain !B! Block, exhaust. thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Add !M! *Quicksand to hand, otherwise draw !M! cards and thecolorful:Tone to [#ffff00]Yellow[].",
+      "UPGRADE_DESCRIPTION": "Gain !B! Block, exhaust. thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Add !M! *Quicksand+ to hand, otherwise draw !M! cards and thecolorful:Tone to [#ffff00]Yellow[]."
+    },
+    "FirstQuarter_TC": {
+      "NAME": "First Quarter",
+      "DESCRIPTION": "Apply 1 Weak !M! times to ALL enemies, Exhaust. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *Last *Quarter to discard pile, otherwise thecolorful:Tone to [#cc33ff]Purple[] and add self.",
+      "UPGRADE_DESCRIPTION": "Apply 1 Weak !M! times to ALL enemies, Exhaust. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *Last *Quarter+ to discard pile, otherwise thecolorful:Tone to [#cc33ff]Purple[] and add self."
+    },
+    "LastQuarter_TC": {
+      "NAME": "Last Quarter",
+      "DESCRIPTION": "Apply 1 Vulnerable !M! times to ALL enemies, Exhaust. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *First *Quarter to discard pile, otherwise thecolorful:Tone to [#cc33ff]Purple[] and add self.",
+      "UPGRADE_DESCRIPTION": "Apply 1 Vulnerable !M! times to ALL enemies, Exhaust. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *First *Quarter+ to discard pile, otherwise thecolorful:Tone to [#cc33ff]Purple[] and add self."
+    },
+    "DarknessPaeon_TC": {
+      "NAME": "深暗赞歌",
+      "DESCRIPTION": "移除自身的所有正面状态，使自身不能再被附加任何状态或能力。向所有敌人施加 #b1 层 缓慢 ",
+      "UPGRADE_DESCRIPTION": "移除自身的所有正面与负面状态，使自身不能再被附加任何状态或能力。向所有敌人施加 #b1 层 缓慢 "
+    },
+    "OpusMagnum_TC": {
+      "NAME": "Opus Magnum",
+      "DESCRIPTION": "thecolorful:Painted will now *DOUBLE the damage inflicted to enemies.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Painted will now *DOUBLE the damage inflicted to enemies."
+    },
+    "ElDorado_TC": {
+      "NAME": "El Dorado",
+      "DESCRIPTION": "*Quicksand will now apply thecolorful:Painted to its target.",
+      "UPGRADE_DESCRIPTION": "Innate. NL *Quicksand will now apply thecolorful:Painted to its target."
+    },
+    "GlimpseofDark_TC": {
+      "NAME": "Darkness Glimpse",
+      "DESCRIPTION": "Apply thecolorful:Painted to ALL enemies. NL thecolorful:Tone to [#cc33ff]Purple[].",
+      "UPGRADE_DESCRIPTION": "Apply thecolorful:Painted to ALL enemies. NL thecolorful:Tone to [#cc33ff]Purple[]."
+    },
+    "Minerals_TC": {
+      "NAME": "Minerals",
+      "DESCRIPTION": "Unplayable. NL Upon drawn, gain !B! block. NL Upon discarded, gain [E]. NL Upon exhausted, gain !M! Metalized.",
+      "UPGRADE_DESCRIPTION": "Unplayable. NL Upon drawn, gain !B! block. NL Upon discarded, gain [E]. NL Upon exhausted, gain !M! Metalized."
+    },
+    "AshesPaeon_TC": {
+      "NAME": "Ashes Paeon",
+      "DESCRIPTION": "Ethereal, Exhaust. NL *Choose: NL Gain Block equals to 2x size of exhaust pile, NL or make a random enemy lose such HP.",
+      "UPGRADE_DESCRIPTION": "Exhaust. NL *Choose: NL Gain Block equals to 2x size of exhaust pile, NL or make ALL enemies lose such HP."
+    },
+    "AshesShelter_TC": {
+      "NAME": "Ashes Shelter",
+      "DESCRIPTION": "Gain Block equals to 2x size of the exhaust pile.",
+      "UPGRADE_DESCRIPTION": "Gain Block equals to 2x size of the exhaust pile."
+    },
+    "AshesStorm_TC": {
+      "NAME": "Ashes Storm",
+      "DESCRIPTION": "Make a random enemy lose HP of 2x size of the exhaust pile.",
+      "UPGRADE_DESCRIPTION": "Make ALL enemies lose HP of 2x size of the exhaust pile."
+    },
+    "SunlightSpear_TC": {
+      "NAME": "Sunlight Spear",
+      "DESCRIPTION": "thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Deal !D! damage. NL Otherwise remove all block of the target, deal damage of the amount removed and thecolorful:Tone to [#ff9900]Orange[].",
+      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Deal !D! damage. NL Otherwise remove all block of the target, deal damage of the amount removed and thecolorful:Tone to [#ff9900]Orange[]."
+    },
+    "BloodPaeon_TC": {
+      "NAME": "Blood Paeon",
+      "DESCRIPTION": "Deal !D! damage, Exhaust. NL thecolorful:Theme of [#ff0000]Red[] - Heal HP equals to unblocked damage, and permanently increase damage by !M! .",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage, Exhaust. NL thecolorful:Theme of [#ff0000]Red[] - Heal HP equals to unblocked damage, and permanently increase damage by !M! ."
+    },
+    "UnusedColor_TC": {
+      "NAME": "Unused Color",
+      "DESCRIPTION": "Deal !D! damage to a random enemy. NL Randomly exhaust a card from draw and exhaust pile and add a copy of this card to each of them. NL Ethereal.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy. NL Randomly exhaust a card from draw and exhaust pile and add a copy of this card to each of them. NL Ethereal."
+    },
+    "ToneRed_TC": {
+      "NAME": "Red",
+      "DESCRIPTION": "thecolorful:Tone to [#ff0000]Red[]. NL Applying thecolorful:Ink grants 2 Strength."
+    },
+    "ToneOrange_TC": {
+      "NAME": "Orange",
+      "DESCRIPTION": "thecolorful:Tone to [#ff9900]Orange[]. NL Applying thecolorful:Ink Grants [E]."
+    },
+    "ToneYellow_TC": {
+      "NAME": "Yellow",
+      "DESCRIPTION": "thecolorful:Tone to [#ffff00]Yellow[]. NL Applying thecolorful:Ink reduces 30% of incoming damage in this turn."
+    },
+    "ToneGreen_TC": {
+      "NAME": "Green",
+      "DESCRIPTION": "thecolorful:Tone to [#33ee33]Green[]. NL Applying thecolorful:Ink grants 2 Dexterity."
+    },
+    "ToneBlue_TC": {
+      "NAME": "Blue",
+      "DESCRIPTION": "thecolorful:Tone to [#0099ff]Blue[]. NL Applying thecolorful:Ink draws 3 cards."
+    },
+    "TonePurple_TC": {
+      "NAME": "Purple",
+      "DESCRIPTION": "thecolorful:Tone to [#cc33ff]Purple[]. NL Applying thecolorful:Ink reduces all your turn-based debuffs by 1."
+    },
+      "ReTone_TC": {
+      "NAME": "Retone",
+      "DESCRIPTION": "Retain. NL Select and thecolorful:Tone to any thecolorful:Theme from all 6 primary colors. NL Exhaust.",
+        "UPGRADE_DESCRIPTION": "Retain. NL Select and thecolorful:Tone to any thecolorful:Theme from all 6 primary colors. NL Draw 1 card. NL Exhaust."
+    },
+    "PauseTone_TC": {
+      "NAME": "Pause Tone",
+      "DESCRIPTION": "Retain. NL Prevent the effect of the next thecolorful:Toning in this turn. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Prevent the effect of the next thecolorful:Toning in this turn. NL Draw 1 card. NL Exhaust."
+    },
+    "LiveVolcano_TC": {
+      "NAME": "Live Volcano",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] at end of turn -  Deal !M! damage to ALL enemies, otherwise thecolorful:Tone to [#ff0000]Red[].",
+      "UPGRADE_DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] at end of turn -  Deal !M! damage to ALL enemies, otherwise thecolorful:Tone to [#ff0000]Red[]."
+    },
+    "Desert_TC": {
+      "NAME": "Desert",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] at start of turn - Add 1 *Quicksand to hand. Otherwise add 1 *Barrier to hand and thecolorful:Tone to [#ffff00]Yellow[].",
+      "UPGRADE_DESCRIPTION": "Innate, thecolorful:Field. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] at start of turn - Add 1 *Quicksand to hand. Otherwise add 1 *Barrier to hand and thecolorful:Tone to [#ffff00]Yellow[]."
+    },
+    "HueCalibrator_TC": {
+      "NAME": "HUE Calibrator",
+      "DESCRIPTION": "thecolorful:Field. NL If no successful thecolorful:toning was conducted in a turn, gain !M! Artifact and add !M! *Retone to your hand at start of next turn.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Field. NL If no successful thecolorful:toning was conducted in a turn, gain !M! Artifact and add !M! *Retone to your hand at start of next turn."
+    },
+    "CrimsonMeteor_TC": {
+      "NAME": "Crimson Meteor",
+      "DESCRIPTION": "Retain. NL Deal !D! damage twice. Strength affects this card 2 times.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage twice. Strength affects this card 3 times."
+    },
+    "InfernoCasing_TC": {
+      "NAME": "Inferno Casing",
+      "DESCRIPTION": "Gain !M! Block twice. NL Strength replaces Dexterity on influencing the amount.",
+      "UPGRADE_DESCRIPTION": "Gain !M! Block 3 times. NL Strength replaces Dexterity on influencing the amount."
+    },
+    "ReIgnition_TC": {
+      "NAME": "Re-ignition",
+      "DESCRIPTION": "Lose !M! HP. NL Gain [E] [E]. NL Draw 2 cards. NL thecolorful:Tone to [#ff0000]Red[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Lose !M! HP. NL Gain [E] [E]. NL Draw 2 cards. NL thecolorful:Tone to [#ff0000]Red[]."
+    },
+    "PrimaryArmaRed_TC": {
+      "NAME": "Primary Arma - Red",
+      "DESCRIPTION": "thecolorful:Tone to [#ff0000]Red[]. NL Shuffle 5 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#ff0000]Red[]. NL Shuffle 5 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    },
+    "ClearPallite_TC": {
+      "NAME": "Clear Pallite",
+      "DESCRIPTION": "Exhaust all colorless cards in hand. NL Draw cards equal to the amount exhausted. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Exhaust all colorless cards in hand. NL Draw cards equal to the amount exhausted."
+    },
+    "Dawn_TC": {
+      "NAME": "Dawn",
+      "DESCRIPTION": "Gain !B! Block. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain [E] , otherwise thecolorful:Tone to [#ff9900]Orange[] and add 1 *Pause *Toning to hand. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! Block. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain [E] , otherwise thecolorful:Tone to [#ff9900]Orange[] and add 1 *Pause *Toning to hand. NL Exhaust."
+    },
+    "Desertify_TC": {
+      "NAME": "Desertify",
+      "DESCRIPTION": "Draw 1 card, Shuffle !M! *Quicksand into draw pile. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - add *Oasis to hand, otherwise thecolorful:Tone to [#ffff00]Yellow[].",
+      "UPGRADE_DESCRIPTION": "Draw 1 card, Shuffle !M! *Quicksand+ into draw pile. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - add *Oasis+ to hand, otherwise thecolorful:Tone to [#ffff00]Yellow[]."
+    },
+    "RiftValley_TC": {
+      "NAME": "Rift Valley",
+      "DESCRIPTION": "Deal !D! damage to a random enemy. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Damages ALL enemies, otherwise add 1 *Retone to hand.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage to a random enemy. NL thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Damages ALL enemies, otherwise add 1 *Retone+ to hand."
+    },
+    "PrimaryArmaYellow_TC": {
+      "NAME": "Primary Arma - Yellow",
+      "DESCRIPTION": "thecolorful:Tone to [#ffff00]Yellow[]. NL Shuffle 4 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#ffff00]Yellow[]. NL Shuffle 4 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    },
+    "MirageDoppel_TC": {
+      "NAME": "Mirage Replica",
+      "DESCRIPTION": "Ethereal. Exhaust. NL Gain !M! Intangible. NL Heal 15% max HP if still in hand at end of turn.",
+      "UPGRADE_DESCRIPTION": "Ethereal. Exhaust. NL Gain !M! Intangible. NL Heal 20% max HP if still in hand at end of turn."
+    },
+    "MirageCity_TC": {
+      "NAME": "Mirage City",
+      "DESCRIPTION": "*Choose: NL Add 3 *Quicksand or *Sandstone *Barrier to hand. NL Exhaust. NL Add a replica to discard pile if still in hand at end of turn.",
+      "UPGRADE_DESCRIPTION": "*Choose: NL Add 3 *Quicksand+ or *Sandstone *Barrier+ to hand. NL Exhaust. NL Add a replica to discard pile if still in hand at end of turn."
+    },
+    "GoldenSpear_TC": {
+      "NAME": "Golden Spear",
+      "DESCRIPTION": "Retain. NL Deal thorn damage of 2x sum amount of cards in draw pile, discard pile and exhaust pile. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Deal thorn damage of 2x sum amount of cards in draw pile, discard pile and exhaust pile. NL Exhaust."
+    },
+    "RockBreaker_TC": {
+      "NAME": "Rock Breaker",
+      "DESCRIPTION": "Deal !D! damage. NL Apply !M! weak. NL thecolorful:Tone to [#ff0000]Red[].",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! weak. NL thecolorful:Tone to [#ff0000]Red[]."
+    },
+    "LavaFlow_TC": {
+      "NAME": "Lava Flow",
+      "DESCRIPTION": "Deal !D! damage !M! times. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] - damage !M! times more, otherwise thecolorful:tone to [#ff0000]Red[].",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] - damage !M! times more, otherwise thecolorful:tone to [#ff0000]Red[]."
+    },
+    "StonePile_TC": {
+      "NAME": "Stone Pile",
+      "DESCRIPTION": "Gain !B! block. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] - Gain !B! block at start of next turn.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] - Gain !B! block at start of next turn."
+    },
+    "Peak_TC": {
+      "NAME": "Peak",
+      "DESCRIPTION": "Unplayable. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] at end of turn - Gain !B! block, otherwise add 1 *Retone to hand.",
+      "UPGRADE_DESCRIPTION": "Unplayable. NL thecolorful:Theme of [#cc33ff]Purple[], [#ff0000]Red[], [#ff9900]Orange[] at end of turn - Gain !B! block, otherwise add 1 *Retone+ to hand."
+    },
+    "BirdsWatchout_TC": {
+      "NAME": "Birds Watchout",
+      "DESCRIPTION": "Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of next thecolorful:toning in this turn.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of next thecolorful:toning in this turn."
+    },
+    "Warmth_TC": {
+      "NAME": "Warmth",
+      "DESCRIPTION": "Unplayable. Ethereal. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff9900]Orange[] upon drawn - Gain [E].",
+      "UPGRADE_DESCRIPTION": "Unplayable. Ethereal. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] upon drawn - Gain [E]."
+    },
+    "GrassShield_TC": {
+      "NAME": "Cespitose",
+      "DESCRIPTION": "Gain !B! block, thecolorful:Theme of [#33ee33]Green[] - Gain !B! block again. NL Whenever you thecolorful:Tone successfully, put this card from discard pile to draw pile and shuffle it.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block, thecolorful:Theme of [#33ee33]Green[] - Gain !B! block again. NL Whenever you thecolorful:Tone successfully, put this card from discard pile to draw pile and shuffle it."
+    },
+    "WindBreak_TC": {
+      "NAME": "Windbreak",
+      "DESCRIPTION": "Unplayable, Ethereal. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] at end of turn - Gain 3 Plated Armor. Otherwise gain 1 Strength.",
+      "UPGRADE_DESCRIPTION": "Unplayable. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] at end of turn - Gain 3 Plated Armor. Otherwise gain 1 Strength."
+    },
+    "StarLight_TC": {
+      "NAME": "Star Light",
+      "DESCRIPTION": "Apply thecolorful:Painted, deal !D! damage. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *Retone to hand. Otherwise apply !M! weak and thecolorful:Tone to [#cc33ff]Purple[].",
+      "UPGRADE_DESCRIPTION": "Apply thecolorful:Painted, deal !D! damage. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Add 1 *Retone+ to hand. Otherwise apply !M! weak and thecolorful:Tone to [#cc33ff]Purple[]."
+    },
+    "Tar_TC": {
+      "NAME": "Tar",
+      "DESCRIPTION": "Deal !D! damage, add 1 *Pause *Tone to hand. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Gain !B! block.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage, add 1 *Pause *Tone+ to hand. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] - Gain !B! block."
+    },
+    "MilkyWay_TC": {
+      "NAME": "Galaxy",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] at start of turn - Apply thecolorful:Painted to ALL enemies, otherwise *Tone to [#cc33ff]Purple[] and gain !M! block.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#0099ff]Blue[], [#cc33ff]Purple[], [#ff0000]Red[] at start of turn - Apply thecolorful:Painted to ALL enemies, otherwise *Tone to [#cc33ff]Purple[] and gain !M! block."
+    },
+    "BlackHole_TC": {
+      "NAME": "Black Hole",
+      "DESCRIPTION": "Apply !M! weak and vulnerable to ALL enemies intend to attack. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Apply !M! weak and vulnerable to ALL enemies intend to attack. NL Exhaust."
+    },
+    "NightSkyBarrier_TC": {
+      "NAME": "Nightsky Barrier",
+      "DESCRIPTION": "Ethereal. Exhaust. NL Lose !M! HP. NL In this turn, ALL thecolorful:painted enemies deal 0 damage to you.",
+      "UPGRADE_DESCRIPTION": "Ethereal. NL Lose !M! HP. NL In this turn, ALL thecolorful:painted enemies deal 0 damage to you."
+    },
+    "Aurora_TC": {
+      "NAME": "Aurora",
+      "DESCRIPTION": "In this turn, ALL enemies with debuff take !M! % more damage.",
+      "UPGRADE_DESCRIPTION": "In this turn, ALL enemies with debuff take !M! % more damage."
+    },
+    "PrimaryArmaPurple_TC": {
+      "NAME": "Primary Arma - Purple",
+      "DESCRIPTION": "thecolorful:Tone to [#cc33ff]Purple[]. NL Shuffle 4 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#cc33ff]Purple[]. NL Shuffle 4 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    },
+    "Spores_TC": {
+      "NAME": "Spores",
+      "DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Pause *Tone to hand. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Parasite *Fungus or *Hypha.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Pause *Tone+ to hand. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Parasite *Fungus+ or *Hypha+."
+    },
+    "ColossalMatsutake_TC": {
+      "NAME": "Colossal Matsutake",
+      "DESCRIPTION": "Gain !B! block. NL Apply !M! Poison to all enemies. NL Add a replica to discard pile. NL Exhaust when discarded.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL Apply !M! Poison to all enemies. NL Add a replica to discard pile. NL Exhaust when discarded."
+    },
+    "Decomposer_TC": {
+      "NAME": "Decomposer",
+      "DESCRIPTION": "Target lose 1 Strength, and will be inflicted !M! poison at the end of each turn. NL Add a replica to draw pile. NL Exhaust when discarded.",
+      "UPGRADE_DESCRIPTION": "Target lose 1 Strength, and will be inflicted !M! poison at the end of each turn. NL Add a replica to draw pile. NL Exhaust when discarded."
+    },
+    "ParasiteFungus_TC": {
+      "NAME": "Parasite Fungus",
+      "DESCRIPTION": "thecolorful:Sprout. NL Apply !M! Poison. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Colossal *Matsutake or *Decomposer.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Apply !M! Poison. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Colossal *Matsutake+ or *Decomposer+."
+    },
+    "Hypha_TC": {
+      "NAME": "Hypha",
+      "DESCRIPTION": "thecolorful:Sprout. NL Heal !M! HP. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Mega *Shroom or *Penicillium.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Heal !M! HP. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Mega *Shroom+ or *Penicillium+."
+    },
+    "MegaShroom_TC": {
+      "NAME": "Mega Shroom",
+      "DESCRIPTION": "Whenever you are attacked, gain !M! Regen.",
+      "UPGRADE_DESCRIPTION": "Whenever you are attacked, gain !M! Regen."
+    },
+    "Penicillium_TC": {
+      "NAME": "Penicillium",
+      "DESCRIPTION": "Gain !M! Artifact.",
+      "UPGRADE_DESCRIPTION": "Gain !M! Artifact."
+    },
+    "RainbowFlower_TC": {
+      "NAME": "Rainbow Flower",
+      "DESCRIPTION": "*Choose: NL Exhaust !M! cards at most in hand, NL or add 3 *Retone to hand.",
+      "UPGRADE_DESCRIPTION": "*Choose: NL Exhaust !M! cards at most in hand, NL or add 3 *Retone+ to hand."
+    },
+    "RainbowBlossom_TC": {
+      "NAME": "Blossom",
+      "DESCRIPTION": "Add 3 *Retone to hand.",
+      "UPGRADE_DESCRIPTION": "Add 3 *Retone+ to hand."
+    },
+    "RainbowPurifier_TC": {
+      "NAME": "Purifier",
+      "DESCRIPTION": "Choose !M! cards at most in hand, exhaust them.",
+      "UPGRADE_DESCRIPTION": "Choose !M! cards at most in hand, exhaust them."
+    },
+    "Rafflesia_TC": {
+      "NAME": "Rafflesia",
+      "DESCRIPTION": "Draw !M! more cards at start of your turn.",
+      "UPGRADE_DESCRIPTION": "Draw !M! more cards at start of your turn."
+    },
+    "Bud_TC": {
+      "NAME": "Bud",
+      "DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Retone to hand. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Rafflesia or *Rainbow *Flower.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Retone to hand. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Rafflesia+ or *Rainbow *Flower+."
+    },
+    "MegaTree_TC": {
+      "NAME": "Mega Tree",
+      "DESCRIPTION": "Gain !B! block. NL thecolorful:Theme of [#33ee33]Green[] - Deal damage equal to current block to a random enemy.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - Deal damage equal to current block to a random enemy."
+    },
+    "ThornsLayer_TC": {
+      "NAME": "Thorns Labyrinth",
+      "DESCRIPTION": "Gain 3 Thorns. NL Whenever you thecolorful:Tone to [#33ee33]Green[], gain !M! Thorns.",
+      "UPGRADE_DESCRIPTION": "Gain 3 Thorns. NL Whenever you thecolorful:Tone to [#33ee33]Green[], gain !M! Thorns."
+    },
+    "Branch_TC": {
+      "NAME": "Branch",
+      "DESCRIPTION": "thecolorful:Sprout. NL Gain !B! Block 2 times. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Mega *Tree or *Thorns *Asylum.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Gain !B! Block 2 times. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Mega *Tree+ or *Thorns *Asylum+."
+    },
+    "Leafgem_TC": {
+      "NAME": "Leafgem",
+      "DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Retone to hand. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Branch or *Bud.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Add 1 *Retone+ to hand. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Branch+ or *Bud+."
+    },
+    "PrairieBlaze_TC": {
+      "NAME": "Prairie Blaze",
+      "DESCRIPTION": "Whenever you thecolorful:Tone to [#ff0000]Red[], gain !M! temporary Strength.",
+      "UPGRADE_DESCRIPTION": "Whenever you thecolorful:Tone to [#ff0000]Red[], gain !M! temporary Strength."
+    },
+    "Nirvana_TC": {
+      "NAME": "Flame of Nirvana",
+      "DESCRIPTION": "Exhaust your hand and end your turn. Exhaust. NL thecolorful:Theme of [#ff0000]Red[] - Gain 1 max HP for each card exhausted, otherwise thecolorful:Tone to [#ff0000]Red[] and gain 1 Strength each.",
+      "UPGRADE_DESCRIPTION": "Exhaust your hand and end your turn. Exhaust. NL thecolorful:Theme of [#ff0000]Red[] - Gain 1 max HP for each card exhausted, otherwise thecolorful:Tone to [#ff0000]Red[] and gain 1 Strength each."
+    },
+    "Drill_TC": {
+      "NAME": "Drill",
+      "DESCRIPTION": "Deal !D! damage. NL thecolorful:Tone to [#ff0000]Red[]. NL If target is thecolorful:Painted, draw !M! card.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL thecolorful:Tone to [#ff0000]Red[]. NL If target is thecolorful:Painted, draw !M! cards."
+    },
+    "Inspiration_TC": {
+      "NAME": "Inspiration",
+      "DESCRIPTION": "At start of your turn, choose from *Pause *Tone or *Retone and add 1 to your hand.",
+      "UPGRADE_DESCRIPTION": "Innate. NL At start of your turn, choose from *Pause *Tone or *Retone and add 1 to your hand."
+    },
+    "ScorchingSun_TC": {
+      "NAME": "Scorching Sun",
+      "DESCRIPTION": "Exhaust all colorless cards in hand, gain [E] for each card exhausted. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Exhaust all colorless cards in hand, gain [E] for each card exhausted. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust."
+    },
+    "GoldCraft_TC": {
+      "NAME": "Goldcraft",
+      "DESCRIPTION": "thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Gain 1 temporary Strength per colorless card in hand. Otherwise gain 2 block each and thecolorful:Tone to [#ffff00]Yellow[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#ff9900]Orange[], [#ffff00]Yellow[], [#33ee33]Green[] - Gain 1 temporary Strength per colorless card in hand. Otherwise gain 2 block each and thecolorful:Tone to [#ffff00]Yellow[]."
+    },
+    "ShoalStrike_TC": {
+      "NAME": "Shoal Strike",
+      "DESCRIPTION": "Deal !D! damage. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 card and put 1 card in hand on top of draw pile. Otherwise thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 card and put 1 card in hand on top of draw pile. Otherwise thecolorful:Tone to [#0099ff]Blue[]."
+    },
+    "TideWaves_TC": {
+      "NAME": "Tide Waves",
+      "DESCRIPTION": "Gain !B! block. NL Scry 2. NL Draw !M! cards. NL thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL Scry 2. NL Draw !M! cards. NL thecolorful:Tone to [#0099ff]Blue[]."
+    },
+    "Migrate_TC": {
+      "NAME": "Migrate",
+      "DESCRIPTION": "Select !M! card in discard pile and put it on top of draw pile. NL Exhaust. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Avoid exhausting.",
+      "UPGRADE_DESCRIPTION": "Select !M! cards in discard pile and put them on top of draw pile in order. NL Exhaust. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Avoid exhausting."
+    },
+    "GatheringClouds_TC": {
+      "NAME": "Gathering Clouds",
+      "DESCRIPTION": "Block will not be removed at start of your next turn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain !M! block whenever you play a card this turn.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Block will not be removed at start of your next turn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain !M! block whenever you play a card this turn."
+    },
+    "Drizzle_TC": {
+      "NAME": "Drizzle",
+      "DESCRIPTION": "Gain !B! Block. NL Exhaust. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Scry !M!. Otherwise thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Exhaust. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Scry !M!. Otherwise thecolorful:Tone to [#0099ff]Blue[]."
+    },
+    "Draught_TC": {
+      "NAME": "Draught",
+      "DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak to ALL enemies.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak to ALL enemies."
+    },
+    "RogueWave_TC": {
+      "NAME": "Rogue Wave",
+      "DESCRIPTION": "Deal !D! damage. NL Add 1 *Retone to hand. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Retain your hand this turn.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add 1 *Retone+ to hand. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Retain your hand this turn."
+    },
+    "FrostBite_TC": {
+      "NAME": "Frostbite",
+      "DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand."
+    },
+    "ImperfectGlacialist_TC": {
+      "NAME": "Imperfect Glacialist",
+      "DESCRIPTION": "Deal !D! damage. NL thecolorful:Tone to [#0099ff]Blue[]. NL Increase damage by actual damage dealt after each play.",
+      "UPGRADE_DESCRIPTION": "Innate. NL Deal !D! damage. NL thecolorful:Tone to [#0099ff]Blue[]. NL Increase damage by actual damage dealt after each play."
+    },
+    "Tundra_TC": {
+      "NAME": "Tundra",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] at end of your turn - put !M! cards in discard pile on top of deaw pile. Otherwise Scry !M! and thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Innate. thecolorful:Field. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] at end of your turn - put !M! cards in discard pile on top of deaw pile. Otherwise Scry !M! and thecolorful:Tone to [#0099ff]Blue[]."
+    },
+    "Storm_TC": {
+      "NAME": "Storm",
+      "DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Gain !M! block whenever you draw a card manually.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Gain !M! block whenever you draw a card manually."
+    },
+    "Stream_TC": {
+      "NAME": "Stream",
+      "DESCRIPTION": "Draw !M! cards. NL thecolorful:Theme of [#0099ff]Blue[] - reduce cost of this card to 1 in remaining battle. NL Otherwise thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Draw !M! cards. NL thecolorful:Theme of [#0099ff]Blue[] - reduce cost of this card to 1 in remaining battle. NL Otherwise thecolorful:Tone to [#0099ff]Blue[]."
+    },
+    "TigerShark_TC": {
+      "NAME": "Tigershark",
+      "DESCRIPTION": "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Increase lower bound for !M! for each card in hand.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Increase lower bound for !M! for each card in hand.",
+      "EXTENDED_DESCRIPTION": [
+        "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Deal !M! damage more for each card in hand.",
+        "Yeeeeeeeeeah!"
+      ]
+    },
+    "SpringTide_TC": {
+      "NAME": "Rising Tide",
+      "DESCRIPTION": "Retain. NL Discard your hand and draw equal amount of cards. NL Gain 1 Strength or 1 Dexterity randomly for each card discarded.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Discard your hand and draw equal amount of cards. NL Gain 1 Strength or 1 Dexterity randomly for each card discarded."
+    },
+    "Avalanche_TC": {
+      "NAME": "Avalanche",
+      "DESCRIPTION": "Gain !B! X block. NL Draw X more cards at start of next turn.",
+      "UPGRADE_DESCRIPTION": "Gain !B! (X+1) block. NL Draw (X+1) more cards at start of next turn."
+    },
+    "Current_TC": {
+      "NAME": "Current",
+      "DESCRIPTION": "Put 1 card in draw pile to hand. Exhaust.",
+      "UPGRADE_DESCRIPTION": "Put 1 card in draw pile to hand."
+    },
+    "PrimaryArmaBlue_TC": {
+      "NAME": "Primary Arma - Blue",
+      "DESCRIPTION": "thecolorful:Tone to [#0099ff]Blue[]. NL Shuffle 4 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#0099ff]Blue[]. NL Shuffle 4 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    },
+    "Enlightning_TC": {
+      "NAME": "Inazuma",
+      "DESCRIPTION": "Unplayable unless thecolorful:Theme being [#cc33ff]Purple[]. NL Deal !M!x sum amount of all debuff present to ALL enemies.",
+      "UPGRADE_DESCRIPTION": "Unplayable unless thecolorful:Theme being [#cc33ff]Purple[]. NL Deal !M!x sum amount of all buff and debuff present to ALL enemies."
+    },
+    "VineWhip_TC": {
+      "NAME": "Vine Whip",
+      "DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage. NL Apply !M! Vulnerable. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Long *Vine. NL Otherwise thecolorful:Tone to [#33ee33]Green[].",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage. NL Apply !M! Vulnerable. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] - thecolorful:Grow: *Long *Vine+. NL Otherwise thecolorful:Tone to [#33ee33]Green[]."
+    },
+    "VineWhipBig_TC": {
+      "NAME": "Long Vine",
+      "DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine+."
+    },
+    "VineWhipMega_TC": {
+      "NAME": "Giant Vine",
+      "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - Deal !D! damage again.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - Deal !D! damage again."
+    },
+    "BirdsStrike_TC": {
+      "NAME": "Horde Strike",
+      "DESCRIPTION": "Deal !D! damage !M! times randomly. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain [E] . Otherwise thecolorful:Tone to [#ff9900]Orange[].",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times randomly. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Gain [E] . Otherwise thecolorful:Tone to [#ff9900]Orange[]."
+    },
+    "WashBucket_TC": {
+      "NAME": "Wash Bucket",
+      "DESCRIPTION": "Retain. NL Deal !D! damage. NL While in hand, increase damage by !M! whenever you thecolorful:Tone in the battle.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Deal !D! damage. NL While in hand, increase damage by !M! whenever you thecolorful:Tone in the battle."
+    },
+    "DrawMaterials_TC": {
+      "NAME": "Draw Materials",
+      "DESCRIPTION": "Add !M! thecolorful:Ink charges for *Pallite.",
+      "UPGRADE_DESCRIPTION": "Add !M! thecolorful:Ink charges for *Pallite."
+    },
+    "Iridescence_TC": {
+      "NAME": "Iridescence",
+      "DESCRIPTION": "Ethereal. NL At start of next turn, gain [E] equals to the amount left in this turn and thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "At start of next turn, gain [E] equals to the amount left in this turn and thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust."
+    },
+    "MountainsHeart_TC": {
+      "NAME": "Mountains Heart",
+      "DESCRIPTION": "In this turn, whenever you gain Strength, gain !M! Vigor. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "In this turn, whenever you gain Strength, gain !M! Vigor."
+    },
+    "Creation_TC": {
+      "NAME": "Creation",
+      "DESCRIPTION": "Whenever you thecolorful:Tone successfully, gain !M! *Ink thecolorful:Alternate.",
+      "UPGRADE_DESCRIPTION": "Whenever you thecolorful:Tone successfully, gain !M! *Ink thecolorful:Alternate."
+    },
+    "ConstructForm_TC": {
+      "NAME": "Construct Form",
+      "DESCRIPTION": "At start of your turn, select !M! card from your discard pile and move it to your hand. NL Ethereal.",
+      "UPGRADE_DESCRIPTION": "At start of your turn, select !M! card from your discard pile and move it to your hand."
+    },
+    "RosyClouds_TC": {
+      "NAME": "Rosy Clouds",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] at start of turn - Gain [E] . Otherwise thecolorful:Tone to [#ff9900]Orange[].",
+      "UPGRADE_DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] at start of turn - Gain [E] . Otherwise thecolorful:Tone to [#ff9900]Orange[]."
+    },
+    "Wilderness_TC": {
+      "NAME": "Wilderness",
+      "DESCRIPTION": "thecolorful:Field. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] at start of turn - Draw !M! more cards. Otherwise thecolorful:Tone to [#33ee33]Green[] and gain !M! *Plated *Armor.",
+      "UPGRADE_DESCRIPTION": "Innate. thecolorful:Field. NL thecolorful:Theme of [#ffff00]Yellow[], [#33ee33]Green[], [#0099ff]Blue[] at start of turn - Draw !M! more cards. Otherwise thecolorful:Tone to [#33ee33]Green[] and gain !M! *Plated *Armor."
+    },
+    "SunriseVariine_TC": {
+      "NAME": "Sunrise Variine",
+      "DESCRIPTION": "Retain. NL All enemies lose !M! X HP. NL Gain (X-1) [E] .",
+      "UPGRADE_DESCRIPTION": "Retain. NL All enemies lose !M! (X+1) HP. NL Gain X [E] ."
+    },
+    "MeridiemChords_TC": {
+      "NAME": "Meridiem",
+      "DESCRIPTION": "Apply thecolorful:Painted. NL Gain [E] [E] . NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Apply thecolorful:Painted. NL Gain [E] [E] ."
+    },
+    "SunsetSonata_TC": {
+      "NAME": "Sunset Sonata",
+      "DESCRIPTION": "Unplayable, Ethereal. NL When present in hand, gain [E] whenever you play a card.",
+      "UPGRADE_DESCRIPTION": "Unplayable. NL When present in hand, gain [E] whenever you play a card."
+    },
+    "PrimaryArmaOrange_TC": {
+      "NAME": "Primary Arma - Orange",
+      "DESCRIPTION": "thecolorful:Tone to [#ff9900]Orange[]. NL Shuffle 4 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#ff9900]Orange[]. NL Shuffle 4 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    },
+    "Foehn_TC": {
+      "NAME": "Foehn",
+      "DESCRIPTION": "Unplayable unless thecolorful:Theme being [#ffff00]Yellow[]. NL Exhaust all Status and Curse in your deck and randomly add *Quicksand or *Barrier to replace. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Unplayable unless thecolorful:Theme being [#ffff00]Yellow[]. NL Exhaust all Status and Curse in your deck and randomly add *Quicksand or *Barrier to replace. NL Exhaust."
+    },
+    "MagicGro_TC": {
+      "NAME": "Mystic Growth",
+      "DESCRIPTION": "Gain !B! block. NL Shuffle a random thecolorful:Sprout into draw pile. NL thecolorful:Tone to [#33ee33]Green[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Gain !B! block. NL Shuffle a random thecolorful:Sprout into draw pile. NL thecolorful:Tone to [#33ee33]Green[]. NL Exhaust."
+    },
+    "LeavesHail_TC": {
+      "NAME": "Hail of leaves",
+      "DESCRIPTION": "thecolorful:Sprout. Deal !D! damage !M! times. NL thecolorful:Theme of [#33ee33]Green[] - Upgrade this card in this battle. NL Can be upgraded multiple times."
+    },
+    "Blendin_TC": {
+      "NAME": "Blend in",
+      "DESCRIPTION": "If you do not lose any HP in this turn, reduce the next !M! damages you receive to 0 from start of next turn.",
+      "UPGRADE_DESCRIPTION": "If you do not lose any HP in this turn, reduce the next !M! damages you receive to 0 from start of next turn."
+    },
+    "ProfusionInk_TC": {
+      "NAME": "Emerge into Ink",
+      "DESCRIPTION": "Add !M! thecolorful:Ink charges to your *Pallite.",
+      "UPGRADE_DESCRIPTION": "Add !M! thecolorful:Ink charges to your *Pallite."
+    },
+    "ProfusionSprout_TC": {
+      "NAME": "Emerge into Seed",
+      "DESCRIPTION": "Shuffle a random thecolorful:Sprout into draw pile.",
+      "UPGRADE_DESCRIPTION": "Shuffle a random upgraded thecolorful:Sprout into draw pile."
+    },
+    "Profusion_TC": {
+      "NAME": "Profusion",
+      "DESCRIPTION": "Ethereal. NL Heal 5% max HP upon drawn. NL *Choose: Gain 1 thecolorful:Ink charge, or shuffle a random thecolorful:Sprout into draw pile. NL If present in hand at end of turn, shuffle a replica into draw pile.",
+      "UPGRADE_DESCRIPTION": "Ethereal. NL Heal 5% max HP upon drawn. NL *Choose: Gain 2 thecolorful:Ink charge, or shuffle a random upgraded thecolorful:Sprout into draw pile. NL If present in hand at end of turn, shuffle a replica into draw pile."
+    },
+    "Overgrow_TC": {
+      "NAME": "Overgrow",
+      "DESCRIPTION": "Play all playable cards in hand. NL Lose HP equal to the amount of insufficient [E] .",
+      "UPGRADE_DESCRIPTION": "Retain. NL Play all playable cards in hand. NL Lose HP equal to the amount of insufficient [E] ."
+    },
+    "PrimaryArmaGreen_TC": {
+      "NAME": "Primary Arma - Green",
+      "DESCRIPTION": "thecolorful:Tone to [#33ee33]Green[]. NL Shuffle 4 special cards to draw pile.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Tone to [#33ee33]Green[]. NL Shuffle 4 upgraded special cards to draw pile.",
+      "EXTENDED_DESCRIPTION": [
+        "Primary Armament",
+        "Magical armaments actualized from the power of pure colors. NL If your deck contains #yPrimary #yArmaments of other colors, #yexhaust all of them upon playing."
+      ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "BottledThoughts_TC": {
+    "NAME": "Bottled Thoughts",
+    "DESCRIPTIONS": [
+      "Add #b",
+      " #yRetone+ to hand."
+    ]
+  },
+  "BottledInk_TC": {
+    "NAME": "Bottled Ink",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yInk count for your #yPallite."
+    ]
+  },
+  "PrimaryExtractive_TC": {
+    "NAME": "Primary Color Extractive",
+    "DESCRIPTIONS": [
+      "Choose one #yPrimary #yArma and add it to your hand.",
+      "Choose one #yPrimary #yArma and add it to your hand twice."
+    ]
+  },
+  "FretPotion_TC": {
+    "NAME": "Fret Potion",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " #yVigor."
+    ]
+  }
+}

@@ -16,11 +16,9 @@ import static theColorful.characters.TC_character.Enums.TC_CARD;
 public class SandstoneBarrier_TC extends CustomCard {
     public static final String ID = NameAssist.MakePath("SandstoneBarrier");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    //private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/SandstoneBarrier.png";
     private static final int COST = 0;
-    //private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = CardColor.COLORLESS;

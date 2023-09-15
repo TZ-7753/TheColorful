@@ -62,11 +62,9 @@ public class TC_character extends CustomPlayer {
     public TC_character(String name) {
         super(name, TC_CHARACTER,ORB_TEXTURES,"TC_resources/img/UI/orb/vfx.png", LAYER_SPEED, null, null);
 
-
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
         this.dialogY = (this.drawY + 150.0F * Settings.scale);
-
 
         // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
@@ -79,14 +77,11 @@ public class TC_character extends CustomPlayer {
                 new EnergyManager(3) // 初始每回合的能量
         );
 
-
         // 如果你的人物没有动画，那么这些不需要写
         // this.loadAnimation("TC_resources/img/char/character.atlas", "TC_resources/img/char/character.json", 1.8F);
         // AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
         // e.setTime(e.getEndTime() * MathUtils.random());
         // e.setTimeScale(1.2F);
-
-
     }
 
     public ArrayList<String> getStartingDeck() {
@@ -129,49 +124,41 @@ public class TC_character extends CustomPlayer {
     }
 
     // 人物名字（出现在游戏左上角）
-    @Override
     public String getTitle(PlayerClass playerClass) {
         return characterStrings.NAMES[0];
     }
 
     // 你的卡牌颜色（这个枚举在最下方创建）
-    @Override
     public AbstractCard.CardColor getCardColor() {
         return TC_CARD;
     }
 
     // 翻牌事件出现的你的职业牌（一般设为打击）
-    @Override
     public AbstractCard getStartCardForEvent() {
         return new Strike_TC();
     }
 
     // 卡牌轨迹颜色
-    @Override
     public Color getCardTrailColor() {
         return TheColorful.TC_COLOR;
     }
 
     // 高进阶带来的生命值损失
-    @Override
     public int getAscensionMaxHPLoss() {
         return 5;
     }
 
     // 卡牌的能量字体，没必要修改
-    @Override
     public BitmapFont getEnergyNumFont() {
         return FontHelper.energyNumFontBlue;
     }
 
     // 人物选择界面点击你的人物按钮时触发的方法，这里为屏幕轻微震动
-    @Override
     public void doCharSelectScreenSelectEffect() {
         CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
     }
 
     // 碎心图片
-    @Override
     public ArrayList<CutscenePanel> getCutscenePanels() {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
         // 有两个参数的，第二个参数表示出现图片时播放的音效
@@ -182,49 +169,41 @@ public class TC_character extends CustomPlayer {
     }
 
     // 自定义模式选择你的人物时播放的音效
-    @Override
     public String getCustomModeCharacterButtonSoundKey() {
         return "SMASH";
     }
 
     // 游戏中左上角显示在你的名字之后的人物名称
-    @Override
     public String getLocalizedCharacterName() {
         return characterStrings.NAMES[0];
     }
 
     // 创建人物实例，照抄
-    @Override
     public AbstractPlayer newInstance() {
         return new TC_character(this.name);
     }
 
     // 第三章面对心脏说的话（例如战士是“你握紧了你的长刀……”之类的）
-    @Override
     public String getSpireHeartText() {
         return characterStrings.TEXT[1];
     }
 
     // 打心脏的颜色，不是很明显
-    @Override
     public Color getSlashAttackColor() {
         return TheColorful.TC_COLOR;
     }
 
     // 吸血鬼事件文本，主要是他（索引为0）和她（索引为1）的区别（机器人另外）
-    @Override
     public String getVampireText() {
-        return Vampires.DESCRIPTIONS[0];
+        return Vampires.DESCRIPTIONS[1];
     }
 
     // 卡牌选择界面选择该牌的颜色
-    @Override
     public Color getCardRenderColor() {
         return TheColorful.TC_COLOR;
     }
 
     // 第三章面对心脏造成伤害时的特效
-    @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
         return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL};
     }
@@ -233,15 +212,19 @@ public class TC_character extends CustomPlayer {
     // ***填在SpireEnum中的name需要一致***
     public static class Enums {
         @SpireEnum
-        public static PlayerClass TC_CHARACTER;
+        public static AbstractPlayer.PlayerClass TC_CHARACTER;
 
         @SpireEnum(name = "TC_COLOR")
         public static AbstractCard.CardColor TC_CARD;
 
         @SpireEnum(name = "TC_COLOR")
         public static CardLibrary.LibraryType TC_LIBRARY;
+
         @SpireEnum
         public static AbstractCard.CardTags SPROUT;
+
+        public Enums() {
+        }
     }
 
 }

@@ -32,7 +32,7 @@ public class GatheringClouds extends ToningCards {
 
     public GatheringClouds() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
 

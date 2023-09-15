@@ -30,7 +30,6 @@ public class MegaTree extends ToningCards {
     public MegaTree() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.block = this.baseBlock = 12;
-        this.damage = this.baseDamage = 0;
     }
 
 
@@ -46,22 +45,20 @@ public class MegaTree extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToTop(new GainBlockAction(p,this.block));
         if(this.upgraded){
             if(p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneGreen")) || p.hasPower(NameAssist.MakePath("ToneBlue"))){
-                this.damage = p.currentBlock;
-                this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, p.currentBlock, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, p.currentBlock+this.block, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 this.rawDescription = cardStrings.DESCRIPTION;
                 this.initializeDescription();
             }
         }else{
             if(p.hasPower(NameAssist.MakePath("ToneGreen"))){
-                this.damage = p.currentBlock;
-                this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, p.currentBlock, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+                this.addToBot(new DamageRandomEnemyAction(new DamageInfo(p, p.currentBlock+this.block, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
                 this.rawDescription = cardStrings.DESCRIPTION;
                 this.initializeDescription();
             }
         }
-        this.addToTop(new GainBlockAction(p,this.block));
     }
 
     @Override

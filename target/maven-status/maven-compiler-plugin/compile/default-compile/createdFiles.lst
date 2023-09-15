@@ -18,6 +18,7 @@ theColorful\Actions\PaintRandomEnemyAction.class
 theColorful\Cards\Abstract\ToningCards$MainTone.class
 theColorful\Powers\LoseNRGNextTurn.class
 theColorful\Powers\NoTone_pow.class
+theColorful\Potions\BottledThoughts.class
 theColorful\Actions\ApplyFieldAction.class
 theColorful\Relics\Painter.class
 theColorful\Cards\BloodPaeon.class
@@ -27,6 +28,7 @@ theColorful\Cards\Sprout\Bud.class
 theColorful\Actions\MagicGroAction.class
 theColorful\Cards\Tundra.class
 theColorful\Actions\ToningAction.class
+theColorful\Relics\BigHorn.class
 theColorful\Cards\MagicGro.class
 theColorful\Actions\OvergrowAction.class
 theColorful\Powers\Field\Desert_pow.class
@@ -34,6 +36,7 @@ theColorful\Cards\SandstoneBarrier_TC.class
 theColorful\Cards\Desert.class
 theColorful\Cards\DustFog_TC.class
 theColorful\Powers\OpusMagnum_pow.class
+theColorful\Relics\TransmutationReactor.class
 theColorful\Cards\Draught.class
 theColorful\Cards\WashBucket.class
 theColorful\Cards\GrassShield.class
@@ -44,6 +47,7 @@ theColorful\Cards\Choices\ToneYellow.class
 theColorful\Cards\Choices\ProfusionSprout.class
 theColorful\Cards\RogueWave.class
 theColorful\Cards\Arma\Red\CrimsonMeteor.class
+theColorful\Potions\BottledInk.class
 theColorful\Cards\GatheringClouds.class
 theColorful\Cards\StarLight.class
 theColorful\Cards\Strike_TC.class
@@ -55,11 +59,13 @@ theColorful\Cards\LavaFlow.class
 theColorful\Cards\LastQuarter_D.class
 theColorful\Cards\OpusMagnum.class
 theColorful\Actions\AvalancheAction.class
+theColorful\Relics\GoldenPage.class
 theColorful\Powers\Aurora_pow.class
 theColorful\Cards\Sprout\Hypha.class
 theColorful\Cards\Arma\Orange\MeridiemChords.class
 theColorful\Cards\Oasis.class
 theColorful\Cards\LiveVolcano.class
+theColorful\Relics\Tripling.class
 theColorful\Powers\NightSkyBarrier_pow.class
 theColorful\Actions\FoehnAction.class
 theColorful\Cards\Choices\ToneGreen.class
@@ -89,6 +95,7 @@ theColorful\Cards\FrostBite.class
 theColorful\Cards\Minerals.class
 theColorful\Cards\Arma\Yellow\MirageCity.class
 theColorful\Cards\PrimaryArmaRed.class
+theColorful\Potions\FretPotion.class
 theColorful\Actions\InkAction.class
 theColorful\Cards\PrimaryArmaPurple.class
 theColorful\Cards\Sprout\VineWhip.class
@@ -100,6 +107,7 @@ theColorful\Powers\ToneOrange.class
 theColorful\Helpers\NameAssist.class
 theColorful\Cards\Wilderness.class
 theColorful\Cards\ShoalStrike.class
+theColorful\Relics\LivePaint.class
 theColorful\Cards\AshesPaeon.class
 theColorful\Cards\FirstQuarter.class
 theColorful\Cards\Quicksand_TC.class
@@ -108,12 +116,12 @@ theColorful\Powers\TonePurple.class
 theColorful\Powers\Creation_pow.class
 theColorful\Actions\SunriseAction.class
 theColorful\Powers\Painted.class
-theColorful\Cards\Arma\Red\InfernoHull.class
 theColorful\Powers\Ink\InkOrange.class
 theColorful\characters\TC_character$Enums.class
 theColorful\Cards\UnusedColor.class
 theColorful\Cards\Sprout\Spores.class
 theColorful\Cards\Sprout\VineWhipMega.class
+theColorful\Potions\PrimaryExtractive.class
 theColorful\Cards\PrimaryArmaOrange.class
 theColorful\Powers\Ink\InkPurple.class
 theColorful\Powers\Calibrating.class
@@ -148,6 +156,7 @@ theColorful\Cards\Choices\AshesStorm.class
 theColorful\Powers\ToneRed.class
 theColorful\Cards\DrawMaterials.class
 theColorful\Powers\Ink\InkRed.class
+theColorful\Cards\Arma\Red\InfernoCasing.class
 theColorful\Powers\ToneGreen.class
 theColorful\Cards\Sprout\Branch.class
 theColorful\Powers\Rafflesia_pow.class
@@ -173,8 +182,10 @@ theColorful\Powers\ToneYellow.class
 theColorful\Cards\PauseTone.class
 theColorful\Cards\PrairieBlaze.class
 theColorful\Cards\GlimpseofDark.class
+theColorful\Relics\JukeBox.class
 theColorful\Cards\Arma\Blue\Avalanche.class
 theColorful\Cards\RosyClouds.class
+theColorful\Actions\PaintAction.class
 theColorful\Cards\Drizzle.class
 theColorful\Cards\Arma\Green\Blendin.class
 theColorful\Cards\ConstructForm.class
@@ -189,6 +200,7 @@ theColorful\Powers\Field\Tundra_pow.class
 theColorful\Core\TheColorful.class
 theColorful\Powers\Field\Weald_pow.class
 theColorful\Cards\Arma\Green\Profusion.class
+theColorful\Relics\JointFigure.class
 theColorful\Actions\InkCountAction.class
 theColorful\Cards\StonePile.class
 theColorful\Cards\Arma\Orange\SunsetSonata.class

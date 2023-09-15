@@ -31,7 +31,7 @@ public class ScorchingSun extends ToningCards {
     private static final CardColor COLOR = TC_CARD;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
-    private static final MainTone TONE = MainTone.YELLOW;
+    private static final MainTone TONE = MainTone.ORANGE;
 
     public ScorchingSun() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

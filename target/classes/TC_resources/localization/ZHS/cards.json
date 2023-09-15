@@ -181,7 +181,7 @@
       "DESCRIPTION": "造成 !D! 伤害2次，力量发挥两倍效果。 NL 保留 。",
       "UPGRADE_DESCRIPTION": "造成 !D! 伤害2次，力量发挥三倍效果。 NL 保留 。"
     },
-    "InfernoHull_TC": {
+    "InfernoCasing_TC": {
       "NAME": "灼燃机壳",
       "DESCRIPTION": "获得 !M! 格挡 2次， 力量 取代 敏捷 影响获得的数量。",
       "UPGRADE_DESCRIPTION": "获得 !M! 格挡 3次， 力量 取代 敏捷 影响获得的数量。"
@@ -217,8 +217,8 @@
     },
     "RiftValley_TC": {
       "NAME": "裂谷",
-      "DESCRIPTION": "造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色 加入手牌",
-      "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色+ 加入手牌"
+      "DESCRIPTION": "随机造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色 加入手牌",
+      "UPGRADE_DESCRIPTION": "随机造成 !D! 伤害。 thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时改为对所有敌人造成伤害，否则将一张 *重新调色+ 加入手牌"
     },
     "PrimaryArmaYellow_TC": {
       "NAME": "原色武装 - 黄",
@@ -231,18 +231,18 @@
     },
     "MirageDoppel_TC": {
       "NAME": "幻象双身",
-      "DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则将2张 *绿洲 洗入抽牌堆",
-      "UPGRADE_DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则将2张 *绿洲+ 洗入抽牌堆"
+      "DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则恢复15%最大生命值。",
+      "UPGRADE_DESCRIPTION": " 虚无 。获得 !M! 层 无实体 。 消耗 。 NL 回合结束时若仍在手中则恢复20%最大生命值。"
     },
     "MirageCity_TC": {
       "NAME": "蜃楼之城",
-      "DESCRIPTION": " *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。 NL 消耗。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。",
-      "UPGRADE_DESCRIPTION": " *选择 ：将3张 *流沙陷阱+ 或 *砂岩屏障+ 加入手牌。 NL 消耗。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。"
+      "DESCRIPTION": " *选择 ：将3张 *流沙陷阱 或 *砂岩屏障 加入手牌。 NL 消耗 。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。",
+      "UPGRADE_DESCRIPTION": " *选择 ：将3张 *流沙陷阱+ 或 *砂岩屏障+ 加入手牌。 NL 消耗 。 NL 回合结束时若仍在手中则将一张复制品加入弃牌堆。"
     },
     "GoldenSpear_TC": {
       "NAME": "黄金长枪",
-      "DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过 格挡 ",
-      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的伤害。 消耗 。 thecolorful:主色调 为 [#ffff00]黄[] 时伤害可以越过 格挡 "
+      "DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的 荆棘 伤害。 消耗 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成抽牌堆，弃牌堆和消耗牌堆内牌数之和2倍的 荆棘 伤害。 消耗 。"
     },
     "RockBreaker_TC": {
       "NAME": "碎岩击",
@@ -266,13 +266,13 @@
     },
     "BirdsWatchout_TC": {
       "NAME": "鸟群警戒",
-      "DESCRIPTION": " thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时阻止下一次 thecolorful:调色 生效，否则场上每有一名敌人就获得 !B! 格挡 。",
-      "UPGRADE_DESCRIPTION": " 保留 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时阻止下一次 thecolorful:调色 生效，否则场上每有一名敌人就获得 !B! 格挡 。"
+      "DESCRIPTION": "场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，阻止下一次 thecolorful:调色 生效。",
+      "UPGRADE_DESCRIPTION": " 保留 。 场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，阻止下一次 thecolorful:调色 生效。"
     },
     "Warmth_TC": {
       "NAME": "温暖的火",
-      "DESCRIPTION": " 不能被打出 。 虚无 。 NL 被抽到时获得 [E] 与1层 脆弱 。 thecolorful:主色调 为 [#ff9900]橙[] 时则不会获得 脆弱 。",
-      "UPGRADE_DESCRIPTION": " 不能被打出 。 虚无 。 NL 被抽到时获得 [E] 与1层 脆弱 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时则不会获得 脆弱 。"
+      "DESCRIPTION": " 不能被打出 。 虚无 。 NL 加入手中时获得 !B! 格挡 。 thecolorful:主色调 为 [#ff9900]橙[] 时额外获得 [E] 。",
+      "UPGRADE_DESCRIPTION": " 不能被打出 。 虚无 。 NL 加入手中时获得 !B! 格挡 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时额外获得 [E] 。"
     },
     "GrassShield_TC": {
       "NAME": "丛生蔓叶",
@@ -291,8 +291,8 @@
     },
     "Tar_TC": {
       "NAME": "焦油",
-      "DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时使攻击可以越过 格挡 。",
-      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色+ 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时使攻击可以越过 格挡 。"
+      "DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，再获得 !B! 格挡 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，将一张 *暂停调色+ 加入手牌。 NL thecolorful:主色调 为 [#0099ff]蓝[] ， [#cc33ff]紫[] ， [#ff0000]红[] 时，再获得 !B! 格挡 。"
     },
     "MilkyWay_TC": {
       "NAME": "银河",
@@ -385,8 +385,8 @@
     },
     "MegaTree_TC": {
       "NAME": "巨木",
-      "DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#33ee33]绿[] 时，在那之前对一个随机敌人造成与当前 格挡 相等的伤害。",
-      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，在那之前对一个随机敌人造成与当前 格挡 相等的伤害。"
+      "DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#33ee33]绿[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。",
+      "UPGRADE_DESCRIPTION": "获得 !B! 格挡 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，对一个随机敌人造成与当前 格挡 相等的伤害。"
     },
     "ThornsLayer_TC": {
       "NAME": "荆棘秘牢",
@@ -425,8 +425,8 @@
     },
     "ScorchingSun_TC": {
       "NAME": "烈阳",
-      "DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。"
+      "DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ff9900]橙[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 消耗 手牌中所有无色牌，每消耗一张就获得 [E] 。 thecolorful:调色 为 [#ff9900]橙[] 。 NL 消耗 。"
     },
     "GoldCraft_TC": {
       "NAME": "黄金造物",
@@ -445,13 +445,13 @@
     },
     "Migrate_TC": {
       "NAME": "洄游",
-      "DESCRIPTION": "选择弃牌堆中的 !M! 张牌放回抽牌堆顶。 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时额外放回一张。",
-      "UPGRADE_DESCRIPTION": "选择弃牌堆中的 !M! 张牌依次放回抽牌堆顶。 thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时额外放回一张。"
+      "DESCRIPTION": "选择弃牌堆中的 !M! 张牌放回抽牌堆顶。 消耗 。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时不会 消耗 。",
+      "UPGRADE_DESCRIPTION": "选择弃牌堆中的 !M! 张牌依次放回抽牌堆顶。 消耗 。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时不会 消耗 。"
     },
     "GatheringClouds_TC": {
       "NAME": "云层聚集",
-      "DESCRIPTION": " 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得3 格挡 。",
-      "UPGRADE_DESCRIPTION": " 保留 。 NL 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得3 格挡 。"
+      "DESCRIPTION": " 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得 !M! 格挡 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 格挡 不会在本回合结束后消失。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，本回合内每打出1张牌就获得 !M! 格挡 。"
     },
     "Drizzle_TC": {
       "NAME": "细雨",
@@ -528,7 +528,7 @@
     },
     "Enlightning_TC": {
       "NAME": "鸣雷一闪",
-      "DESCRIPTION": " thecolorful:主色调 为 [#cc33ff]紫[] 才可打出。对所有敌人造成场上所有负面状态数量之和 !M! 倍的伤害。 NL 消耗 。",
+      "DESCRIPTION": " thecolorful:主色调 为 [#cc33ff]紫[] 才可打出。对所有敌人造成场上所有负面状态数量之和 !M! 倍的伤害。",
       "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#cc33ff]紫[] 才可打出。对所有敌人造成场上所有正面与负面状态数量之和 !M! 倍的伤害。"
     },
     "VineWhip_TC": {
@@ -554,7 +554,7 @@
     "WashBucket_TC": {
       "NAME": "洗笔桶",
       "DESCRIPTION": " 保留 。 NL 造成 !D! 伤害。 NL 在手中时，每次进行调色，就在本场战斗中使伤害 + !M! 。",
-      "UPGRADE_DESCRIPTION": " 固有 ， 保留 。 NL 造成 !D! 伤害。 NL 在手中时，每次进行调色，就在本场战斗中使伤害 + !M! 。"
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 造成 !D! 伤害。 NL 在手中时，每次进行调色，就在本场战斗中使伤害 + !M! 。"
     },
     "DrawMaterials_TC": {
       "NAME": "万界取材",
@@ -568,18 +568,18 @@
     },
     "MountainsHeart_TC": {
       "NAME": "山脉之心",
-      "DESCRIPTION": "本回合内，每当你获得 力量 ，就对随机敌人造成力量层数+ !M! 的伤害。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": "本回合内，每当你获得 力量 ，就对随机敌人造成力量层数+ !M! 的伤害。"
+      "DESCRIPTION": "本回合内，每当你获得 力量 ，就获得 !M! 活力 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": "本回合内，每当你获得 力量 ，就获得 !M! 活力 。"
     },
     "Creation_TC": {
       "NAME": "星辰创生",
-      "DESCRIPTION": "每有一个敌人死亡，就从3张无色牌中选择一张牌加入手牌。加入的牌在本回合耗能为0。",
-      "UPGRADE_DESCRIPTION": "每有一个敌人死亡，就从3张无色牌中选择一张牌加入手牌。加入的牌在本回合耗能为0。"
+      "DESCRIPTION": "每当你成功 thecolorful:调色 ，获得 !M! thecolorful:活墨拟形 。",
+      "UPGRADE_DESCRIPTION": " 每当你成功 thecolorful:调色 ，获得 !M! thecolorful:活墨拟形 。"
     },
     "ConstructForm_TC": {
       "NAME": "构念形态",
-      "DESCRIPTION": " 使用 thecolorful:活墨 不再受到一回合一次的限制，每一回合的首次使用将不会降低计数。 NL 虚无 。",
-      "UPGRADE_DESCRIPTION": " 使用 thecolorful:活墨 不再受到一回合一次的限制，每一回合的首次使用将不会降低计数。"
+      "DESCRIPTION": "你的回合开始时，从弃牌堆中选择一张牌加入手牌。 NL 虚无 。",
+      "UPGRADE_DESCRIPTION": "你的回合开始时，从弃牌堆中选择一张牌加入手牌。"
     },
     "RosyClouds_TC": {
       "NAME": "云霞漫天",
@@ -617,13 +617,13 @@
     },
     "Foehn_TC": {
       "NAME": "焚风",
-      "DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 时才能打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 时才能打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 保留 。 消耗 。"
+      "DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 NL 保留 。 消耗 。"
     },
     "MagicGro_TC": {
       "NAME": "催生秘术",
-      "DESCRIPTION": "获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。",
-      "UPGRADE_DESCRIPTION": " 获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。"
+      "DESCRIPTION": "获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 获得 !B! 格挡 。 NL 将一张随机的原始 thecolorful:萌芽 卡牌洗入抽牌堆。 NL thecolorful:调色 为 [#33ee33]绿[] 。 NL 消耗 。"
     },
     "LeavesHail_TC": {
       "NAME": "锐叶箭雨",

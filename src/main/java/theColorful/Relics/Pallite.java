@@ -1,6 +1,7 @@
 package theColorful.Relics;
 
 import basemod.abstracts.CustomRelic;
+import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.relics.ClickableRelic;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.unique.DiscoveryAction;
@@ -22,23 +23,19 @@ import com.megacrit.cardcrawl.relics.AbstractRelic.RelicTier;
 import theColorful.Powers.Ink.*;
 
 public class Pallite extends CustomRelic implements ClickableRelic {
-    // 遗物ID
-    public static final String ID = NameAssist.MakePath("Pallite");
-    // 图片路径
-    private static final String IMG_PATH = "TC_resources/img/relics/pallite.png";
-    // 遗物类型
-    private static final RelicTier RELIC_TIER = RelicTier.STARTER;
-    // 点击音效
-    private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
 
+    public static final String ID = NameAssist.MakePath("Pallite");
+    private static final Texture IMG = new Texture("TC_resources/img/relics/pallite.png");
+    private static final Texture OUTLINE = new Texture("TC_resources/img/relics/outline/pallite.png");
+    private static final RelicTier RELIC_TIER = RelicTier.STARTER;
+    private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
     private boolean used;
 
     public Pallite() {
-        super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
+        super(ID, IMG, OUTLINE, RELIC_TIER, LANDING_SOUND);
         this.counter = 6;
     }
 
-    // 获取遗物描述，但原版游戏只在初始化和获取遗物时调用，故该方法等于初始描述
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0];
     }
@@ -84,9 +81,7 @@ public class Pallite extends CustomRelic implements ClickableRelic {
                     this.addToBot(new ReduceAllDebuffAction(AbstractDungeon.player));
                     this.addToBot(new InkCountAction());
                 }
-                if(!AbstractDungeon.player.hasPower(NameAssist.MakePath("ConstructForm_pow"))){
-                    this.used = true;
-                }
+                this.used = true;
                 this.flash();
             }
         }
@@ -98,10 +93,6 @@ public class Pallite extends CustomRelic implements ClickableRelic {
                 this.flash();
                 this.addToBot(new RelicAboveCreatureAction(m, this));
                 this.counter++;
-            }
-            if(AbstractDungeon.player.hasPower(NameAssist.MakePath("Creation_pow"))){
-                int amt = AbstractDungeon.player.getPower(NameAssist.MakePath("Creation_pow")).amount;
-                this.addToBot(new DiscoveryAction(true,amt));
             }
         }
     }

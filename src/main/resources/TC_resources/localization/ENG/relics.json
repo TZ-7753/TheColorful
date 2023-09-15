@@ -1,0 +1,66 @@
+{
+  "Pallite_TC": {
+    "NAME": "Pallite",
+    "FLAVOR": "Media of color toning magics, very similar to a painting palette.",
+    "DESCRIPTIONS": [
+      "When a #yPainted enemy dies, gain #b1 charge. Once per turn, right click on the relic to apply #yInk based on current #yTheme."
+    ]
+  },
+  "Painter_TC": {
+    "NAME": "Painter Wand",
+    "FLAVOR": "Media for casting color magics, a paintbrush.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add a #yRetone to hand."
+    ]
+  },
+  "Reactor_TC": {
+    "NAME": "Transmutation Reactor",
+    "FLAVOR": "'Carpe Diem! No warranties.'",
+    "DESCRIPTIONS": [
+      "For next 3 combats, gain [E] at the start of your turn.",
+      "The relic has consumed all its power."
+    ]
+  },
+  "MusicBox_TC": {
+    "NAME": "Music Box",
+    "FLAVOR": "Always playing music, never repeats.",
+    "DESCRIPTIONS": [
+      "If you have at least 6 cards in hand when ending your turn, gain [E] at start of next turn."
+    ]
+  },
+  "LivePaint_TC": {
+    "NAME": "Live Paint",
+    "FLAVOR": "Large blob of Ink, changing color by itself.",
+    "DESCRIPTIONS": [
+      "Upon pickup, raise your max HP by #b5. Start each combat with a random #yTheme ."
+    ]
+  },
+  "BigHorn_TC": {
+    "NAME": "Big Horn",
+    "FLAVOR": "From some even bigger creature... Rooms in the Spire seem too small for them.",
+    "DESCRIPTIONS": [
+      "When you first break #yblock in a combat, gain [E] ."
+    ]
+  },
+  "JointFigure_TC": {
+    "NAME": "Joint Figure",
+    "FLAVOR": "Little figure with very flexible joints, perfect painting model.",
+    "DESCRIPTIONS": [
+      "Applying #yPainted to a #yPainted enemy makes it lose #b10 % max HP."
+    ]
+  },
+  "Tripling_TC": {
+    "NAME": "Tripling Unit",
+    "FLAVOR": "Three magnetic beads, everlasting group dance.",
+    "DESCRIPTIONS": [
+      "When you discard #y3 cards, draw #b3 more card next turn."
+    ]
+  },
+  "GoldenPage_TC": {
+    "NAME": "Golden Page",
+    "FLAVOR": "Once upon a time, there was another great painter who visited this place...",
+    "DESCRIPTIONS": [
+      "Whenever you #yTone successfully, gain #b3 gold."
+    ]
+  }
+}

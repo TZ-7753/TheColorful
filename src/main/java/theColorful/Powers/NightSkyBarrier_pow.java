@@ -1,6 +1,7 @@
 package theColorful.Powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -19,13 +20,13 @@ public class NightSkyBarrier_pow extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public NightSkyBarrier_pow(AbstractCreature owner) {
+    public NightSkyBarrier_pow(AbstractCreature owner,int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
 
-        this.amount = -1;
+        this.amount = amount;
 
         String path128 = "TC_resources/img/powers/dummy2.png";
         String path48 = "TC_resources/img/powers/dummy2.png";
@@ -43,12 +44,15 @@ public class NightSkyBarrier_pow extends AbstractPower {
         return damageAmount;
     }
 
-    // 能力在更新时如何修改描述
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
 
     public void atEndOfRound() {
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        if(this.amount > 1) {
+            this.addToBot(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
+        }else{
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
+        }
     }
 }

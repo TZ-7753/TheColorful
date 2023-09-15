@@ -1,7 +1,10 @@
 package theColorful.Powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
+import com.megacrit.cardcrawl.actions.common.BetterDrawPileToHandAction;
+import com.megacrit.cardcrawl.actions.defect.DiscardPileToHandAction;
+import com.megacrit.cardcrawl.actions.defect.SeekAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -32,12 +35,12 @@ public class ConstructForm_pow extends AbstractPower {
         this.updateDescription();
     }
 
-    public void atStartOfTurn() {
-        this.addToBot(new ApplyPowerAction(this.owner,this.owner,new Ink_pow(this.owner,this.amount)));
+    public void atStartOfTurnPostDraw() {
+        this.addToBot(new BetterDiscardPileToHandAction(this.amount));
     }
 
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0];
+        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
 
 

@@ -31,7 +31,7 @@ public class StonePile extends ToningCards {
 
     public StonePile() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 5;
+        this.block = this.baseBlock = 6;
     }
 
 

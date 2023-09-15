@@ -14,13 +14,9 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import java.util.Iterator;
 
 public class Decomposer_pow extends AbstractPower{
-    // 能力的ID
     public static final String POWER_ID = NameAssist.MakePath("Decomposer_pow");
-    // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    // 能力的名称
     private static final String NAME = powerStrings.NAME;
-    // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public Decomposer_pow(AbstractCreature owner,int amount) {
@@ -31,8 +27,8 @@ public class Decomposer_pow extends AbstractPower{
 
         this.amount = amount;
 
-        String path128 = "TC_resources/img/powers/dummy1.png";
-        String path48 = "TC_resources/img/powers/dummy1.png";
+        String path128 = "TC_resources/img/powers/Decomposer_84.png";
+        String path48 = "TC_resources/img/powers/Decomposer_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 8, 8, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
 

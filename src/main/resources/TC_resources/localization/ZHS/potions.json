@@ -1,0 +1,30 @@
+{
+  "BottledThoughts_TC": {
+    "NAME": "瓶装思绪",
+    "DESCRIPTIONS": [
+      "将 #b",
+      " 张 #y重新调色+ 加入手牌。"
+    ]
+  },
+  "BottledInk_TC": {
+    "NAME": "瓶装活墨",
+    "DESCRIPTIONS": [
+      "为 #y绘盘 增加 #b",
+      " #y活墨 计数。"
+    ]
+  },
+  "PrimaryExtractive_TC": {
+    "NAME": "原色提取物",
+    "DESCRIPTIONS": [
+      "选择一张 #y原色武装 加入手牌。",
+      "选择一张 #y原色武装 加入手牌 #b2 次。"
+    ]
+  },
+  "FretPotion_TC": {
+    "NAME": "躁动药水",
+    "DESCRIPTIONS": [
+      "获得 #b",
+      " #y活力。"
+    ]
+  }
+}
