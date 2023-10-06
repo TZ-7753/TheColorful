@@ -22,7 +22,7 @@ public class MountainsHeart extends ToningCards {
     private static final String IMG_PATH = "TC_resources/img/cards/MountainsHeart.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = TC_CARD;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -30,7 +30,7 @@ public class MountainsHeart extends ToningCards {
 
     public MountainsHeart() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber = 3;
         this.exhaust = true;
     }
 

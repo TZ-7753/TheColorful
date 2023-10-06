@@ -311,8 +311,8 @@
     },
     "Aurora_TC": {
       "NAME": "Aurora",
-      "DESCRIPTION": "In this turn, ALL enemies with debuff take !M! % more damage.",
-      "UPGRADE_DESCRIPTION": "In this turn, ALL enemies with debuff take !M! % more damage."
+      "DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of current HP. If they are not, thecolorful:paint them.",
+      "UPGRADE_DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of current HP. If they are not, thecolorful:paint them."
     },
     "PrimaryArmaPurple_TC": {
       "NAME": "Primary Arma - Purple",
@@ -460,8 +460,8 @@
     },
     "Draught_TC": {
       "NAME": "Draught",
-      "DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak to ALL enemies.",
-      "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak to ALL enemies."
+      "DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak and Vulnerable to ALL enemies.",
+      "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemies. NL thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Apply !M! Weak and Vulnerable to ALL enemies."
     },
     "RogueWave_TC": {
       "NAME": "Rogue Wave",
@@ -568,8 +568,8 @@
     },
     "MountainsHeart_TC": {
       "NAME": "Mountains Heart",
-      "DESCRIPTION": "In this turn, whenever you gain Strength, gain !M! Vigor. NL Exhaust.",
-      "UPGRADE_DESCRIPTION": "In this turn, whenever you gain Strength, gain !M! Vigor."
+      "DESCRIPTION": "Whenever you gain Strength, gain 1 Regen. NL The power can stack !M! Regen at most.",
+      "UPGRADE_DESCRIPTION": "Whenever you gain Strength, gain 1 Regen. NL The power can stack !M! Regen at most."
     },
     "Creation_TC": {
       "NAME": "Creation",

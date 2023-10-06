@@ -36,7 +36,6 @@ theColorful\Cards\SandstoneBarrier_TC.class
 theColorful\Cards\Desert.class
 theColorful\Cards\DustFog_TC.class
 theColorful\Powers\OpusMagnum_pow.class
-theColorful\Relics\TransmutationReactor.class
 theColorful\Cards\Draught.class
 theColorful\Cards\WashBucket.class
 theColorful\Cards\GrassShield.class
@@ -162,6 +161,7 @@ theColorful\Cards\Sprout\Branch.class
 theColorful\Powers\Rafflesia_pow.class
 theColorful\Cards\Arma\Blue\TigerShark.class
 theColorful\Cards\Sprout\MegaTree.class
+theColorful\Relics\MysticPowerCell.class
 theColorful\Cards\Defend_TC.class
 theColorful\Cards\Choices\RainbowPurifier.class
 theColorful\Cards\Choices\AshesShelter.class
@@ -200,6 +200,7 @@ theColorful\Powers\Field\Tundra_pow.class
 theColorful\Core\TheColorful.class
 theColorful\Powers\Field\Weald_pow.class
 theColorful\Cards\Arma\Green\Profusion.class
+theColorful\Actions\AuroraAction.class
 theColorful\Relics\JointFigure.class
 theColorful\Actions\InkCountAction.class
 theColorful\Cards\StonePile.class

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.RegenPower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import theColorful.Actions.ToningAction;
@@ -27,12 +28,12 @@ public class MountainsHeart_pow extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-        this.isTurnBased = true;
+        this.isTurnBased = false;
 
         this.amount = amount;
 
-        String path128 = "TC_resources/img/powers/dummy2.png";
-        String path48 = "TC_resources/img/powers/dummy2.png";
+        String path128 = "TC_resources/img/powers/MountainsHeart_84.png";
+        String path48 = "TC_resources/img/powers/MountainsHeart_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
 
@@ -41,13 +42,16 @@ public class MountainsHeart_pow extends AbstractPower {
 
     public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
         if(power.ID.equals("Strength") && target == this.owner && power.amount > 0){
-            this.flash();
-            this.addToBot(new ApplyPowerAction(this.owner,this.owner,new VigorPower(this.owner,this.amount)));
+            if(AbstractDungeon.player.hasPower("Regeneration")){
+                if(AbstractDungeon.player.getPower("Regeneration").amount < this.amount) {
+                    this.flash();
+                    this.addToBot(new ApplyPowerAction(this.owner, this.owner, new RegenPower(this.owner, 1)));
+                }
+            }else{
+                this.flash();
+                this.addToBot(new ApplyPowerAction(this.owner, this.owner, new RegenPower(this.owner, 1)));
+            }
         }
-    }
-
-    public void atEndOfRound() {
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("MountainsHeart_pow")));
     }
 
     public void updateDescription() {

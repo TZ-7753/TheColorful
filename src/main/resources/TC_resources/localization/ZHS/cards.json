@@ -311,8 +311,8 @@
     },
     "Aurora_TC": {
       "NAME": "极光",
-      "DESCRIPTION": "本回合内，有负面状态的所有敌人受到的伤害增加 !M! %。",
-      "UPGRADE_DESCRIPTION": "本回合内，有负面状态的所有敌人受到的伤害增加 !M! %。"
+      "DESCRIPTION": "所有 thecolorful:入画 的敌人失去其当前生命的25%，否则向其施加 thecolorful:入画 。",
+      "UPGRADE_DESCRIPTION": "所有 thecolorful:入画 的敌人失去其当前生命的25%，否则向其施加 thecolorful:入画 。"
     },
     "PrimaryArmaPurple_TC": {
       "NAME": "原色武装 - 紫",
@@ -325,8 +325,8 @@
     },
     "Spores_TC": {
       "NAME": "孢子",
-      "DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *寄生毒蕈 或 *菌丝 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *寄生毒蕈 或 *菌丝 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *寄生毒蕈 或 *菌丝 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *暂停调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *寄生毒蕈+ 或 *菌丝+ 。"
     },
     "ColossalMatsutake_TC": {
       "NAME": "巨松茸",
@@ -340,13 +340,13 @@
     },
     "ParasiteFungus_TC": {
       "NAME": "寄生毒蕈",
-      "DESCRIPTION": " thecolorful:萌芽 。 施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸 或 *分解者 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *巨松茸+ 或 *分解者+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。 施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨松茸 或 *分解者 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。施加 !M! 层 中毒 。 NL thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨松茸+ 或 *分解者+ 。"
     },
     "Hypha_TC": {
       "NAME": "菌丝",
-      "DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *肥硕大蘑菇 或 *青霉菌 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *肥硕大蘑菇+ 或 *青霉菌+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *肥硕大蘑菇 或 *青霉菌 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。 回复 !M! 生命 。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *肥硕大蘑菇+ 或 *青霉菌+ 。"
     },
     "MegaShroom_TC": {
       "NAME": "肥硕大蘑菇",
@@ -380,8 +380,8 @@
     },
     "Bud_TC": {
       "NAME": "花苞",
-      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *虹色之花 或 *大王花 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *虹色之花+ 或 *大王花+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *虹色之花 或 *大王花 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *虹色之花+ 或 *大王花+ 。"
     },
     "MegaTree_TC": {
       "NAME": "巨木",
@@ -395,13 +395,13 @@
     },
     "Branch_TC": {
       "NAME": "硬枝",
-      "DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢 或 *巨木 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时，选择将一张 *荆棘秘牢+ 或 *巨木+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨木 或 *荆棘秘牢 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。获得 !B! 格挡 两次。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨木+ 或 *荆棘秘牢+ 。"
     },
     "Leafgem_TC": {
       "NAME": "新叶",
-      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝 或 *花苞 加入抽牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，选择将 *硬枝+ 或 *花苞+ 加入抽牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *硬枝 或 *花苞 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。将一张 *重新调色+ 加入手牌。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *硬枝+ 或 *花苞+ 。"
     },
     "PrairieBlaze_TC": {
       "NAME": "燎原",
@@ -460,8 +460,8 @@
     },
     "Draught_TC": {
       "NAME": "冻气",
-      "DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外对所有敌人造成 !M! 虚弱 。",
-      "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外对所有敌人造成 !M! 虚弱 。"
+      "DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外向所有敌人施加 !M! 虚弱 与 易伤 。",
+      "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 伤害。 NL thecolorful:主色调 为 [#33ee33]绿[] ， [#0099ff]蓝[] ， [#cc33ff]紫[] 时,额外向所有敌人施加 !M! 虚弱 与 易伤 。"
     },
     "RogueWave_TC": {
       "NAME": "巨浪",
@@ -533,13 +533,13 @@
     },
     "VineWhip_TC": {
       "NAME": "藤鞭",
-      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，将 *长藤鞭 加入弃牌堆并将此卡 消耗 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时，将 *长藤鞭+ 加入弃牌堆并将此卡 消耗 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。"
+      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *长藤鞭 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#ffff00]黄[] ， [#33ee33]绿[] ， [#0099ff]蓝[] 时， thecolorful:成长 为 *长藤鞭+ ，否则 thecolorful:调色 为 [#33ee33]绿[] 。"
     },
     "VineWhipBig_TC": {
       "NAME": "长藤鞭",
-      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时，将 *巨藤鞭 加入弃牌堆并将此卡 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时，将 *巨藤鞭+ 加入弃牌堆并将此卡 消耗 。"
+      "DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:萌芽 。造成 !D! 伤害与 !M! 易伤 。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭+ 。"
     },
     "VineWhipMega_TC": {
       "NAME": "巨藤鞭",
@@ -568,8 +568,8 @@
     },
     "MountainsHeart_TC": {
       "NAME": "山脉之心",
-      "DESCRIPTION": "本回合内，每当你获得 力量 ，就获得 !M! 活力 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": "本回合内，每当你获得 力量 ，就获得 !M! 活力 。"
+      "DESCRIPTION": "每当你获得 力量 ，就获得 1 再生 。 NL 这项能力最多可使你获得 !M! 层 再生 。",
+      "UPGRADE_DESCRIPTION": "每当你获得 力量 ，就获得 1 再生 。 NL 这项能力最多可使你获得 !M! 层 再生 。"
     },
     "Creation_TC": {
       "NAME": "星辰创生",

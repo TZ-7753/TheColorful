@@ -13,11 +13,12 @@
       "At the start of each combat, add a #yRetone to hand."
     ]
   },
-  "Reactor_TC": {
-    "NAME": "Transmutation Reactor",
+  "MysticPowerCell_TC": {
+    "NAME": "Mystic Powercell",
     "FLAVOR": "'Carpe Diem! No warranties.'",
     "DESCRIPTIONS": [
-      "For next 3 combats, gain [E] at the start of your turn.",
+      "For next #b",
+      " combats, gain [E] at the start of your turn.",
       "The relic has consumed all its power."
     ]
   },
@@ -25,14 +26,14 @@
     "NAME": "Music Box",
     "FLAVOR": "Always playing music, never repeats.",
     "DESCRIPTIONS": [
-      "If you have at least 6 cards in hand when ending your turn, gain [E] at start of next turn."
+      "If you have at least #b6 cards in hand when ending your turn, gain [E] at start of next turn."
     ]
   },
   "LivePaint_TC": {
     "NAME": "Live Paint",
-    "FLAVOR": "Large blob of Ink, changing color by itself.",
+    "FLAVOR": "Unplug and look inside, you can see it change color by itself.",
     "DESCRIPTIONS": [
-      "Upon pickup, raise your max HP by #b5. Start each combat with a random #yTheme ."
+      "Upon pickup, raise your max HP by #b5. Start each combat with #b1 #yInk #yAlternate."
     ]
   },
   "BigHorn_TC": {
@@ -50,17 +51,17 @@
     ]
   },
   "Tripling_TC": {
-    "NAME": "Tripling Unit",
+    "NAME": "Tripling",
     "FLAVOR": "Three magnetic beads, everlasting group dance.",
     "DESCRIPTIONS": [
-      "When you discard #y3 cards, draw #b3 more card next turn."
+      "When you discard #y3 cards, draw #b3 more cards next turn."
     ]
   },
   "GoldenPage_TC": {
     "NAME": "Golden Page",
     "FLAVOR": "Once upon a time, there was another great painter who visited this place...",
     "DESCRIPTIONS": [
-      "Whenever you #yTone successfully, gain #b3 gold."
+      "Whenever you #yTone successfully, gain #b6 gold."
     ]
   }
 }

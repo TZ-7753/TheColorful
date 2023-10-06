@@ -45,6 +45,7 @@ public class MudstoneGolem extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.upgradeBaseCost(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

@@ -28,8 +28,8 @@ public class Rafflesia_pow extends AbstractPower {
 
         this.amount = Amount;
 
-        String path128 = "TC_resources/img/powers/ToneYellow84.png";
-        String path48 = "TC_resources/img/powers/ToneYellow32.png";
+        String path128 = "TC_resources/img/powers/Rafflesia_84.png";
+        String path48 = "TC_resources/img/powers/Rafflesia_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 22, 22, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 8, 8, 32, 32);
 

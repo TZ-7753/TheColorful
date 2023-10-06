@@ -42,17 +42,17 @@ public class TC_character extends CustomPlayer {
     private static final String CORPSE_IMAGE = "TC_resources/img/char/corpse.png";
     // 战斗界面左下角能量图标的每个图层
     private static final String[] ORB_TEXTURES = new String[]{
-            "TC_resources/img/UI/orb/layer5.png",
-            "TC_resources/img/UI/orb/layer4.png",
-            "TC_resources/img/UI/orb/layer3.png",
-            "TC_resources/img/UI/orb/layer2.png",
             "TC_resources/img/UI/orb/layer1.png",
+            "TC_resources/img/UI/orb/layer2.png",
+            "TC_resources/img/UI/orb/layer3.png",
+            "TC_resources/img/UI/orb/layer4.png",
+            "TC_resources/img/UI/orb/layer5.png",
             "TC_resources/img/UI/orb/layer6.png",
-            "TC_resources/img/UI/orb/layer5d.png",
-            "TC_resources/img/UI/orb/layer4d.png",
-            "TC_resources/img/UI/orb/layer3d.png",
+            "TC_resources/img/UI/orb/layer1d.png",
             "TC_resources/img/UI/orb/layer2d.png",
-            "TC_resources/img/UI/orb/layer1d.png"
+            "TC_resources/img/UI/orb/layer3d.png",
+            "TC_resources/img/UI/orb/layer4d.png",
+            "TC_resources/img/UI/orb/layer5d.png"
     };
     // 每个图层的旋转速度
     private static final float[] LAYER_SPEED = new float[]{-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};

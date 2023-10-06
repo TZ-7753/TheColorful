@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theColorful.Actions.AuroraAction;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.Aurora_pow;
 import theColorful.Powers.NightSkyBarrier_pow;
@@ -31,7 +32,6 @@ public class Aurora extends CustomCard {
 
     public Aurora() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 50;
     }
 
 
@@ -39,7 +39,7 @@ public class Aurora extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeMagicNumber(50);
+            this.upgradeBaseCost(0);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -47,12 +47,7 @@ public class Aurora extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Iterator<AbstractMonster> var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
-        AbstractMonster mo;
-        while(var3.hasNext()) {
-            mo = var3.next();
-            this.addToBot(new ApplyPowerAction(mo,p,new Aurora_pow(p,this.magicNumber)));
-        }
+        this.addToBot(new AuroraAction());
     }
 
     public AbstractCard makeCopy(){

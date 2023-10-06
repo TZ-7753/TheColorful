@@ -33,7 +33,7 @@ public class TideWaves extends ToningCards {
 
     public TideWaves() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 5;
+        this.block = this.baseBlock = 6;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 
@@ -43,7 +43,7 @@ public class TideWaves extends ToningCards {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeMagicNumber(1);
-            this.upgradeBlock(3);
+            this.upgradeBlock(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

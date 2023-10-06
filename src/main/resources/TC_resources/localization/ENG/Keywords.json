@@ -19,7 +19,8 @@
   {
     "NAMES": [
       "Painted",
-      "painted"
+      "painted",
+      "paint"
     ],
     "DESCRIPTION": "The enemy is being dragged into your painting! They take #b50% more damage, and will be converted to #yInk charges upon death."
   },

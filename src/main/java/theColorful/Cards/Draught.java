@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theColorful.Helpers.NameAssist;
 import theColorful.Powers.Painted;
@@ -61,6 +62,7 @@ public class Draught extends CustomCard {
             while(var3.hasNext()) {
                 mo = var3.next();
                 this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo,this.magicNumber,false)));
+                this.addToBot(new ApplyPowerAction(mo, p, new VulnerablePower(mo,this.magicNumber,false)));
             }
         }
     }

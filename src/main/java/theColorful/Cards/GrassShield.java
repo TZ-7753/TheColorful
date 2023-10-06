@@ -30,7 +30,7 @@ public class GrassShield extends ToningCards {
 
     public GrassShield() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 3;
+        this.block = this.baseBlock = 5;
     }
 
 

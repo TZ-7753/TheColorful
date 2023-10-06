@@ -231,12 +231,12 @@
   "MountainsHeart_pow_TC": {
     "NAME": "山脉之心",
     "DESCRIPTIONS": [
-      "本回合内，每当你获得 #y力量 ，就获得 #b",
-      " #y活力。"
+      "每当你获得 #y力量 ，就获得1层 #y再生 。这个能力最多可以让你获得 #b",
+      " 层。"
     ]
   },
   "Creation_pow_TC": {
-    "NAME": "宇宙创生",
+    "NAME": "星辰创生",
     "DESCRIPTIONS": [
       "每当成功 #y调色 ， 获得 #b",
       " #y活墨拟形 。"
@@ -245,7 +245,7 @@
   "ConstructForm_pow_TC": {
     "NAME": "构念形态",
     "DESCRIPTIONS": [
-      "你的回合开始时，从抽牌堆中选择 #b",
+      "你的回合开始时，从弃牌堆中选择 #b",
       " 张牌加入手牌。"
     ]
   },

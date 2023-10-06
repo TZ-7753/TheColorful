@@ -29,7 +29,7 @@ public class MegaTree extends ToningCards {
 
     public MegaTree() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 12;
+        this.block = this.baseBlock = 14;
     }
 
 
@@ -37,7 +37,7 @@ public class MegaTree extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBlock(4);
+            this.upgradeBlock(7);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

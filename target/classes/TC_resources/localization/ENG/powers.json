@@ -231,8 +231,8 @@
   "MountainsHeart_pow_TC": {
     "NAME": "Mountains Heart",
     "DESCRIPTIONS": [
-      "In this turn, whenever you gain #yStrength, gain #b",
-      " #yVigor."
+      "Whenever you gain #yStrength, gain #b1 #yRegen. The power can stack #b",
+      " #yRegen at most."
     ]
   },
   "Creation_pow_TC": {
@@ -245,8 +245,8 @@
   "ConstructForm_pow_TC": {
     "NAME": "Construct Form",
     "DESCRIPTIONS": [
-      "At start of your turn, select",
-      "cards from draw pile and move to your hand."
+      "At start of your turn, select #b",
+      " card(s) from discard pile and move to your hand."
     ]
   },
   "Ink_pow_TC": {

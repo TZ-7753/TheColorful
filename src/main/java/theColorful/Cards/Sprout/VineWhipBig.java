@@ -44,7 +44,7 @@ public class VineWhipBig extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(4);
             AbstractCard c1 = new VineWhipMega();
             c1.upgrade();
             this.cardsToPreview = c1;

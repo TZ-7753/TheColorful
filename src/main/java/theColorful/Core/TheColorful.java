@@ -6,7 +6,6 @@ import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import com.google.gson.Gson;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
@@ -258,7 +257,7 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new Pallite(), TC_CARD);
         BaseMod.addRelicToCustomPool(new Painter(), TC_CARD);
-        BaseMod.addRelic(new TransmutationReactor(),RelicType.SHARED);
+        BaseMod.addRelic(new MysticPowerCell(),RelicType.SHARED);
         BaseMod.addRelic(new JukeBox(),RelicType.SHARED);
         BaseMod.addRelicToCustomPool(new LivePaint(), TC_CARD);
         BaseMod.addRelic(new BigHorn(),RelicType.SHARED);

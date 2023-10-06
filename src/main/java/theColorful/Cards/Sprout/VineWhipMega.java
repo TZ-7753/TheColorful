@@ -39,8 +39,7 @@ public class VineWhipMega extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeDamage(2);
-            upgradeMagicNumber(1);
+            upgradeDamage(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

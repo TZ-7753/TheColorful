@@ -54,7 +54,7 @@ public class GlimpseofDark extends ToningCards {
         AbstractMonster mo;
         while(var3.hasNext()) {
             mo = var3.next();
-            this.addToBot(new PaintAction(m));
+            this.addToBot(new PaintAction(mo));
         }
         this.addToBot(new ToningAction(p,TONE));
     }
