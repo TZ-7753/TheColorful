@@ -3,7 +3,7 @@
   "name": "The Colorful",
   "author_list": ["TZ-7753"],
   "description": "绘师 - 角色mod。 \n mod交流群：723677239",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sts_version": "12-18-2022",
   "mts_version": "3.23.2",
   "dependencies": ["basemod"]

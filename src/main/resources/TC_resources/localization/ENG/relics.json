@@ -47,7 +47,7 @@
     "NAME": "Joint Figure",
     "FLAVOR": "Little figure with very flexible joints, perfect painting model.",
     "DESCRIPTIONS": [
-      "Applying #yPainted to a #yPainted enemy makes it lose #b10 % max HP."
+      "Applying #yPainted to a #yPainted enemy makes it lose #b10 % current HP."
     ]
   },
   "Tripling_TC": {

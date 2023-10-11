@@ -28,8 +28,8 @@ public class NightSkyBarrier_pow extends AbstractPower {
 
         this.amount = amount;
 
-        String path128 = "TC_resources/img/powers/dummy2.png";
-        String path48 = "TC_resources/img/powers/dummy2.png";
+        String path128 = "TC_resources/img/powers/NightskyBarrier_84.png";
+        String path48 = "TC_resources/img/powers/NightskyBarrier_32.png";
         this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(path48), 0, 0, 32, 32);
 

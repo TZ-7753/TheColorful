@@ -22,7 +22,7 @@ public class PaintAction extends AbstractGameAction {
             if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("JointFigure")) && this.target.hasPower(NameAssist.MakePath("Painted"))){
                 AbstractRelic r = AbstractDungeon.player.getRelic(NameAssist.MakePath("JointFigure"));
                 r.flash();
-                this.addToBot(new LoseHPAction(this.target,this.target,(int)(this.target.maxHealth * 0.1)));
+                this.addToBot(new LoseHPAction(this.target,this.target,(int)(this.target.currentHealth * 0.1)));
             }
             else{
                 this.addToTop(new ApplyPowerAction(this.target, AbstractDungeon.player, new Painted(this.target)));

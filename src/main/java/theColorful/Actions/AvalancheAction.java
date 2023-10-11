@@ -34,9 +34,7 @@ public class AvalancheAction extends AbstractGameAction {
         }
 
         if (effect > 0) {
-            for(int i=0;i<effect;i++){
-                this.addToBot(new GainBlockAction(AbstractDungeon.player,6));
-            }
+            this.addToBot(new GainBlockAction(AbstractDungeon.player,6 * effect));
             this.addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new DrawCardNextTurnPower(AbstractDungeon.player,effect)));
 
             this.p.energy.use(EnergyPanel.totalCount);
