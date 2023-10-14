@@ -137,7 +137,7 @@
     },
     "ToneYellow_TC": {
       "NAME": "黄",
-      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[] 。 NL thecolorful:活墨 会使你在本回合将受到的所有伤害减少 *30% 。"
+      "DESCRIPTION": "thecolorful:调色 为 [#ffff00]黄[] 。 NL thecolorful:活墨 会使你在本回合将受到的所有伤害减少 *30 %。"
     },
     "ToneGreen_TC": {
       "NAME": "绿",
@@ -149,17 +149,17 @@
     },
     "TonePurple_TC": {
       "NAME": "紫",
-      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[] 。 NL thecolorful:活墨 会使你的所有回合计数负面状态 *减少 一层。"
+      "DESCRIPTION": "thecolorful:调色 为 [#cc33ff]紫[] 。 NL thecolorful:活墨 会使你的所有回合计数负面状态 *减少 1层。"
     },
       "ReTone_TC": {
       "NAME": "重新调色",
       "DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色。 NL 消耗 。",
-        "UPGRADE_DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色并抽一张牌。 NL 消耗 。"
+        "UPGRADE_DESCRIPTION": " 保留 。 NL 从六种原色中任选其一， thecolorful:调色 为指定的颜色并抽1张牌。 NL 消耗 。"
     },
     "PauseTone_TC": {
       "NAME": "暂停调色",
-      "DESCRIPTION": " 保留 。 NL 阻止本回合内的下一次 thecolorful:调色 产生效果。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": " 保留 。 NL 阻止本回合内的下一次 thecolorful:调色 产生效果并抽一张牌。 NL 消耗 。"
+      "DESCRIPTION": " 保留 。 NL 阻止本回合内的所有 thecolorful:调色 产生效果。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " 保留 。 NL 阻止本回合内的所有 thecolorful:调色 产生效果。 NL 抽1张牌。 NL 消耗 。"
     },
     "LiveVolcano_TC": {
       "NAME": "活火山",
@@ -266,8 +266,8 @@
     },
     "BirdsWatchout_TC": {
       "NAME": "鸟群警戒",
-      "DESCRIPTION": "场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，阻止下一次 thecolorful:调色 生效。",
-      "UPGRADE_DESCRIPTION": " 保留 。 场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，阻止下一次 thecolorful:调色 生效。"
+      "DESCRIPTION": "场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，在本回合内阻止所有 thecolorful:调色 生效。",
+      "UPGRADE_DESCRIPTION": " 保留 。 场上每有一名敌人就获得 !B! 格挡 。 NL thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时，在本回合内阻止所有 thecolorful:调色 生效。"
     },
     "Warmth_TC": {
       "NAME": "温暖的火",
@@ -405,8 +405,8 @@
     },
     "PrairieBlaze_TC": {
       "NAME": "燎原",
-      "DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 力量 并在回合结束时失去。",
-      "UPGRADE_DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 力量 并在回合结束时失去。"
+      "DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 临时 力量 。",
+      "UPGRADE_DESCRIPTION": "每当你 thecolorful:调色 为 [#ff0000]红[] ，获得 !M! 临时 力量 。"
     },
     "Nirvana_TC": {
       "NAME": "涅槃之焰",
@@ -430,8 +430,8 @@
     },
     "GoldCraft_TC": {
       "NAME": "黄金造物",
-      "DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就在本回合内获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就在本回合内获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。"
+      "DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ff9900]橙[] ， [#ffff00]黄[] ， [#33ee33]绿[] 时，你的手中每有一张无色牌就获得1临时 力量 ，否则获得2 格挡 并 thecolorful:调色 为 [#ffff00]黄[] 。"
     },
     "ShoalStrike_TC": {
       "NAME": "鱼群打击",
@@ -617,8 +617,8 @@
     },
     "Foehn_TC": {
       "NAME": "焚风",
-      "DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 或 *砂岩屏障 。 NL 保留 。 消耗 。"
+      "DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 与 *砂岩屏障 。 NL 消耗 。",
+      "UPGRADE_DESCRIPTION": " thecolorful:主色调 为 [#ffff00]黄[] 才可打出。 NL 将牌组中所有的 状态 或 诅咒 牌随机转化为 *流沙陷阱 与 *砂岩屏障 。 NL 保留 。 消耗 。"
     },
     "MagicGro_TC": {
       "NAME": "催生秘术",

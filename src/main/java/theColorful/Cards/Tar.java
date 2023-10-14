@@ -35,7 +35,7 @@ public class Tar extends ToningCards {
     public Tar() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 8;
-        this.block = this.baseBlock = 5;
+        this.block = this.baseBlock = 8;
         this.cardsToPreview = new PauseTone();
     }
 
@@ -45,7 +45,7 @@ public class Tar extends ToningCards {
         if (!this.upgraded) {
             upgradeName();
             this.upgradeDamage(3);
-            this.upgradeBlock(2);
+            this.upgradeBlock(3);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
             AbstractCard c = new PauseTone();

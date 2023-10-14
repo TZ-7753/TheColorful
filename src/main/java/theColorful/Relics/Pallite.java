@@ -92,7 +92,12 @@ public class Pallite extends CustomRelic implements ClickableRelic {
             if(m.hasPower(NameAssist.MakePath("Painted"))) {
                 this.flash();
                 this.addToBot(new RelicAboveCreatureAction(m, this));
-                this.counter++;
+                if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("PainterW"))){
+                    AbstractDungeon.player.getRelic(NameAssist.MakePath("PainterW")).flash();
+                    this.counter += 2;
+                }else{
+                    this.counter++;
+                }
             }
         }
     }

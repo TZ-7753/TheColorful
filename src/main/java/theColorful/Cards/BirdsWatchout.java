@@ -35,7 +35,7 @@ public class BirdsWatchout extends ToningCards {
 
     public BirdsWatchout() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = 7;
+        this.block = this.baseBlock = 8;
         this.magicNumber = this.baseMagicNumber = 1;
     }
 
@@ -46,7 +46,6 @@ public class BirdsWatchout extends ToningCards {
             upgradeName();
             this.selfRetain = true;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
-            this.upgradeBlock(3);
             this.initializeDescription();
         }
     }
@@ -63,7 +62,7 @@ public class BirdsWatchout extends ToningCards {
             this.addToBot(new GainBlockAction(p,this.block));
         }
         if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneYellow")) || p.hasPower(NameAssist.MakePath("ToneRed"))){
-            this.addToBot(new ApplyPowerAction(p,p,new NoTone_pow(p,1)));
+            this.addToBot(new ApplyPowerAction(p,p,new NoTone_pow(p)));
         }
     }
 

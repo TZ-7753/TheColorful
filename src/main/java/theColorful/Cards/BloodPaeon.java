@@ -36,7 +36,7 @@ public class BloodPaeon extends CustomCard {
     public BloodPaeon() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.misc = 4;
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber = 1;
         this.damage = this.baseDamage = this.misc;
         this.exhaust = true;
     }
@@ -46,7 +46,7 @@ public class BloodPaeon extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeMagicNumber(1);
             this.initializeDescription();
         }
     }

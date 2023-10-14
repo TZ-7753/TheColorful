@@ -16,13 +16,11 @@ public class NoTone_pow extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public NoTone_pow(AbstractCreature owner, int Amount) {
+    public NoTone_pow(AbstractCreature owner) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.type = PowerType.BUFF;
-
-        this.amount = Amount;
 
         String path128 = "TC_resources/img/powers/dummy1.png";
         String path48 = "TC_resources/img/powers/dummy1.png";
@@ -37,7 +35,7 @@ public class NoTone_pow extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+        this.description = powerStrings.DESCRIPTIONS[0];
     }
 
 

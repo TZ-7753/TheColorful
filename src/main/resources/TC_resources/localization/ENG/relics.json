@@ -63,5 +63,33 @@
     "DESCRIPTIONS": [
       "Whenever you #yTone successfully, gain #b6 gold."
     ]
+  },
+  "PainterB_TC": {
+    "NAME": "Painter Noir",
+    "FLAVOR": "Toning with black, all colors can be more vivid.",
+    "DESCRIPTIONS": [
+      "Replaces #yPainter #yWand. At start of each combat, add #b3 #yRetone to hand."
+    ]
+  },
+  "PainterW_TC": {
+    "NAME": "Painter Albus",
+    "FLAVOR": "Toning with white, all colors can be mixed in.",
+    "DESCRIPTIONS": [
+      "Replaces #yPainter #yWand. When a #yPainted enemy dies, gain #b1 additional charge for #yPallite."
+    ]
+  },
+  "Antinomy_TC": {
+    "NAME": "Shattered Reality",
+    "FLAVOR": "You can`t even focus you eyes on it.",
+    "DESCRIPTIONS": [
+      "Gain [E] at start of your turn. In the first turn of each combat, a random type of #yAttack / #ySkill / #yPower cards becomes temporarily #runplayable."
+    ]
+  },
+  "DreamScale_TC": {
+    "NAME": "Dream Scale",
+    "FLAVOR": "Constructed by all your dreams.",
+    "DESCRIPTIONS": [
+      "Every #b2 turns, gain #b1 #yBuffer and shuffle a random #rStatus card into discard pile."
+    ]
   }
 }

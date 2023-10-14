@@ -158,8 +158,8 @@
     },
     "PauseTone_TC": {
       "NAME": "Pause Tone",
-      "DESCRIPTION": "Retain. NL Prevent the effect of the next thecolorful:Toning in this turn. NL Exhaust.",
-      "UPGRADE_DESCRIPTION": "Retain. NL Prevent the effect of the next thecolorful:Toning in this turn. NL Draw 1 card. NL Exhaust."
+      "DESCRIPTION": "Retain. NL Prevent the effect of all thecolorful:Toning in this turn. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Prevent the effect of all thecolorful:Toning in this turn. NL Draw 1 card. NL Exhaust."
     },
     "LiveVolcano_TC": {
       "NAME": "Live Volcano",
@@ -266,8 +266,8 @@
     },
     "BirdsWatchout_TC": {
       "NAME": "Birds Watchout",
-      "DESCRIPTION": "Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of next thecolorful:toning in this turn.",
-      "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of next thecolorful:toning in this turn."
+      "DESCRIPTION": "Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of all thecolorful:toning in this turn.",
+      "UPGRADE_DESCRIPTION": "Retain. NL Gain !B! block for each enemy present. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] - Prevent the effect of all thecolorful:toning in this turn."
     },
     "Warmth_TC": {
       "NAME": "Warmth",

@@ -264,5 +264,9 @@ public class TheColorful implements EditCardsSubscriber, EditStringsSubscriber, 
         BaseMod.addRelicToCustomPool(new Tripling(),TC_CARD);
         BaseMod.addRelicToCustomPool(new JointFigure(),TC_CARD);
         BaseMod.addRelicToCustomPool(new GoldenPage(),TC_CARD);
+        BaseMod.addRelicToCustomPool(new Painter_B(),TC_CARD);
+        BaseMod.addRelicToCustomPool(new Painter_W(),TC_CARD);
+        BaseMod.addRelic(new Antinomy(),RelicType.SHARED);
+        BaseMod.addRelic(new DreamScale(),RelicType.SHARED);
     }
 }

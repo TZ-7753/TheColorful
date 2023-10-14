@@ -38,6 +38,7 @@ public class LivePaint extends CustomRelic{
     }
 
     public void atBattleStart() {
+        this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player,this));
         this.addToBot(new ApplyPowerAction(AbstractDungeon.player,AbstractDungeon.player,new Ink_pow(AbstractDungeon.player,1)));
     }
 }

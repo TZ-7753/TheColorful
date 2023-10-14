@@ -9,11 +9,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.FrailPower;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
-import theColorful.Powers.LoseNRGNextTurn;
-import theColorful.Powers.NoTone_pow;
 
 import static theColorful.characters.TC_character.Enums.TC_CARD;
 

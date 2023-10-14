@@ -1,6 +1,7 @@
 package theColorful.Cards;
 
 import basemod.abstracts.CustomCard;
+import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -27,6 +28,9 @@ public class Foehn extends CustomCard {
     public Foehn() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        AbstractCard c1 = new Quicksand_TC();
+        AbstractCard c2 = new SandstoneBarrier_TC();
+        MultiCardPreview.add(this, c1, c2);
     }
 
     @Override

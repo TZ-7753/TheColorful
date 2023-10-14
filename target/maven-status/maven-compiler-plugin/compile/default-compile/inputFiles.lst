@@ -15,6 +15,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Tar.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrairieBlaze.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ProfusionInk.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Painter_B.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Sprout\Decomposer.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Sprout\Hypha.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Sprout\VineWhipMega.java
@@ -61,6 +62,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\MagicGro.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\BigHorn.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\LivePaint.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkRed.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Antinomy.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Iridescence_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\BloodPaeon.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Sprout\Penicillium.java
@@ -93,6 +95,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Desertify.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Painter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Sprout\ColossalMatsutake.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Cirrus.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Painter_W.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkOrange.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Ink\InkYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\DrawMaterialsAction.java
@@ -105,6 +108,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\TonePurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\FirstQuarter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\SunlightSpear.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LastQuarter_D.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\NoPow_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\ReduceAllDebuffAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrimaryArmaGreen.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Drizzle.java
@@ -128,6 +132,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Drought.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\LastQuarter.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrimaryArmaYellow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\MegaShroom_pow.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Relics\DreamScale.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\Tripling.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\PrimaryArmaPurple.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Helpers\NameAssist.java
@@ -156,6 +161,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Decomposer_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Dune.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Actions\PrimaryArmaInitAction.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Tundra.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\NoSkill_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\ToneBlue.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\ProfusionSprout.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Green\Overgrow.java
@@ -185,6 +191,7 @@ D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Red\CrimsonMeteor.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Choices\RainbowBlossom.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Yellow\GoldenSpear.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Arma\Orange\SunsetSonata.java
+D:\Mymod\TheColorful\src\main\java\theColorful\Powers\NoAtk_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Powers\Field\HueCalibrator_pow.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Cards\Swamp_TC.java
 D:\Mymod\TheColorful\src\main\java\theColorful\Relics\MysticPowerCell.java

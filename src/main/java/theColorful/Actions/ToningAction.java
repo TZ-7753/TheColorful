@@ -35,10 +35,9 @@ public class ToningAction extends AbstractGameAction {
     public void update() {
 
         //若无阻止调色的pow或其他特殊主色调，则正常清理
-        this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Calibrating")));
-        if(this.owner.hasPower(NameAssist.MakePath("NoTone_pow"))){
-            this.addToBot(new ReducePowerAction(this.owner,this.owner,NameAssist.MakePath("NoTone_pow"),1));
-        }else {
+        if(!this.owner.hasPower(NameAssist.MakePath("NoTone_pow"))){
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("Calibrating")));
+
             if (this.owner.hasPower(NameAssist.MakePath("TonePurple")) && this.tone != ToningCards.MainTone.PURPLE) {
                 this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, NameAssist.MakePath("TonePurple")));
             }
@@ -109,7 +108,7 @@ public class ToningAction extends AbstractGameAction {
                 this.addToBot(new ApplyPowerAction(this.owner,this.owner,new Ink_pow(this.owner,amt)));
             }
 
-            //
+            //处理黄金纸
             if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("GoldenPage"))){
                 AbstractRelic page = AbstractDungeon.player.getRelic(NameAssist.MakePath("GoldenPage"));
                 page.flash();

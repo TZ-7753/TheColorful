@@ -22,6 +22,7 @@ theColorful\Potions\BottledThoughts.class
 theColorful\Actions\ApplyFieldAction.class
 theColorful\Relics\Painter.class
 theColorful\Cards\BloodPaeon.class
+theColorful\Powers\NoAtk_pow.class
 theColorful\Powers\Field\RosyClouds_pow.class
 theColorful\Cards\Sprout\LeavesHail.class
 theColorful\Cards\Sprout\Bud.class
@@ -86,6 +87,8 @@ theColorful\Powers\ToneBlue.class
 theColorful\Cards\Stream.class
 theColorful\Cards\Swamp_TC.class
 theColorful\Cards\ElDorado.class
+theColorful\Relics\Antinomy.class
+theColorful\Powers\NoSkill_pow.class
 theColorful\Cards\Inspiration.class
 theColorful\Cards\Foehn.class
 theColorful\Cards\DarknessPaeon.class
@@ -158,6 +161,7 @@ theColorful\Powers\Ink\InkRed.class
 theColorful\Cards\Arma\Red\InfernoCasing.class
 theColorful\Powers\ToneGreen.class
 theColorful\Cards\Sprout\Branch.class
+theColorful\Relics\DreamScale.class
 theColorful\Powers\Rafflesia_pow.class
 theColorful\Cards\Arma\Blue\TigerShark.class
 theColorful\Cards\Sprout\MegaTree.class
@@ -177,8 +181,10 @@ theColorful\Powers\Storm_pow.class
 theColorful\Cards\PrimaryArmaYellow.class
 theColorful\Powers\MegaShroom_pow.class
 theColorful\Cards\Sprout\VineWhipBig.class
+theColorful\Relics\Painter_B.class
 theColorful\Powers\Decomposer_pow.class
 theColorful\Powers\ToneYellow.class
+theColorful\Relics\Painter_W.class
 theColorful\Cards\PauseTone.class
 theColorful\Cards\PrairieBlaze.class
 theColorful\Cards\GlimpseofDark.class
@@ -187,6 +193,7 @@ theColorful\Cards\Arma\Blue\Avalanche.class
 theColorful\Cards\RosyClouds.class
 theColorful\Actions\PaintAction.class
 theColorful\Cards\Drizzle.class
+theColorful\Powers\NoPow_pow.class
 theColorful\Cards\Arma\Green\Blendin.class
 theColorful\Cards\ConstructForm.class
 theColorful\Actions\PrimaryArmaInitAction.class

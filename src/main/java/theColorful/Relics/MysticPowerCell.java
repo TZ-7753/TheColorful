@@ -48,6 +48,12 @@ public class MysticPowerCell extends CustomRelic{
         ++AbstractDungeon.player.energy.energyMaster;
     }
 
+    public void onUnequip() {
+        if(this.counter > 0) {
+            --AbstractDungeon.player.energy.energyMaster;
+        }
+    }
+
     public void atPreBattle() {
         if (this.counter > 0) {
             this.description = this.DESCRIPTIONS[0] + this.counter + this.DESCRIPTIONS[1];

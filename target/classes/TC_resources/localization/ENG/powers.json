@@ -126,8 +126,7 @@
   "NoTone_pow_TC": {
     "NAME": "Tone Prevention",
     "DESCRIPTIONS": [
-      "In this turn, next #b",
-      " #yTone(s) will not have any effect."
+      "In this turn, all #yToning will not have any effect."
     ]
   },
   "MilkyWay_pow_TC": {
@@ -276,6 +275,24 @@
     "DESCRIPTIONS": [
       "If you do not lose any HP in this turn, gain #b",
       " #yBuffer at start of next turn."
+    ]
+  },
+  "NoAtk_pow_TC": {
+    "NAME": "No Attack",
+    "DESCRIPTIONS": [
+      "Can not play any #yAttack this turn."
+    ]
+  },
+  "NoSkill_pow_TC": {
+    "NAME": "No Skill",
+    "DESCRIPTIONS": [
+      "Can not play any #ySkill this turn."
+    ]
+  },
+  "NoPow_pow_TC": {
+    "NAME": "No Power",
+    "DESCRIPTIONS": [
+      "Can not play any #yPower this turn."
     ]
   }
 }
