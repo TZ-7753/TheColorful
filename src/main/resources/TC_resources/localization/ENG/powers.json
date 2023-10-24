@@ -160,7 +160,7 @@
   "MegaShroom_pow_TC": {
     "NAME": "Mega Shroom",
     "DESCRIPTIONS": [
-      "Whenever you are attacked, gain #b",
+      "Whenever you take damage, gain #b",
       " #yRegen."
     ]
   },
@@ -244,8 +244,8 @@
   "ConstructForm_pow_TC": {
     "NAME": "Construct Form",
     "DESCRIPTIONS": [
-      "At start of your turn, select #b",
-      " card(s) from discard pile and move to your hand."
+      "You can apply multiple types of #yInk in one turn. Whenever you apply #yInk, reduce cost of #b",
+      " random card(s) in hand to 0."
     ]
   },
   "Ink_pow_TC": {

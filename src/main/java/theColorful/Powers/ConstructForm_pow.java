@@ -35,10 +35,6 @@ public class ConstructForm_pow extends AbstractPower {
         this.updateDescription();
     }
 
-    public void atStartOfTurnPostDraw() {
-        this.addToBot(new BetterDiscardPileToHandAction(this.amount));
-    }
-
     public void updateDescription() {
         this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }

@@ -19,7 +19,7 @@ public class AuroraAction extends AbstractGameAction {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if(!mo.isDying && !mo.isDead && !mo.escaped){
                 if(mo.hasPower("Painted_TC")){
-                    this.addToBot(new LoseHPAction(mo,mo,(int)(mo.currentHealth * 0.25),AttackEffect.FIRE));
+                    this.addToBot(new LoseHPAction(mo,mo,(int)(mo.maxHealth * 0.25),AttackEffect.FIRE));
                 }else{
                     this.addToBot(new PaintAction(mo));
                 }

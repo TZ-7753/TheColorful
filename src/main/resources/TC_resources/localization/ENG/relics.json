@@ -61,7 +61,7 @@
     "NAME": "Golden Page",
     "FLAVOR": "Once upon a time, there was another great painter who visited this place...",
     "DESCRIPTIONS": [
-      "Whenever you #yTone successfully, gain #b6 gold."
+      "Whenever you apply #yInk, gain #b6 gold."
     ]
   },
   "PainterB_TC": {
@@ -89,7 +89,11 @@
     "NAME": "Dream Scale",
     "FLAVOR": "Constructed by all your dreams.",
     "DESCRIPTIONS": [
-      "Every #b2 turns, gain #b1 #yBuffer and shuffle a random #rStatus card into discard pile."
+      "Every #b2 turns, gain #b1 Buffer and shuffle a random #rStatus card into discard pile."
+    ],
+    "EXTENDED_DESCRIPTION": [
+      "Buffer",
+      "Completely absorb the next damage to your HP."
     ]
   }
 }

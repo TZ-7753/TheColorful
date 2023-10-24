@@ -20,7 +20,7 @@ public class FrostBite extends ToningCards {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/FrostBite.png";
-    private static final int COST = 3;
+    private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;
@@ -30,8 +30,9 @@ public class FrostBite extends ToningCards {
 
     public FrostBite() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.damage = this.baseDamage = 5;
+        this.damage = this.baseDamage = 2;
         this.magicNumber = this.baseMagicNumber = 1;
+        this.exhaust = true;
     }
 
 
@@ -39,7 +40,7 @@ public class FrostBite extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

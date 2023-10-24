@@ -108,12 +108,6 @@ public class ToningAction extends AbstractGameAction {
                 this.addToBot(new ApplyPowerAction(this.owner,this.owner,new Ink_pow(this.owner,amt)));
             }
 
-            //处理黄金纸
-            if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("GoldenPage"))){
-                AbstractRelic page = AbstractDungeon.player.getRelic(NameAssist.MakePath("GoldenPage"));
-                page.flash();
-                this.addToBot(new GainGoldAction(6));
-            }
         }
 
         this.isDone = true;

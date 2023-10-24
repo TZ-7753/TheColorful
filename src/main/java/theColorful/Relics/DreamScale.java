@@ -6,15 +6,13 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.status.*;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.powers.BufferPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theColorful.Helpers.NameAssist;
-import theColorful.Powers.NoAtk_pow;
-import theColorful.Powers.NoPow_pow;
-import theColorful.Powers.NoSkill_pow;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.badlogic.gdx.math.MathUtils.random;
 

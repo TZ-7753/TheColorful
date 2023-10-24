@@ -35,14 +35,14 @@ public class MegaShroom_pow extends AbstractPower{
         this.updateDescription();
     }
 
-    // 能力在更新时如何修改描述
     public void updateDescription() {
         this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        this.addToBot(new ApplyPowerAction(this.owner,this.owner,new RegenPower(this.owner,this.amount)));
+        if(damageAmount > 0){
+            this.addToBot(new ApplyPowerAction(this.owner,this.owner,new RegenPower(this.owner,this.amount)));
+        }
         return damageAmount;
     }
-
 }

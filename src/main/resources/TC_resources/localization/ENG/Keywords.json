@@ -61,5 +61,12 @@
       "grown"
     ],
     "DESCRIPTION": "Shuffle the new card into draw pile and #yexhaust self."
+  },
+  {
+    "NAMES": [
+      "Buffer",
+      "buffer"
+    ],
+    "DESCRIPTION": "Prevent the next time you would lose HP."
   }
 ]

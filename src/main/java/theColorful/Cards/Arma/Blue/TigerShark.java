@@ -60,18 +60,13 @@ public class TigerShark extends ToningCards {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.damage = this.baseDamage + (AbstractDungeon.player.hand.size() * this.magicNumber);
-        if(this.damage < 100){
-            int add = AbstractDungeon.cardRandomRng.random((100 - this.damage));
-            this.damage += add;
-        }
+        this.damage = (AbstractDungeon.player.hand.size() * this.magicNumber);
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         if(this.damage > 50){
-            this.addToBot(new TalkAction(true, CARD_STRINGS.EXTENDED_DESCRIPTION[1], 1.0F, 2.0F));
+            this.addToBot(new TalkAction(true, CARD_STRINGS.EXTENDED_DESCRIPTION[0], 1.0F, 2.0F));
         }
         this.addToBot(new ToningAction(p,TONE));
     }
-
 
     public AbstractCard makeCopy(){
         return new TigerShark();

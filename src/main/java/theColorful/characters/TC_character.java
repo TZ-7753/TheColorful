@@ -56,25 +56,22 @@ public class TC_character extends CustomPlayer {
     };
     // 每个图层的旋转速度
     private static final float[] LAYER_SPEED = new float[]{-40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F};
-    // 人物的本地化文本，如卡牌的本地化文本一样，如何书写见下
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("TC_character");
 
     public TC_character(String name) {
         super(name, TC_CHARACTER,ORB_TEXTURES,"TC_resources/img/UI/orb/vfx.png", LAYER_SPEED, null, null);
 
-        // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）
         this.dialogX = (this.drawX + 0.0F * Settings.scale);
         this.dialogY = (this.drawY + 150.0F * Settings.scale);
 
-        // 初始化你的人物，如果你的人物只有一张图，那么第一个参数填写你人物图片的路径。
         this.initializeClass(
-                "TC_resources/img/char/character.png", // 人物图片
+                "TC_resources/img/char/character.png",
                 TC_CHARACTER_SHOULDER_2, TC_CHARACTER_SHOULDER_1,
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
                 0.0F, 0.0F,
-                200.0F, 220.0F, // 人物碰撞箱大小。越大的人物模型这个越大
-                new EnergyManager(3) // 初始每回合的能量
+                200.0F, 220.0F,
+                new EnergyManager(3)
         );
 
         // 如果你的人物没有动画，那么这些不需要写
@@ -99,11 +96,11 @@ public class TC_character extends CustomPlayer {
         return retVal;
     }
 
-    // 初始遗物的ID，可以先写个原版遗物凑数
+
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Pallite.ID);
         retVal.add(Painter.ID);
+        retVal.add(Pallite.ID);
         return retVal;
     }
 

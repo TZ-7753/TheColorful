@@ -311,8 +311,8 @@
     },
     "Aurora_TC": {
       "NAME": "Aurora",
-      "DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of current HP. If they are not, thecolorful:paint them.",
-      "UPGRADE_DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of current HP. If they are not, thecolorful:paint them."
+      "DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of max HP. If they are not, thecolorful:paint them.",
+      "UPGRADE_DESCRIPTION": "ALL thecolorful:Painted enemies lose 25% of max HP. If they are not, thecolorful:paint them."
     },
     "PrimaryArmaPurple_TC": {
       "NAME": "Primary Arma - Purple",
@@ -350,8 +350,8 @@
     },
     "MegaShroom_TC": {
       "NAME": "Mega Shroom",
-      "DESCRIPTION": "Whenever you are attacked, gain !M! Regen.",
-      "UPGRADE_DESCRIPTION": "Whenever you are attacked, gain !M! Regen."
+      "DESCRIPTION": "Whenever you take damage, gain !M! Regen.",
+      "UPGRADE_DESCRIPTION": "Whenever you take damage, gain !M! Regen."
     },
     "Penicillium_TC": {
       "NAME": "Penicillium",
@@ -425,8 +425,8 @@
     },
     "ScorchingSun_TC": {
       "NAME": "Scorching Sun",
-      "DESCRIPTION": "Exhaust all colorless cards in hand, gain [E] for each card exhausted. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust.",
-      "UPGRADE_DESCRIPTION": "Exhaust all colorless cards in hand, gain [E] for each card exhausted. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust."
+      "DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. NL thecolorful:Tone to [#ff9900]Orange[]."
     },
     "GoldCraft_TC": {
       "NAME": "Goldcraft",
@@ -470,8 +470,8 @@
     },
     "FrostBite_TC": {
       "NAME": "Frostbite",
-      "DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand.",
-      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand."
+      "DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand. NL Exhaust.",
+      "UPGRADE_DESCRIPTION": "thecolorful:Theme of [#33ee33]Green[], [#0099ff]Blue[], [#cc33ff]Purple[] - Draw 1 more card next turn for each card in hand. Otherwise thecolorful:Tone to [#0099ff]Blue[] and make a random enemy lose !D! HP for each card in hand. NL Exhaust."
     },
     "ImperfectGlacialist_TC": {
       "NAME": "Imperfect Glacialist",
@@ -495,11 +495,10 @@
     },
     "TigerShark_TC": {
       "NAME": "Tigershark",
-      "DESCRIPTION": "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Increase lower bound for !M! for each card in hand.",
-      "UPGRADE_DESCRIPTION": "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Increase lower bound for !M! for each card in hand.",
+      "DESCRIPTION": "Retain. NL Deal !M! damage for each card in your hand. NL thecolorful:Tone to [#0099ff]Blue[].",
+      "UPGRADE_DESCRIPTION": "Retain. NL Deal !M! damage for each card in your hand. NL thecolorful:Tone to [#0099ff]Blue[].",
       "EXTENDED_DESCRIPTION": [
-        "Retain. NL Randomly deal !D! ~ 100 damage. NL thecolorful:Tone to [#0099ff]Blue[]. Deal !M! damage more for each card in hand.",
-        "Yeeeeeeeeeah!"
+        "~Yeeeeeeeeeah!~"
       ]
     },
     "SpringTide_TC": {
@@ -578,8 +577,8 @@
     },
     "ConstructForm_TC": {
       "NAME": "Construct Form",
-      "DESCRIPTION": "At start of your turn, select !M! card from your discard pile and move it to your hand. NL Ethereal.",
-      "UPGRADE_DESCRIPTION": "At start of your turn, select !M! card from your discard pile and move it to your hand."
+      "DESCRIPTION": "You can now apply thecolorful:Ink of Multiple thecolorful:Themes in one single turn. Whenever you apply thecolorful:Ink, reduce the cost of a random card in hand to 0. NL Ethereal.",
+      "UPGRADE_DESCRIPTION": "You can now apply thecolorful:Ink of Multiple thecolorful:Themes in one single turn. Whenever you apply thecolorful:Ink, reduce the cost of a random card in hand to 0."
     },
     "RosyClouds_TC": {
       "NAME": "Rosy Clouds",

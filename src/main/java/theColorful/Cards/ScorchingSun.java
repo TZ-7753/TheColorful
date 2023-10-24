@@ -9,9 +9,11 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
@@ -25,7 +27,7 @@ public class ScorchingSun extends ToningCards {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "TC_resources/img/cards/ScorchingSun.png";
-    private static final int COST = 2;
+    private static final int COST = 0;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = TC_CARD;
@@ -36,6 +38,7 @@ public class ScorchingSun extends ToningCards {
     public ScorchingSun() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.magicNumber = this.baseMagicNumber = 4;
     }
 
 
@@ -43,7 +46,7 @@ public class ScorchingSun extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.upgradeBaseCost(1);
+            this.exhaust = false;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -52,11 +55,9 @@ public class ScorchingSun extends ToningCards {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int cnt = 0;
-        for (AbstractCard c : p.hand.group) {
-            if (c.color == CardColor.COLORLESS) {
-                cnt += 1;
-                this.addToBot(new ExhaustSpecificCardAction(c, p.hand));
-            }
+        if(AbstractDungeon.player.hasRelic(NameAssist.MakePath("Pallite"))){
+            AbstractRelic r = AbstractDungeon.player.getRelic(NameAssist.MakePath("Pallite"));
+            cnt = r.counter / this.magicNumber;
         }
         if(cnt > 0){
             this.addToBot(new GainEnergyAction(cnt));
