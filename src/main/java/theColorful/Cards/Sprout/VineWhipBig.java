@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
 
@@ -62,6 +63,8 @@ public class VineWhipBig extends ToningCards {
         if(p.hasPower(NameAssist.MakePath("ToneGreen"))){
             this.exhaust = true;
             this.addToBot(new MakeTempCardInDiscardAction(c,1));
+        }else{
+            this.addToBot(new ToningAction(p,TONE));
         }
     }
 

@@ -17,6 +17,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import theColorful.Actions.ToningAction;
 import theColorful.Cards.Abstract.ToningCards;
 import theColorful.Helpers.NameAssist;
+import theColorful.Powers.Iridescence_pow;
 
 import java.util.Iterator;
 
@@ -38,7 +39,7 @@ public class ScorchingSun extends ToningCards {
     public ScorchingSun() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        this.magicNumber = this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber = 6;
     }
 
 
@@ -62,7 +63,11 @@ public class ScorchingSun extends ToningCards {
         if(cnt > 0){
             this.addToBot(new GainEnergyAction(cnt));
         }
-        this.addToBot(new ToningAction(p,TONE));
+        if(p.hasPower(NameAssist.MakePath("ToneOrange"))){
+            this.addToBot(new ApplyPowerAction(p,p,new Iridescence_pow(p)));
+        }else{
+            this.addToBot(new ToningAction(p,TONE));
+        }
     }
 
 

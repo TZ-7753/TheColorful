@@ -89,7 +89,7 @@
     },
     "GlimpseofDark_TC": {
       "NAME": "一瞬黑暗",
-      "DESCRIPTION": "对所有敌人施加 thecolorful:入画 ， thecolorful:调色 为 [#cc33ff]紫[] 。",
+      "DESCRIPTION": "对所有敌人施加 thecolorful:入画 ， thecolorful:调色 为 [#cc33ff]紫[] 。 NL 消耗 。",
       "UPGRADE_DESCRIPTION": "对所有敌人施加 thecolorful:入画 ， thecolorful:调色 为 [#cc33ff]紫[] 。"
     },
     "Minerals_TC": {
@@ -189,7 +189,7 @@
     "ReIgnition_TC": {
       "NAME": "复燃",
       "DESCRIPTION": "失去 !M! 点生命， NL 获得 [E] [E] ， NL 抽2张牌， NL thecolorful:调色 为 [#ff0000]红[] 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": "失去 !M! 点生命， NL 获得 [E] [E] ， NL 抽2张牌， NL thecolorful:调色 为 [#ff0000]红[] 。"
+      "UPGRADE_DESCRIPTION": "失去 !M! 点生命， NL 获得 [E] [E] ， NL 抽2张牌， NL thecolorful:调色 为 [#ff0000]红[] 。 NL 消耗 。"
     },
     "PrimaryArmaRed_TC": {
       "NAME": "原色武装 - 红",
@@ -271,8 +271,8 @@
     },
     "Warmth_TC": {
       "NAME": "温暖的火",
-      "DESCRIPTION": "不能被打出 。 虚无 。 NL 加入手中时获得 !B! 点 格挡 。 thecolorful:主色调 为 [#ff9900]橙[] 时额外获得 [E] 。",
-      "UPGRADE_DESCRIPTION": "不能被打出 。 虚无 。 NL 加入手中时获得 !B! 点 格挡 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时额外获得 [E] 。"
+      "DESCRIPTION": "不能被打出 。 虚无 。 NL 加入手中时获得 !B! 点 格挡 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时额外获得 [E] 。",
+      "UPGRADE_DESCRIPTION": "不能被打出 。 NL 加入手中时获得 !B! 点 格挡 。 thecolorful:主色调 为 [#ff0000]红[] ， [#ff9900]橙[] ， [#ffff00]黄[] 时额外获得 [E] 。"
     },
     "GrassShield_TC": {
       "NAME": "丛生蔓叶",
@@ -425,8 +425,8 @@
     },
     "ScorchingSun_TC": {
       "NAME": "烈阳",
-      "DESCRIPTION": "你每有 !M! thecolorful:活墨 计数，就获得 [E] 。 NL thecolorful:调色 为 [#ff9900]橙[] 。 NL 消耗 。",
-      "UPGRADE_DESCRIPTION": "你每有 !M! thecolorful:活墨 计数，就获得 [E] 。 NL thecolorful:调色 为 [#ff9900]橙[] 。"
+      "DESCRIPTION": "你每有 !M! thecolorful:活墨 计数，就获得 [E] 。 消耗 。 NL thecolorful:主色调 为 [#ff9900]橙[] 时，在下一回合开始时获得本回合结束时剩余的能量，否则 thecolorful:调色 为 [#ff9900]橙[] 。",
+      "UPGRADE_DESCRIPTION": "你每有 !M! thecolorful:活墨 计数，就获得 [E] 。 NL thecolorful:主色调 为 [#ff9900]橙[] 时，在下一回合开始时获得本回合结束时剩余的能量，否则 thecolorful:调色 为 [#ff9900]橙[] 。"
     },
     "GoldCraft_TC": {
       "NAME": "黄金造物",
@@ -537,13 +537,13 @@
     },
     "VineWhipBig_TC": {
       "NAME": "长藤鞭",
-      "DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭 。",
-      "UPGRADE_DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭+ 。"
+      "DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭 ，否则 thecolorful:调色 为 [#33ee33]绿[] 。",
+      "UPGRADE_DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时， thecolorful:成长 为 *巨藤鞭+ ，否则 thecolorful:调色 为 [#33ee33]绿[] 。"
     },
     "VineWhipMega_TC": {
       "NAME": "巨藤鞭",
-      "DESCRIPTION": "造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害。",
-      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害。"
+      "DESCRIPTION": "造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害，否则 thecolorful:调色 为 [#33ee33]绿[] 。",
+      "UPGRADE_DESCRIPTION": "造成 !D! 点伤害与 !M! 层 易伤。 thecolorful:主色调 为 [#33ee33]绿[] 时再造成一次伤害，否则 thecolorful:调色 为 [#33ee33]绿[] 。"
     },
     "BirdsStrike_TC": {
       "NAME": "鸟群打击",
@@ -626,7 +626,7 @@
     },
     "LeavesHail_TC": {
       "NAME": "锐叶箭雨",
-      "DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害 !M! 次。 NL thecolorful:主色调 为 [#33ee33]绿[] 时将此卡升级。 NL 可被多次升级。"
+      "DESCRIPTION": "thecolorful:萌芽 。造成 !D! 点伤害 !M! 次。 NL thecolorful:主色调 为 [#33ee33]绿[] 时将此卡升级，否则 thecolorful:调色 为 [#33ee33]绿[] 。 NL 可被多次升级。"
     },
     "Blendin_TC": {
       "NAME": "藏木于林",

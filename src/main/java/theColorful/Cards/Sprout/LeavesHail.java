@@ -50,6 +50,7 @@ public class LeavesHail extends ToningCards {
     @Override
     public void upgrade() {
         this.upgradeMagicNumber(1);
+        this.upgradeDamage(1);
         ++this.timesUpgraded;
         this.upgraded = true;
         this.name = cardStrings.NAME + "+" + this.timesUpgraded;
@@ -64,6 +65,8 @@ public class LeavesHail extends ToningCards {
         if(p.hasPower(NameAssist.MakePath("ToneGreen"))){
             this.addToBot(new UpgradeSpecificCardAction(this));
             p.bottledCardUpgradeCheck(this);
+        }else{
+            this.addToBot(new ToningAction(p,TONE));
         }
     }
 

@@ -171,6 +171,7 @@ theColorful\Cards\Choices\RainbowPurifier.class
 theColorful\Cards\Choices\AshesShelter.class
 theColorful\Cards\Arma\Green\Overgrow.class
 theColorful\Cards\Arma\Yellow\MirageDoppel.class
+theColorful\Actions\ConstructFormAction.class
 theColorful\Cards\MountainsHeart.class
 theColorful\Cards\ClearPallite.class
 theColorful\Cards\Warmth.class

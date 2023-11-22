@@ -39,6 +39,7 @@ public class Warmth extends ToningCards {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
+            this.isEthereal = false;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
@@ -53,14 +54,8 @@ public class Warmth extends ToningCards {
     @Override
     public void triggerWhenDrawn() {
         AbstractPlayer p = AbstractDungeon.player;
-        if(this.upgraded){
-            if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneRed")) || p.hasPower(NameAssist.MakePath("ToneYellow"))){
-                this.addToTop(new GainEnergyAction(1));
-            }
-        }else{
-            if(p.hasPower(NameAssist.MakePath("ToneOrange"))){
-                this.addToTop(new GainEnergyAction(1));
-            }
+        if(p.hasPower(NameAssist.MakePath("ToneOrange")) || p.hasPower(NameAssist.MakePath("ToneRed")) || p.hasPower(NameAssist.MakePath("ToneYellow"))){
+            this.addToTop(new GainEnergyAction(1));
         }
         this.addToBot(new GainBlockAction(p,this.block));
     }

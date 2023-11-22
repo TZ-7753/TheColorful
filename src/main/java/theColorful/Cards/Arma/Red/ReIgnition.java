@@ -41,7 +41,6 @@ public class ReIgnition extends ToningCards {
             this.upgradeBaseCost(0);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             this.initializeDescription();
-            this.exhaust = false;
         }
     }
 

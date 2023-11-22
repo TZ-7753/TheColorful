@@ -89,7 +89,7 @@
     },
     "GlimpseofDark_TC": {
       "NAME": "Darkness Glimpse",
-      "DESCRIPTION": "Apply thecolorful:Painted to ALL enemies. NL thecolorful:Tone to [#cc33ff]Purple[].",
+      "DESCRIPTION": "Apply thecolorful:Painted to ALL enemies. NL thecolorful:Tone to [#cc33ff]Purple[]. NL Exhaust.",
       "UPGRADE_DESCRIPTION": "Apply thecolorful:Painted to ALL enemies. NL thecolorful:Tone to [#cc33ff]Purple[]."
     },
     "Minerals_TC": {
@@ -189,7 +189,7 @@
     "ReIgnition_TC": {
       "NAME": "Re-ignition",
       "DESCRIPTION": "Lose !M! HP. NL Gain [E] [E]. NL Draw 2 cards. NL thecolorful:Tone to [#ff0000]Red[]. NL Exhaust.",
-      "UPGRADE_DESCRIPTION": "Lose !M! HP. NL Gain [E] [E]. NL Draw 2 cards. NL thecolorful:Tone to [#ff0000]Red[]."
+      "UPGRADE_DESCRIPTION": "Lose !M! HP. NL Gain [E] [E]. NL Draw 2 cards. NL thecolorful:Tone to [#ff0000]Red[]. NL Exhaust."
     },
     "PrimaryArmaRed_TC": {
       "NAME": "Primary Arma - Red",
@@ -271,8 +271,8 @@
     },
     "Warmth_TC": {
       "NAME": "Warmth",
-      "DESCRIPTION": "Unplayable. Ethereal. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff9900]Orange[] upon drawn - Gain [E].",
-      "UPGRADE_DESCRIPTION": "Unplayable. Ethereal. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] upon drawn - Gain [E]."
+      "DESCRIPTION": "Unplayable. Ethereal. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] upon drawn - Gain [E].",
+      "UPGRADE_DESCRIPTION": "Unplayable. NL Gain !B! block upon drawn. NL thecolorful:Theme of [#ff0000]Red[], [#ff9900]Orange[], [#ffff00]Yellow[] upon drawn - Gain [E]."
     },
     "GrassShield_TC": {
       "NAME": "Cespitose",
@@ -425,8 +425,8 @@
     },
     "ScorchingSun_TC": {
       "NAME": "Scorching Sun",
-      "DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. NL thecolorful:Tone to [#ff9900]Orange[]. NL Exhaust.",
-      "UPGRADE_DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. NL thecolorful:Tone to [#ff9900]Orange[]."
+      "DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. Exhaust. NL thecolorful:Theme of [#ff9900]Orange[] - At start of next turn, gain [E] equals to the amount left in this turn. Otherwise thecolorful:Tone to [#ff9900]Orange[].",
+      "UPGRADE_DESCRIPTION": "Gain [E] for every !M! thecolorful:Ink charge. NL thecolorful:Theme of [#ff9900]Orange[] - At start of next turn, gain [E] equals to the amount left in this turn. Otherwise thecolorful:Tone to [#ff9900]Orange[]."
     },
     "GoldCraft_TC": {
       "NAME": "Goldcraft",
@@ -537,8 +537,8 @@
     },
     "VineWhipBig_TC": {
       "NAME": "Long Vine",
-      "DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine.",
-      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine+."
+      "DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine. Otherwise thecolorful:Tone to [#33ee33]Green[].",
+      "UPGRADE_DESCRIPTION": "thecolorful:Sprout. NL Deal !D! damage, apply !M! Vulnerable. NL thecolorful:Theme of [#33ee33]Green[] - thecolorful:Grow: *Giant *Vine+. Otherwise thecolorful:Tone to [#33ee33]Green[]."
     },
     "VineWhipMega_TC": {
       "NAME": "Giant Vine",
@@ -626,7 +626,7 @@
     },
     "LeavesHail_TC": {
       "NAME": "Hail of leaves",
-      "DESCRIPTION": "thecolorful:Sprout. Deal !D! damage !M! times. NL thecolorful:Theme of [#33ee33]Green[] - Upgrade this card in this battle. NL Can be upgraded multiple times."
+      "DESCRIPTION": "thecolorful:Sprout. Deal !D! damage !M! times. NL thecolorful:Theme of [#33ee33]Green[] - Upgrade this card in this battle, otherwise thecolorful:Tone to [#33ee33]Green[]. NL Can be upgraded multiple times."
     },
     "Blendin_TC": {
       "NAME": "Blend in",

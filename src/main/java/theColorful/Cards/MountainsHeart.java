@@ -30,7 +30,7 @@ public class MountainsHeart extends ToningCards {
 
     public MountainsHeart() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 3;
+        this.magicNumber = this.baseMagicNumber = 4;
         this.exhaust = true;
     }
 

@@ -25,7 +25,7 @@ public class DrawMaterials extends CustomCard {
 
     public DrawMaterials() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.magicNumber = this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber = 3;
     }
 
     @Override
